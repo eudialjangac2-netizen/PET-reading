@@ -1,0 +1,91 @@
+{
+  "id": "test3-part1",
+  "partType": "part1",
+  "exerciseName": "Test 3 - Part 1",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": { "1": "C", "2": "C", "3": "A", "4": "B", "5": "A" },
+  "questions": [
+    {
+      "id": 1,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px dashed #ccc;padding:18px;border-radius:12px;background:#fffef9;'><div style='font-weight:800;color:#6b3ba7;font-size:16px;margin-bottom:4px;'>Win a holiday</div><div style='font-weight:700;font-size:13px;margin-bottom:10px;'>Competition</div><div>Tell us in 200 words what makes the perfect holiday.<br><strong>Over 16s only. (Under 18s must have their parents' permission to enter)</strong></div></div>",
+      "options": [
+        { "letter": "A", "text": "The competition is open for families with teenagers only." },
+        { "letter": "B", "text": "People of all ages can participate in the competition if they wish." },
+        { "letter": "C", "text": "Your parents must approve of your entering the competition if you are not eighteen." }
+      ],
+      "hint": "💡 Đọc kỹ cụm 'Under 18s must have their parents' permission to enter' — ai dưới 18 tuổi cần điều kiện gì?"
+    },
+    {
+      "id": 2,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #333;padding:18px;border-radius:8px;background:#fffef9;text-align:center;'><div style='font-weight:800;color:#6b3ba7;font-size:16px;margin-bottom:10px;'>Staffroom</div><div>Members of the public are forbidden to enter the staffroom at any time.<br>If you need help with anything please go to the customer services desk where a member of staff will be happy to help you.<br>Thank you.</div></div>",
+      "options": [
+        { "letter": "A", "text": "Members of the public may only enter the staffroom if they are with a member of staff." },
+        { "letter": "B", "text": "Staff should use the staffroom for dealing with customers needing some kind of help." },
+        { "letter": "C", "text": "At no time may members of the public go into the staffroom." }
+      ],
+      "hint": "💡 'forbidden to enter ... at any time' — có ngoại lệ nào không?"
+    },
+    {
+      "id": 3,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px dashed #ccc;padding:18px;border-radius:12px;background:#fffef9;'><div style='font-size:13px;color:#666;margin-bottom:2px;'><strong>To:</strong> Sally</div><div style='font-size:13px;color:#666;margin-bottom:10px;'><strong>From:</strong> Mary</div><div>Hi,<br>I left my diary at your house yesterday. Could you please send it to me? I'll pay you for the postage next time that we meet up. I really don't want to have to buy a new one.<br>Thanks again for inviting me to stay. I had a great time.</div></div>",
+      "options": [
+        { "letter": "A", "text": "is asking Sally to do her a favour and post her diary to her." },
+        { "letter": "B", "text": "is disappointed as she will probably have to get a new diary." },
+        { "letter": "C", "text": "forgot to pay back some money she owed to Sally." }
+      ],
+      "hint": "💡 Câu 'Could you please send it to me?' đang yêu cầu điều gì?"
+    },
+    {
+      "id": 4,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #4a90d9;padding:18px;border-radius:12px;background:#eaf3fc;'><div style='font-weight:800;color:#1a5fa8;font-size:15px;margin-bottom:8px;'>FOR SALE</div><div>Girl's bike, suitable for ages 7-12. One careful owner, but hardly used. Looks like new. <strong>Any offers above £40 considered.</strong> Buyer must collect.<br>Phone Adrian on 00799 345621.</div></div>",
+      "options": [
+        { "letter": "A", "text": "Adrian is willing to deliver the bike to the buyer's house if needed." },
+        { "letter": "B", "text": "Anyone interested in the bike will have to pay at least 40 pounds for it." },
+        { "letter": "C", "text": "The bike was originally bought for a young girl but was never actually used." }
+      ],
+      "hint": "💡 So sánh 'Any offers above £40 considered' với 'Buyer must collect' và 'hardly used'."
+    },
+    {
+      "id": 5,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #333;padding:18px;border-radius:18px;background:#f4f4f4;max-width:280px;'><div style='font-size:12px;color:#888;margin-bottom:6px;'>9:47 AM</div><div>Dear students,<br>The school swimming pool will be closing early tomorrow afternoon (Thursday) at 2pm, so that essential cleaning can be done to the pool. The pool will remain closed until its <strong>normal opening time of 8am on Monday morning</strong>. Thank you for your understanding.</div></div>",
+      "options": [
+        { "letter": "A", "text": "The pool usually opens at 8 am in the morning." },
+        { "letter": "B", "text": "The pool will be closed from Monday to Thursday next week." },
+        { "letter": "C", "text": "The pool will be closed for a few hours on Thursday morning." }
+      ],
+      "hint": "💡 'normal opening time of 8am on Monday morning' cho biết giờ mở cửa BÌNH THƯỜNG, không phải lịch đóng cửa."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 1,
+      "ans": "C",
+      "key": "C là đáp án đúng vì 'Under 18s must have their parents' permission to enter'. Đáp án A sai vì cuộc thi dành cho người từ 16 tuổi trở lên, không phải cho cả gia đình. Đáp án B sai vì bạn phải ít nhất 16 tuổi mới được tham gia."
+    },
+    {
+      "q": 2,
+      "ans": "C",
+      "key": "C là đáp án đúng vì 'Members of the public are forbidden to enter the staffroom at any time'. Đáp án A sai vì công chúng không bao giờ được phép vào phòng nhân viên. Đáp án B sai vì khách hàng được hỗ trợ tại quầy dịch vụ khách hàng, không phải trong staffroom."
+    },
+    {
+      "q": 3,
+      "ans": "A",
+      "key": "A là đáp án đúng vì cô ấy nói 'Could you please send it to me?'. Đáp án B sai vì cô ấy nói 'I really don't want to have to buy a new one'. Đáp án C sai vì cô ấy chỉ nhắc đến tiền để nói rằng sẽ trả tiền bưu điện khi gửi cuốn nhật ký — nhật ký chưa được gửi nên cô ấy chưa nợ khoản tiền nào."
+    },
+    {
+      "q": 4,
+      "ans": "B",
+      "key": "B là đáp án đúng vì Adrian nói 'Any offers above £40 will be considered'. Đáp án A sai vì Adrian nói 'Buyer must collect' (người mua phải tự đến lấy). Đáp án C sai vì xe đạp 'hardly used' nghĩa là đã được dùng một chút, không phải chưa từng dùng."
+    },
+    {
+      "q": 5,
+      "ans": "A",
+      "key": "A là đáp án đúng vì bài viết có nói 'normal opening time of 8am' (giờ mở cửa bình thường là 8 giờ sáng). Đáp án B sai vì bể bơi sẽ mở lại bình thường vào thứ Hai. Đáp án C sai vì 'will be closing early tomorrow afternoon (Thursday) at 2pm' nghĩa là bể bơi vẫn mở cửa vào buổi sáng thứ Năm, chỉ đóng sớm vào buổi chiều."
+    }
+  ]
+}
