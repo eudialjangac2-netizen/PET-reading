@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kho Bài Tập - PET Reading</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Google Sans', 'Product Sans', Roboto, sans-serif;
+    background: #f7f5f0;
+    color: #2d2a24;
+    min-height: 100vh;
+  }
+
+  .page-header {
+    background: linear-gradient(135deg, #6b3ba7 0%, #d4a017 50%, #e66000 100%);
+    padding: 36px 20px 28px;
+    text-align: center;
+    color: white;
+  }
+  .page-header h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
+  .page-header p { font-size: 14.5px; opacity: 0.92; }
+
+  .filter-bar {
+    max-width: 1000px; margin: -20px auto 0; padding: 0 20px;
+    display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+    position: relative; z-index: 5;
+  }
+  .filter-chip {
+    background: white; border: 2px solid #e5e0d5; border-radius: 30px;
+    padding: 9px 18px; font-size: 13.5px; font-weight: 700; color: #6b6558;
+    cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.06); transition: all 0.15s;
+  }
+  .filter-chip:hover { border-color: #bbb; }
+  .filter-chip.active { background: #2d2a24; color: white; border-color: #2d2a24; }
+
+  .content-area { max-width: 1000px; margin: 0 auto; padding: 32px 20px 60px; }
+
+  .test-group { margin-bottom: 36px; }
+  .test-group-title {
+    font-size: 17px; font-weight: 700; color: #4a4538; margin-bottom: 14px;
+    padding-left: 4px; border-left: 4px solid #d4a017;
+  }
+
+  .card-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px;
+  }
+
+  .exercise-card {
+    background: white; border-radius: 22px; overflow: hidden; cursor: pointer;
+    border: 2px solid var(--card-border, #eee); box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    transition: transform 0.15s, box-shadow 0.15s; text-decoration: none; color: inherit;
+    display: flex; flex-direction: column;
+  }
+  .exercise-card:hover { transform: translateY(-4px); box-shadow: 0 10px 22px rgba(0,0,0,0.12); }
+
+  .card-banner {
+    height: 110px; background: var(--card-bg, #f0f0f0);
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .card-banner img {
+    width: 76px; height: 76px; border-radius: 18px; object-fit: cover;
+    border: 3px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  .card-body { padding: 14px 16px 16px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+  .card-title { font-size: 15.5px; font-weight: 700; color: var(--card-primary, #333); }
+  .card-mascot-name { font-size: 12.5px; color: #999; font-weight: 600; }
+  .card-cta {
+    margin-top: auto; font-size: 13px; font-weight: 700; color: var(--card-primary, #333);
+    display: flex; align-items: center; gap: 4px; padding-top: 8px;
+  }
+
+  .empty-state {
+    text-align: center; padding: 60px 20px; color: #999; font-size: 15px;
+  }
+
+  .loading-state { text-align: center; padding: 60px 20px; color: #999; font-size: 15px; }
+</style>
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>📚 Kho Bài Tập PET Reading</h1>
+    <p>Chọn 1 bài để bắt đầu luyện tập</p>
+  </div>
+
+  <div class="filter-bar" id="filterBar"></div>
+
+  <div class="content-area" id="contentArea">
+    <div class="loading-state">Đang tải danh sách bài tập...</div>
+  </div>
+
+  <script src="theme-config.js"></script>
+  <script>
+    const PART_LABELS = {
+      part1: "Part 1", part2: "Part 2", part3: "Part 3",
+      part4: "Part 4", part5: "Part 5", part6: "Part 6",
+    };
+
+    let allExercises = [];
+    let activeFilter = "all";
+
+    function extractTestGroup(id) {
+      // "test1-part1" -> "Test 1"
+      const match = id.match(/^test(\d+)-part\d+$/);
+      return match ? `Test ${match[1]}` : "Khác";
+    }
+
+    function renderFilterBar() {
+      const partTypesPresent = [...new Set(allExercises.map(e => e.partType))].sort();
+      const bar = document.getElementById("filterBar");
+      const chips = [{ key: "all", label: "Tất cả" }].concat(
+        partTypesPresent.map(pt => ({ key: pt, label: PART_LABELS[pt] || pt }))
+      );
+      bar.innerHTML = chips.map(c => `
+        <div class="filter-chip ${c.key === activeFilter ? "active" : ""}" data-filter="${c.key}">${c.label}</div>
+      `).join("");
+      bar.querySelectorAll(".filter-chip").forEach(chip => {
+        chip.addEventListener("click", () => {
+          activeFilter = chip.getAttribute("data-filter");
+          renderFilterBar();
+          renderContent();
+        });
+      });
+    }
+
+    function renderContent() {
+      const container = document.getElementById("contentArea");
+      const filtered = activeFilter === "all"
+        ? allExercises
+        : allExercises.filter(e => e.partType === activeFilter);
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div class="empty-state">Chưa có bài tập nào ở mục này.</div>`;
+        return;
+      }
+
+      // Gom nhóm theo "Test N"
+      const groups = {};
+      filtered.forEach(ex => {
+        const groupName = extractTestGroup(ex.id);
+        if (!groups[groupName]) groups[groupName] = [];
+        groups[groupName].push(ex);
+      });
+
+      const groupNames = Object.keys(groups).sort((a, b) => {
+        const numA = parseInt(a.replace(/\D/g, "")) || 0;
+        const numB = parseInt(b.replace(/\D/g, "")) || 0;
+        return numA - numB;
+      });
+
+      container.innerHTML = groupNames.map(groupName => `
+        <div class="test-group">
+          <div class="test-group-title">${groupName}</div>
+          <div class="card-grid">
+            ${groups[groupName].map(ex => renderCard(ex)).join("")}
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderCard(ex) {
+      const theme = (typeof getThemeByPartType === "function") ? getThemeByPartType(ex.partType) : null;
+      const primary = theme ? theme.primary : "#333";
+      const bg = theme ? theme.bgMain : "#f0f0f0";
+      const border = theme ? theme.borderColor : "#eee";
+      const avatar = theme ? theme.avatarImg : "";
+      const mascotName = theme ? theme.mascot : "";
+      const partLabel = PART_LABELS[ex.partType] || ex.partType;
+
+      return `
+        <a class="exercise-card" href="bai-tap-doc.html?id=${ex.id}"
+           style="--card-primary:${primary}; --card-bg:${bg}; --card-border:${border};">
+          <div class="card-banner">
+            ${avatar ? `<img src="${avatar}" alt="${mascotName}">` : ""}
+          </div>
+          <div class="card-body">
+            <div class="card-title">${ex.displayName}</div>
+            <div class="card-mascot-name">${partLabel} · ${mascotName}</div>
+            <div class="card-cta">Bắt đầu làm bài →</div>
+          </div>
+        </a>
+      `;
+    }
+
+    async function loadManifest() {
+      try {
+        const res = await fetch("exercises-manifest.json");
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+        allExercises = data.exercises || [];
+      } catch (err) {
+        document.getElementById("contentArea").innerHTML =
+          `<div class="empty-state">⚠️ Không tải được danh sách bài tập: ${err.message}</div>`;
+        return;
+      }
+
+      if (allExercises.length === 0) {
+        document.getElementById("contentArea").innerHTML =
+          `<div class="empty-state">Chưa có bài tập nào được đăng.</div>`;
+        return;
+      }
+
+      renderFilterBar();
+      renderContent();
+    }
+
+    window.addEventListener("DOMContentLoaded", loadManifest);
+  </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PET Reading</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared-styles.css">
+</head>
+<body>
+
+  <!-- Teacher Admin Bar -->
+  <div id="teacherToolbar">
+    <div><strong>TEACHER MODE ACTIVE</strong> (<span id="teacherNameLabel"></span>)</div>
+    <div>
+      <button onclick="PETEngine.teacherAutoFill(true)">Auto-Fill Đúng</button>
+      <button onclick="PETEngine.teacherAutoFill(false)">Auto-Fill Sai</button>
+      <button onclick="PETEngine.toggleAntiCheat()">Bypass Anti-Cheat/Spam</button>
+    </div>
+  </div>
+
+  <!-- Login Screen -->
+  <div id="loginScreen">
+    <div class="login-card">
+      <img id="loginAvatarImg" src="" alt="Mascot">
+      <h2>Đăng Nhập Làm Bài</h2>
+      <p id="loginSubtitle">Vui lòng nhập đầy đủ thông tin để bắt đầu bài tập</p>
+
+      <div class="form-group">
+        <label for="studentName">Họ và Tên học sinh *</label>
+        <input type="text" id="studentName" autocomplete="off">
+      </div>
+
+      <div class="form-group">
+        <label for="accessCode">Mã xác nhận bài tập *</label>
+        <input type="text" id="accessCode" autocomplete="off">
+      </div>
+
+      <button class="btn-start" onclick="PETEngine.startExercise()">Bắt Đầu Làm Bài</button>
+    </div>
+  </div>
+
+  <!-- Floating Highlight Popup -->
+  <div id="hlPopup">
+    <span class="hl-title">Tô màu:</span>
+    <div class="hl-btn hl-yellow" title="Vàng" onclick="PETEngine.applyHighlight('yellow')"></div>
+    <div class="hl-btn hl-green" title="Xanh lá" onclick="PETEngine.applyHighlight('green')"></div>
+    <div class="hl-btn hl-blue" title="Xanh dương" onclick="PETEngine.applyHighlight('blue')"></div>
+    <div class="hl-btn hl-remove" title="Xóa" onclick="PETEngine.applyHighlight('remove')"></div>
+  </div>
+
+  <!-- Retry Modal -->
+  <div id="modalOverlay">
+    <div class="modal-box">
+      <div style="font-size: 48px; margin-bottom: 8px;">🔄</div>
+      <h3 style="color: var(--primary); font-size: 22px; margin-bottom: 8px;">CẦN LÀM LẠI BÀI TẬP</h3>
+      <p style="font-size: 15px; color: #4a5568; line-height: 1.5;" id="modalDesc">Bạn chưa đạt 100%. Hãy thử lại nhé!</p>
+      <button class="btn-start" style="margin-top: 20px;" onclick="PETEngine.closeModal()">Thử Làm Lại 🔄</button>
+    </div>
+  </div>
+
+  <!-- Main App Window -->
+  <div id="mainApp">
+    <div class="app-header">
+      <h1 id="appTitle">PET Reading</h1>
+      <div class="highlight-toolbar">
+        <span class="hl-title">Highlight bài đọc:</span>
+        <div class="hl-btn hl-yellow" title="Vàng" onclick="PETEngine.applyHighlight('yellow')"></div>
+        <div class="hl-btn hl-green" title="Xanh lá" onclick="PETEngine.applyHighlight('green')"></div>
+        <div class="hl-btn hl-blue" title="Xanh dương" onclick="PETEngine.applyHighlight('blue')"></div>
+        <div class="hl-btn hl-remove" title="Xóa Highlight" onclick="PETEngine.applyHighlight('remove')"></div>
+      </div>
+    </div>
+
+    <!-- Renderer của từng partType sẽ đổ nội dung vào đây -->
+    <div id="partRenderTarget"></div>
+
+    <div class="submit-footer">
+      <div style="font-size:14px; color:var(--text-muted);" id="statusText">Hoàn thành các câu hỏi để nộp bài</div>
+      <div class="duplicate-tooltip" id="dupTooltip">⚠️ Không được chọn trùng đáp án giữa các câu!</div>
+      <button class="btn-submit" id="btnSubmit" onclick="PETEngine.checkAnswers()" disabled>Kiểm Tra Đáp Án 🚀</button>
+    </div>
+  </div>
+
+  <!-- Anti-Spam Overlay -->
+  <div id="lockOverlay">
+    <div class="modal-box">
+      <h3 style="color:#e53e3e; font-size:22px; margin-bottom:10px;" id="lockTitle">⚠️ CẢNH BÁO THAO TÁC QUÁ NHANH</h3>
+      <p style="font-size:15px; color:#4a5568;">Bạn đã thao tác quá nhanh.</p>
+      <div style="font-size:48px; font-weight:700; color:#e53e3e; margin:16px 0;" id="lockTimer">5</div>
+      <p style="font-size:13px; color:#718096;">Màn hình sẽ tự động khóa trong thời gian quy định.</p>
+    </div>
+  </div>
+
+  <!-- Result Modal -->
+  <div id="resultModal">
+    <div class="result-card">
+      <div style="text-align:center; margin-bottom:24px;">
+        <div style="font-size:60px;">🎉</div>
+        <h2 style="color:var(--primary); font-size:28px;">HOÀN THÀNH XUẤT SẮC!</h2>
+        <p style="color:var(--text-muted); font-size:15px; margin-top:6px;">Kết quả bài tập đã được ghi nhận thành công.</p>
+      </div>
+      <h3 style="color:var(--primary); font-size:18px; margin-bottom:12px;">Giải Thích Đáp Án Chi Tiết:</h3>
+      <div id="explanationContainer"></div>
+      <button class="btn-start" style="margin-top:24px;" onclick="location.reload()">Làm Bài Mới 🔄</button>
+    </div>
+  </div>
+
+  <!-- Load engine + theme trước -->
+  <script src="shared-engine.js"></script>
+  <script src="theme-config.js"></script>
+
+  <!-- Dispatcher core PHẢI nạp trước các renderer, vì renderer gọi registerRenderer() ngay khi parse -->
+  <script>
+    window.PART_RENDERERS = {}; // mỗi renderers/partN.js sẽ tự đăng ký vào đây
+    window.registerRenderer = function (partType, renderFn) {
+      window.PART_RENDERERS[partType] = renderFn;
+    };
+  </script>
+
+  <!-- Renderer riêng từng partType (mỗi file tự gọi registerRenderer khi được nạp) -->
+  <script src="renderers/part1.js"></script>
+  <script src="renderers/part2.js"></script>
+  <script src="renderers/part3.js"></script>
+  <script src="renderers/part4.js"></script>
+  <script src="renderers/part5.js"></script>
+  <script src="renderers/part6.js"></script>
+
+<script>
+  // ==========================================================================
+  // DISPATCHER: đọc ?id= trên URL -> tải JSON bài -> gọi đúng renderer partType
+  // ==========================================================================
+  async function bootExercise() {
+    const params = new URLSearchParams(window.location.search);
+    const exerciseId = params.get("id");
+
+    if (!exerciseId) {
+      document.body.innerHTML = "<p style='padding:40px;font-family:sans-serif;'>⚠️ Thiếu tham số <code>?id=</code> trên URL. Ví dụ: <code>bai-tap-doc.html?id=test1-part1</code></p>";
+      return;
+    }
+
+    let data;
+    try {
+      const res = await fetch(`exercises/${exerciseId}.json`);
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      data = await res.json();
+    } catch (err) {
+      document.body.innerHTML = `<p style='padding:40px;font-family:sans-serif;'>⚠️ Không tải được bài tập <code>${exerciseId}</code>: ${err.message}</p>`;
+      return;
+    }
+
+    const renderFn = PART_RENDERERS[data.partType];
+    if (!renderFn) {
+      document.body.innerHTML = `<p style='padding:40px;font-family:sans-serif;'>⚠️ Chưa có renderer cho partType "<code>${data.partType}</code>". Hiện chỉ hỗ trợ: ${Object.keys(PART_RENDERERS).join(", ") || "(chưa có renderer nào)"}.</p>`;
+      return;
+    }
+
+    const theme = (typeof getThemeByPartType === "function") ? getThemeByPartType(data.partType) : null;
+    if (theme) {
+      const avatarEl = document.getElementById("loginAvatarImg");
+      if (avatarEl) avatarEl.src = theme.avatarImg;
+    }
+
+    // Renderer tự build DOM + tự gọi PETEngine.init(...) với cfg phù hợp partType đó
+    try {
+      renderFn(data, theme);
+    } catch (err) {
+      console.error("Render error:", err);
+      document.body.innerHTML += `<pre style="color:red;padding:20px;">RENDER ERROR: ${err.message}\n${err.stack}</pre>`;
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", bootExercise);
+</script>
+</body>
+</html>

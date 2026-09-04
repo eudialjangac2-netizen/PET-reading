@@ -1,0 +1,258 @@
+/* =====================================================================
+   PET READING - SHARED STYLES
+   =====================================================================
+   Biến CSS mặc định = bảng màu Part 1 (Lemon Rabbit). PETEngine.applyTheme()
+   sẽ override --primary/--primary-light/--accent/--bg-main/--border-color
+   theo theme của từng Part lúc runtime (đọc từ theme-config.js).
+
+   File này gồm 2 phần:
+   1. Khung dùng chung mọi Part (login, header, footer, modal, highlight...)
+   2. Layout riêng từng partType (thêm dần khi build renderer mới)
+   ===================================================================== */
+
+:root {
+  --bg-main: #fcf9e8;
+  --bg-card: #ffffff;
+  --primary: #d4a017;
+  --primary-light: #fbe380;
+  --accent: #fbc02d;
+  --text-dark: #3a3321;
+  --text-muted: #82785c;
+  --border-color: #f3e6a1;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Google Sans', 'Product Sans', Roboto, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  user-select: text;
+  -webkit-user-select: text;
+  min-height: 100vh;
+}
+
+/* ---------- Teacher Toolbar ---------- */
+#teacherToolbar {
+  display: none; background: #4a3524; color: white; padding: 10px 20px;
+  align-items: center; justify-content: space-between; font-size: 14px;
+  position: sticky; top: 0; z-index: 1000;
+}
+#teacherToolbar button {
+  background: var(--primary); border: none; color: white; padding: 6px 14px;
+  border-radius: 20px; cursor: pointer; font-weight: 700; margin-left: 8px;
+}
+
+/* ---------- Login Screen ---------- */
+#loginScreen {
+  display: flex; justify-content: center; align-items: center; min-height: 100vh;
+  padding: 20px; background: radial-gradient(circle at center, #ffffff 0%, var(--bg-main) 100%);
+}
+.login-card {
+  background: var(--bg-card); border-radius: 28px; padding: 32px 28px;
+  max-width: 440px; width: 100%; box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+  border: 3px solid var(--border-color); text-align: center;
+}
+#loginAvatarImg {
+  width: 170px; height: 170px; object-fit: cover; border-radius: 24px;
+  margin: 0 auto 16px; display: block; border: 3px solid var(--border-color);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.login-card h2 { color: var(--primary); font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+.login-card p { color: var(--text-muted); font-size: 14px; margin-bottom: 20px; }
+.form-group { text-align: left; margin-bottom: 16px; }
+.form-group label { display: block; font-weight: 700; font-size: 14px; color: var(--primary); margin-bottom: 6px; }
+.form-group input {
+  width: 100%; padding: 12px 16px; border: 2px solid var(--border-color);
+  border-radius: 16px; font-size: 15px; outline: none; background: #fffef7; font-family: inherit;
+}
+.btn-start {
+  width: 100%; padding: 15px; background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  color: #fff; border: none; border-radius: 20px; font-size: 16px; font-weight: 700;
+  cursor: pointer; box-shadow: 0 6px 16px rgba(0,0,0,0.18); margin-top: 10px;
+}
+
+/* ---------- Main App Shell ---------- */
+#mainApp { display: none; min-height: 100vh; flex-direction: column; }
+.app-header {
+  background: var(--bg-card); border-bottom: 2px solid var(--border-color);
+  padding: 12px 24px; display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+}
+.app-header h1 { font-size: 18px; color: var(--primary); display: flex; align-items: center; gap: 8px; }
+
+.highlight-toolbar {
+  display: flex; align-items: center; gap: 8px; background: #fffde6;
+  padding: 6px 14px; border-radius: 30px; border: 1px solid var(--border-color);
+}
+.hl-title { font-size: 13px; font-weight: 700; color: var(--primary); }
+.hl-btn { width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; cursor: pointer; }
+.hl-yellow { background-color: #ffef96; }
+.hl-green { background-color: #b7efc5; }
+.hl-blue { background-color: #a0c4ff; }
+.hl-remove { background-color: #e2e8f0; position: relative; }
+.hl-remove::after { content: "×"; position: absolute; top:-3px; left:5px; font-weight:bold; color:#64748b; }
+
+#hlPopup {
+  display: none; position: absolute; z-index: 9000; background: #ffffff;
+  border: 2px solid var(--primary-light); border-radius: 30px; padding: 6px 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18); gap: 8px; align-items: center;
+}
+
+.questions-scroll-area {
+  max-width: 900px; margin: 0 auto; width: 100%; padding: 24px 16px 100px 16px;
+}
+
+/* ---------- Submit Footer ---------- */
+.submit-footer {
+  position: fixed; bottom: 0; left: 0; width: 100%;
+  background: white; border-top: 2px solid var(--border-color); padding: 14px 24px;
+  display: flex; justify-content: space-between; align-items: center; z-index: 90;
+}
+.btn-submit {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%); color: white; border: none;
+  padding: 12px 32px; border-radius: 30px; font-weight: 700; font-size: 16px; cursor: pointer;
+}
+.btn-submit:disabled { background: #cbd5e0; cursor: not-allowed; }
+
+.duplicate-tooltip {
+  display: none; position: absolute; right: 24px; bottom: 75px; background: #fff5f5;
+  border: 2px solid #feb2b2; color: #c53030; padding: 10px 16px; border-radius: 12px; font-size: 13.5px; font-weight: 700;
+}
+
+/* ---------- Modals & Overlays ---------- */
+#lockOverlay, #modalOverlay {
+  display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.75); z-index: 9999; flex-direction: column;
+  align-items: center; justify-content: center; color: white; text-align: center; padding: 20px;
+}
+.modal-box {
+  background: white; color: var(--text-dark); padding: 32px 24px;
+  border-radius: 24px; max-width: 440px; width: 100%;
+}
+
+.hint-box {
+  margin-top: 12px; background: #fff5f5; border-left: 4px solid #f56565; padding: 10px 14px;
+  border-radius: 8px; font-size: 13.5px; color: #c53030; display: none;
+}
+
+#resultModal {
+  display: none; position: fixed; top:0; left:0; width:100%; height:100%;
+  background: rgba(0,0,0,0.6); z-index: 8000; overflow-y: auto; padding: 30px 16px;
+}
+.result-card { background: white; border-radius: 24px; max-width: 750px; margin: 0 auto; padding: 32px; }
+.explanation-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.explanation-table th, .explanation-table td { border: 1px solid var(--border-color); padding: 12px 14px; text-align: left; font-size: 14px; }
+.explanation-table th { background: #fffbe6; color: var(--primary); font-weight: 700; }
+
+mark.hl-yellow { background-color: #ffef96; color: inherit; border-radius: 4px; padding: 2px 0; }
+mark.hl-green { background-color: #b7efc5; color: inherit; border-radius: 4px; padding: 2px 0; }
+mark.hl-blue { background-color: #a0c4ff; color: inherit; border-radius: 4px; padding: 2px 0; }
+
+/* =====================================================================
+   PART 1 LAYOUT (grid từng câu — đề & đáp án cạnh nhau)
+   ===================================================================== */
+.part1-item-card {
+  background: var(--bg-card); border-radius: 20px; border: 2px solid var(--border-color);
+  padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.part1-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+@media (max-width: 768px) { .part1-grid { grid-template-columns: 1fr; } }
+
+.q-num-badge {
+  font-weight: 700; font-size: 16px; color: var(--primary); margin-bottom: 12px;
+  display: inline-block; background: #fffbe6; padding: 4px 12px; border-radius: 12px;
+}
+
+.mcq-options { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+.option-label {
+  display: flex; align-items: flex-start; gap: 10px; background: #fffef9;
+  padding: 12px 14px; border-radius: 14px; border: 1.5px solid var(--border-color);
+  cursor: pointer; transition: all 0.2s; font-size: 14.5px; line-height: 1.4;
+}
+.option-label:hover { border-color: var(--primary); background: #fffbe6; }
+.option-label input[type="radio"] { margin-top: 3px; accent-color: var(--primary); cursor: pointer; }
+
+/* =====================================================================
+   SPLIT-PANE MODE (Part 2, 3, 4, 5, 6) — đề/nội dung trái, thao tác phải
+   Renderer tự thêm class "split-mode" vào #mainApp khi dùng layout này.
+   ===================================================================== */
+#mainApp.split-mode { height: 100vh; }
+#mainApp.split-mode .submit-footer { position: relative; }
+#mainApp.split-mode .questions-scroll-area { padding-bottom: 24px; }
+
+.split-container { display: flex; flex: 1; overflow: hidden; position: relative; }
+.left-pane, .right-pane { flex: 1; overflow-y: auto; padding: 24px; }
+.left-pane { border-right: 2px dashed var(--border-color); background: rgba(0,0,0,0.015); }
+.right-pane { background: #ffffff; }
+
+/* ---------- Article (Part 3, 4, 5, 6) ---------- */
+.article-title { font-size: 22px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+.article-author { font-size: 14px; font-style: italic; color: var(--text-muted); margin-bottom: 16px; }
+.article-content { font-size: 15px; line-height: 1.75; color: var(--text-dark); text-align: justify; }
+.article-image-box {
+  float: right; margin: 0 0 16px 20px; width: 45%; max-width: 280px;
+  border-radius: 16px; overflow: hidden; border: 2px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.article-image-box img { width: 100%; height: auto; display: block; }
+
+/* ---------- MCQ card (Part 3, Part 5) ---------- */
+.mcq-card {
+  background: rgba(0,0,0,0.015); border-radius: 18px; border: 2px solid var(--border-color);
+  padding: 18px; margin-bottom: 20px;
+}
+.mcq-title { font-weight: 700; font-size: 15.5px; color: var(--primary); margin-bottom: 12px; line-height: 1.4; }
+
+/* ---------- Person-matching card (Part 2) ---------- */
+.person-card {
+  background: white; border-radius: 20px; border: 2px solid var(--border-color);
+  padding: 20px; margin-bottom: 24px; position: relative;
+}
+.person-header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+.person-avatar { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-light); }
+.person-title { font-weight: 700; font-size: 17px; color: var(--primary); }
+.person-text { font-size: 15px; line-height: 1.6; color: #4a5568; margin-bottom: 16px; }
+.answer-select-box {
+  background: rgba(0,0,0,0.03); border-radius: 14px; padding: 12px 16px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.answer-select-box label { font-weight: 700; font-size: 14px; color: var(--primary); }
+.answer-select-box select {
+  padding: 8px 16px; border-radius: 10px; border: 2px solid var(--primary-light);
+  font-weight: 700; font-size: 15px; color: var(--primary); outline: none; cursor: pointer;
+  background: white; font-family: inherit;
+}
+
+/* ---------- Option pool cards (Part 2 & Part 4 right pane) ---------- */
+.option-card { background: white; border-radius: 18px; border: 2px solid #e2e8f0; padding: 18px; margin-bottom: 20px; }
+.option-letter {
+  display: inline-block; background: var(--primary-light); color: white;
+  font-weight: 700; padding: 4px 12px; border-radius: 8px; font-size: 14px; margin-bottom: 8px;
+}
+.option-title { font-weight: 700; font-size: 16px; color: var(--text-dark); display: inline; margin-left: 6px; }
+.option-body { font-size: 14.5px; line-height: 1.6; color: #4a5568; margin-top: 6px; }
+
+/* ---------- Inline dropdown-in-text (Part 4) ---------- */
+.inline-gap-select {
+  display: inline-block; padding: 3px 10px; border-radius: 8px; border: 2px solid var(--primary-light);
+  font-weight: 700; color: var(--primary); background: #fffdf7; font-size: 14px; margin: 0 3px; cursor: pointer;
+  font-family: inherit;
+}
+
+/* ---------- Gap-fill text input (Part 6) ---------- */
+.gap-tag {
+  display: inline-block; background: var(--primary-light); color: white; padding: 2px 8px;
+  border-radius: 8px; font-weight: 800; font-size: 14.5px; margin: 0 2px;
+}
+.gap-card {
+  background: rgba(0,0,0,0.015); border-radius: 20px; border: 2px solid var(--border-color);
+  padding: 18px; margin-bottom: 18px;
+}
+.gap-title { font-weight: 800; font-size: 15.5px; color: var(--primary); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.gap-input-wrapper { display: flex; align-items: center; gap: 10px; }
+.gap-text-input {
+  width: 100%; padding: 12px 16px; border: 2px solid var(--border-color); border-radius: 14px;
+  font-size: 17px; outline: none; font-weight: 700; color: var(--primary); background: #ffffff; font-family: inherit;
+}
+.gap-text-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,0,0,0.06); }
