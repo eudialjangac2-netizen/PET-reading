@@ -1,0 +1,69 @@
+{
+  "id": "test3-part6",
+  "partType": "part6",
+  "exerciseName": "Test 3 - Part 6",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "27": ["on"],
+    "28": ["all"],
+    "29": ["so"],
+    "30": ["in"],
+    "31": ["out"],
+    "32": ["see"]
+  },
+  "article": {
+    "title": "The British Museum",
+    "author": "",
+    "image": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?w=500",
+    "paragraphs": [
+      "Last week my class and I visited the British Museum in London and I was thrilled. The British Museum is the first national public museum in the world. It first opened to the public <span class='gap-tag'>(27)</span>.................... 15th January, 1759. It has a huge collection of objects from <span class='gap-tag'>(28)</span>.................... over the world. The guide told us that the reason the collection grew <span class='gap-tag'>(29)</span>.................... quickly was that Britain controlled many countries worldwide in the 18th and 19th centuries.",
+      "As it is such a large museum, you really need a guidebook <span class='gap-tag'>(30)</span>.................... order to find where everything is in the museum. Then, you can plan what you really want to see. It's very easy to run <span class='gap-tag'>(31)</span>.................... of time while you are looking around and, to be honest, it is nearly impossible to <span class='gap-tag'>(32)</span>.................... everything in the museum in one day. In fact, we only saw half of it."
+    ]
+  },
+  "questions": [
+    {
+      "id": 27,
+      "label": "Câu 27",
+      "placeholder": "Nhập từ cho ô (27)...",
+      "hint": "💡 Giới từ đi trước 1 ngày tháng cụ thể (a particular date)."
+    },
+    {
+      "id": 28,
+      "label": "Câu 28",
+      "placeholder": "Nhập từ cho ô (28)...",
+      "hint": "💡 Cụm 'all over the world' = khắp mọi nơi trên thế giới."
+    },
+    {
+      "id": 29,
+      "label": "Câu 29",
+      "placeholder": "Nhập từ cho ô (29)...",
+      "hint": "💡 Từ đứng trước tính từ/trạng từ để nhấn mạnh mức độ, thường theo sau là mệnh đề 'that' chỉ kết quả (so...that)."
+    },
+    {
+      "id": 30,
+      "label": "Câu 30",
+      "placeholder": "Nhập từ cho ô (30)...",
+      "hint": "💡 Cụm 'in order to' = với mục đích để làm gì đó, giải thích lý do."
+    },
+    {
+      "id": 31,
+      "label": "Câu 31",
+      "placeholder": "Nhập từ cho ô (31)...",
+      "hint": "💡 Cụm động từ 'run out of' = dùng hết thứ gì đó, không còn đủ nữa."
+    },
+    {
+      "id": 32,
+      "label": "Câu 32",
+      "placeholder": "Nhập từ cho ô (32)...",
+      "hint": "💡 Cần động từ nguyên mẫu (to + V), câu đang nói về việc ngắm nhìn hiện vật trong bảo tàng."
+    }
+  ],
+  "explanation": [
+    { "q": 27, "ans": "on", "key": "<strong>on</strong>: dùng trước 1 ngày tháng cụ thể (a particular date), ví dụ 'on 15th January, 1759'." },
+    { "q": 28, "ans": "all", "key": "<strong>all</strong>: cụm 'all over' nghĩa là ở khắp mọi nơi. Khi nói 'all over the world' nghĩa là 'khắp mọi nơi trên thế giới'." },
+    { "q": 29, "ans": "so", "key": "<strong>so</strong>: khi đứng trước tính từ hoặc trạng từ, 'so' nhấn mạnh mức độ, thường đi kèm mệnh đề 'that' phía sau chỉ kết quả." },
+    { "q": 30, "ans": "in", "key": "<strong>in</strong>: cụm 'in order to' nghĩa là với mục đích làm điều gì đó, giải thích lý do tại sao ai đó làm việc gì." },
+    { "q": 31, "ans": "out", "key": "<strong>out</strong>: 'run out of' là cụm động từ nghĩa là dùng hết thứ gì đó và không còn đủ nữa (ví dụ hết thời gian)." },
+    { "q": 32, "ans": "see", "key": "<strong>see</strong>: câu cần động từ nguyên mẫu (infinitive), và ngữ cảnh đang nói về việc ngắm nhìn mọi thứ trong bảo tàng." }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "test3-part5",
+  "partType": "part5",
+  "exerciseName": "Test 3 - Part 5",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": { "21": "C", "22": "A", "23": "B", "24": "A", "25": "D", "26": "C" },
+  "article": {
+    "title": "Technology in the home",
+    "author": "Cambridge B1 Preliminary for Schools - Reading Part 5",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500",
+    "paragraphs": [
+      "There have been so many <strong>(21) ....................</strong> over the last twenty years or so that have had a(n) <strong>(22) ....................</strong> effect on our life. Take, smartphones, as an example. In fact, you could say that our lives have totally changed due to the internet and all the technology that has <strong>(23) ....................</strong> because of it. When you stop to think about it, how many hours a week do you sit at your computer, typing on your keyboard? I think you would be <strong>(24) ....................</strong> at the amount of time you spend using technology in the home.",
+      "People of all ages are beginning to <strong>(25) ....................</strong> on the internet for many different things and it is more than likely that you are spending two to three whole days a week doing some kind of activity online. Maybe it's time to turn off the computer and have a nice, face-to-face <strong>(26) ....................</strong> with your friends, family or colleagues."
+    ]
+  },
+  "questions": [
+    {
+      "id": 21,
+      "question": "21. Choose the correct word for gap (21):",
+      "options": [
+        { "letter": "A", "text": "discoveries" },
+        { "letter": "B", "text": "equipment" },
+        { "letter": "C", "text": "inventions" },
+        { "letter": "D", "text": "designs" }
+      ],
+      "hint": "💡 'invention' = thứ gì đó con người tạo ra lần đầu tiên (máy móc, thiết bị)."
+    },
+    {
+      "id": 22,
+      "question": "22. Choose the correct word for gap (22):",
+      "options": [
+        { "letter": "A", "text": "enormous" },
+        { "letter": "B", "text": "common" },
+        { "letter": "C", "text": "essential" },
+        { "letter": "D", "text": "limited" }
+      ],
+      "hint": "💡 Vế sau nói 'our lives have totally changed' — cần tính từ chỉ mức độ ảnh hưởng RẤT LỚN."
+    },
+    {
+      "id": 23,
+      "question": "23. Choose the correct word for gap (23):",
+      "options": [
+        { "letter": "A", "text": "produced" },
+        { "letter": "B", "text": "appeared" },
+        { "letter": "C", "text": "presented" },
+        { "letter": "D", "text": "installed" }
+      ],
+      "hint": "💡 'appear' = xuất hiện, hợp về ngữ pháp và nghĩa với 'technology that has appeared because of it'."
+    },
+    {
+      "id": 24,
+      "question": "24. Choose the correct word for gap (24):",
+      "options": [
+        { "letter": "A", "text": "shocked" },
+        { "letter": "B", "text": "confused" },
+        { "letter": "C", "text": "frightened" },
+        { "letter": "D", "text": "angry" }
+      ],
+      "hint": "💡 Chỉ 'shocked' mới đi được với giới từ 'at' trong câu này ('shocked at')."
+    },
+    {
+      "id": 25,
+      "question": "25. Choose the correct word for gap (25):",
+      "options": [
+        { "letter": "A", "text": "base" },
+        { "letter": "B", "text": "carry" },
+        { "letter": "C", "text": "keep" },
+        { "letter": "D", "text": "depend" }
+      ],
+      "hint": "💡 'depend on' = phụ thuộc vào — hợp với ngữ cảnh 'depend on the internet for many things'."
+    },
+    {
+      "id": 26,
+      "question": "26. Choose the correct word for gap (26):",
+      "options": [
+        { "letter": "A", "text": "lecture" },
+        { "letter": "B", "text": "conference" },
+        { "letter": "C", "text": "discussion" },
+        { "letter": "D", "text": "interview" }
+      ],
+      "hint": "💡 'discussion' = cuộc trò chuyện giữa 2 người trở lên, hợp với 'face-to-face ... with your friends, family or colleagues'."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 21,
+      "ans": "C",
+      "key": "C (inventions) đúng vì 'invention' là thứ gì đó con người tạo ra lần đầu tiên, như 1 chiếc máy hay thiết bị. Đáp án A (discoveries - khám phá) sai vì đó là thứ được TÌM RA chứ không phải TẠO RA, như 1 địa điểm mới hay thông tin mới. Đáp án B (equipment) sai vì không dùng đúng ngữ pháp trong câu này (phải nói 'so many new pieces of equipment'). Đáp án D (designs) sai vì tương tự, phải nói 'so many new designs that have led to the invention of new devices'."
+    },
+    {
+      "q": 22,
+      "ans": "A",
+      "key": "A (enormous) đúng vì nghĩa là 'rất lớn', khớp với vế sau 'our lives have totally changed'. Đáp án B (common) sai vì nghĩa là 'phổ biến/thông thường' — sẽ hợp hơn trong câu như 'Smartphones are common in most homes these days'. Đáp án C (essential) sai vì nói ảnh hưởng của công nghệ là 'thiết yếu/cần thiết' thì hơi kỳ, vì con người vẫn sống được khi chưa có các phát minh đó. Đáp án D (limited) sai vì nghĩa trái ngược hoàn toàn — ảnh hưởng ở đây là RẤT LỚN, không phải hạn chế."
+    },
+    {
+      "q": 23,
+      "ans": "B",
+      "key": "B (appeared) đúng vì 'appear' nghĩa là đột nhiên xuất hiện/tồn tại. Đáp án A (produced) sai vì phải nói 'all the technology that has been produced'. Đáp án C (presented) sai vì 'present' nghĩa là trình bày/giới thiệu lần đầu, câu đúng sẽ là 'all the technology that has been presented'. Đáp án D (installed) sai vì 'install' nghĩa là lắp đặt vào đúng chỗ để sử dụng (hợp cho máy móc/thiết bị), câu đúng phải là 'all the technology that has been installed because of it'."
+    },
+    {
+      "q": 24,
+      "ans": "A",
+      "key": "A (shocked) đúng vì 'shocked' diễn tả sự ngạc nhiên, thường theo hướng tiêu cực, và là từ duy nhất trong 4 lựa chọn đi được với giới từ 'at'. Đáp án B, C, D sai vì không thể đi với giới từ 'at' trong câu này — ta nói 'confused about/by', 'frightened of', 'angry with' một điều gì đó."
+    },
+    {
+      "q": 25,
+      "ans": "D",
+      "key": "D (depend) đúng vì 'depend on' nghĩa là phụ thuộc vào, cần thứ gì đó. Đáp án A (base) sai vì 'be based on' nghĩa là dựa trên/chịu ảnh hưởng bởi thứ gì đó, ví dụ 'New computers are based on the idea that the internet is one of the main requirements'. Đáp án B và C sai vì 'carry on' hoặc 'keep on' nghĩa là tiếp tục làm gì đó, không phù hợp ngữ cảnh."
+    },
+    {
+      "q": 26,
+      "ans": "C",
+      "key": "C (discussion) đúng vì đó là khi 2 người trở lên ngồi lại nói chuyện cùng nhau. Đáp án A (lecture) sai vì đó là khi 1 người (như giáo viên/giáo sư) nói chuyện trang trọng trước 1 nhóm người. Đáp án B (conference) sai vì đó là khi 1 nhóm đông người tụ họp để thảo luận 1 chủ đề cụ thể và chia sẻ ý tưởng. Đáp án D (interview) sai vì 1 cuộc phỏng vấn thường không diễn ra giữa bạn bè/người thân."
+    }
+  ]
+}
