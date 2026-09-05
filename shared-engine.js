@@ -191,9 +191,24 @@
 
     studentName = nameInput;
     startTime = new Date();
+    buildWatermark();
     document.getElementById("loginScreen").style.display = "none";
     document.getElementById("mainApp").style.display = "flex";
   };
+
+  // ---------------------------------------------------------------------
+  // WATERMARK (chống chụp lén đề bài — hiển thị mờ, không cản trở đọc bài)
+  // ---------------------------------------------------------------------
+  function buildWatermark() {
+    const wm = document.getElementById("watermark");
+    if (!wm) return;
+    const label = (studentName || cfg.exerciseName || "PET Reading") + " • " + new Date().toLocaleDateString("vi-VN");
+    const html = [];
+    for (let i = 0; i < 40; i++) {
+      html.push(`<span>${label}</span>`);
+    }
+    wm.innerHTML = html.join("");
+  }
 
   // ---------------------------------------------------------------------
   // HIGHLIGHT
@@ -378,6 +393,7 @@
     const total = cfg.questionIds.length;
 
     if (correctCount === total) {
+      renderResultSummary();
       const resultModal = document.getElementById("resultModal");
       if (resultModal) resultModal.style.display = "block";
     } else {
@@ -406,6 +422,35 @@
     const modalOverlay = document.getElementById("modalOverlay");
     if (modalOverlay) modalOverlay.style.display = "none";
   };
+
+  function formatDuration(ms) {
+    const totalSeconds = Math.max(0, Math.round(ms / 1000));
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+    if (minutes === 0) return `${seconds} giây`;
+    return `${minutes} phút ${seconds} giây`;
+  }
+
+  function renderResultSummary() {
+    const box = document.getElementById("resultSummaryBox");
+    if (!box) return;
+    const now = new Date();
+    const durationText = startTime ? formatDuration(now - startTime) : "-";
+    box.innerHTML = `
+      <div class="result-summary-item">
+        <span class="label">👤 Học sinh</span>
+        <span class="value">${studentName || "-"}</span>
+      </div>
+      <div class="result-summary-item">
+        <span class="label">📅 Ngày làm bài</span>
+        <span class="value">${now.toLocaleDateString("vi-VN")}</span>
+      </div>
+      <div class="result-summary-item">
+        <span class="label">⏱️ Thời gian hoàn thành</span>
+        <span class="value">${durationText}</span>
+      </div>
+    `;
+  }
 
   // ---------------------------------------------------------------------
   // GOOGLE SHEETS LOGGING
