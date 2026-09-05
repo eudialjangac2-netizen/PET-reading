@@ -81,6 +81,12 @@ body {
 }
 .app-header h1 { font-size: 18px; color: var(--primary); display: flex; align-items: center; gap: 8px; }
 
+.header-right-group { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.stats-badge {
+  background: rgba(0,0,0,0.04); color: var(--primary); font-size: 13px; font-weight: 700;
+  padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border-color); white-space: nowrap;
+}
+
 .highlight-toolbar {
   display: flex; align-items: center; gap: 8px; background: #fffde6;
   padding: 6px 14px; border-radius: 30px; border: 1px solid var(--border-color);
@@ -178,6 +184,7 @@ mark.hl-blue { background-color: #a0c4ff; color: inherit; border-radius: 4px; pa
    Renderer tự thêm class "split-mode" vào #mainApp khi dùng layout này.
    ===================================================================== */
 #mainApp.split-mode { height: 100vh; }
+#mainApp.split-mode #partRenderTarget { display: flex; flex-direction: column; flex: 1; min-height: 0; }
 #mainApp.split-mode .submit-footer { position: relative; }
 #mainApp.split-mode .questions-scroll-area { padding-bottom: 24px; }
 
