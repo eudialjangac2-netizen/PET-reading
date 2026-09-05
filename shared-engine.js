@@ -137,14 +137,16 @@
   // ---------------------------------------------------------------------
   function wireAntiCopy() {
     document.addEventListener("copy", function (e) {
+      if (antiCheatBypassed) return;
       e.preventDefault();
       if (e.clipboardData) e.clipboardData.setData("text/plain", "");
       alert("⚠️ Hệ thống đã khóa chức năng Sao Chép (Copy)!");
     });
-    document.addEventListener("cut", function (e) { e.preventDefault(); });
-    document.addEventListener("contextmenu", function (e) { e.preventDefault(); });
-    document.addEventListener("dragstart", function (e) { e.preventDefault(); });
+    document.addEventListener("cut", function (e) { if (!antiCheatBypassed) e.preventDefault(); });
+    document.addEventListener("contextmenu", function (e) { if (!antiCheatBypassed) e.preventDefault(); });
+    document.addEventListener("dragstart", function (e) { if (!antiCheatBypassed) e.preventDefault(); });
     document.addEventListener("keydown", function (e) {
+      if (antiCheatBypassed) return;
       if ((e.ctrlKey || e.metaKey) && ["c", "C", "x", "X", "p", "P"].includes(e.key)) {
         e.preventDefault();
         alert("⚠️ Thao tác sao chép / in ấn bị cấm!");
@@ -157,8 +159,16 @@
   // ---------------------------------------------------------------------
   function wireTabSwitchCounter() {
     document.addEventListener("visibilitychange", function () {
-      if (document.hidden && !antiCheatBypassed) tabSwitchCount++;
+      if (document.hidden && !antiCheatBypassed) {
+        tabSwitchCount++;
+        updateTabBadge();
+      }
     });
+  }
+
+  function updateTabBadge() {
+    const badge = document.getElementById("tabBadge");
+    if (badge) badge.textContent = `Chuyển tab: ${tabSwitchCount} lần`;
   }
 
   // ---------------------------------------------------------------------
@@ -171,6 +181,7 @@
 
     if (nameInput === cfg.teacherName && codeInput === cfg.teacherCode) {
       isTeacher = true;
+      antiCheatBypassed = true; // Giáo viên đăng nhập -> tự động bypass toàn bộ anti-cheat/spam
       const toolbar = document.getElementById("teacherToolbar");
       if (toolbar) toolbar.style.display = "flex";
     } else if (codeInput !== cfg.studentCode) {
