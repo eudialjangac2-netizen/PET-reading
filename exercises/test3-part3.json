@@ -1,0 +1,102 @@
+{
+  "id": "test3-part3",
+  "partType": "part3",
+  "exerciseName": "Test 3 - Part 3",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": { "11": "B", "12": "C", "13": "B", "14": "D", "15": "A" },
+  "article": {
+    "title": "My new hobby - gardening",
+    "author": "by Beth Collins",
+    "image": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=400",
+    "paragraphs": [
+      "A garden is much more than just creating a beautiful environment. It can be a way to save or even make money and more than that, it can be a place where you can express yourself. For me it's a bit of all these things. I know it may sound strange for a 13-year-old to be interested in gardening but I always have been and I would love to make a career out of it.",
+      "I have learned many things these past few years I have been reading about and doing some gardening. So, here is my top advice about gardening. First, you do not need to spend a lot of money to have a beautiful garden. Some of the gardens I think are the prettiest are just lines of plants. There aren't many garden decorations and pathways. It's just beautiful plants loaded with fruits and vegetables. We can also find many useful things for free, from pieces of old wood, to old pots and pans. Or, we can build things for free from materials that other people have thrown away.",
+      "If you just remember that planting way more than you need will take the stress away of losing some plants, you will save yourself a lot of worry, too. You need to ask yourself, which plants produce enough food to make them worth growing. I actually sat down and did the maths on that one this spring. It amazed me what some plants were worth. A tomato, for example, can produce £50-£150 worth of fruit. It takes up a lot of space but that's a lot of money coming out of a 50p seed! So if I had known sooner what each plant could save us, I would have told my parents to fill our garden with different plants.",
+      "And finally, gardening doesn't have to be all or nothing. But then I guess that's more of a personality weakness than anything. I struggle with doing things a little at a time. Once I decide to do something, I usually devote every waking hour to it for a little while and then get tired. So it's okay to just have one tomato plant, and it's okay to have an off year. It will save you a lot of stress."
+    ]
+  },
+  "questions": [
+    {
+      "id": 11,
+      "question": "11. Beth wants to express",
+      "options": [
+        { "letter": "A", "text": "how designing your own garden should be hard work." },
+        { "letter": "B", "text": "how gardens can mean different things to different people." },
+        { "letter": "C", "text": "the importance of selling flowers to make money." },
+        { "letter": "D", "text": "how gardeners have the best job when it comes to profit." }
+      ],
+      "hint": "💡 Đọc kỹ câu mở đầu: 'A garden is much more than just creating a beautiful environment... it can be a place where you can express yourself.'"
+    },
+    {
+      "id": 12,
+      "question": "12. How does Beth describe her perfect garden?",
+      "options": [
+        { "letter": "A", "text": "decorative" },
+        { "letter": "B", "text": "colourful" },
+        { "letter": "C", "text": "simple" },
+        { "letter": "D", "text": "complicated" }
+      ],
+      "hint": "💡 'Some of the gardens I think are the prettiest are just lines of plants' — chỉ đơn giản là các hàng cây thôi."
+    },
+    {
+      "id": 13,
+      "question": "13. What advice does Beth give to future gardeners?",
+      "options": [
+        { "letter": "A", "text": "spend lots of money to make your garden perfect" },
+        { "letter": "B", "text": "use what you can find around you" },
+        { "letter": "C", "text": "refuse to spend any money on your garden" },
+        { "letter": "D", "text": "ask other gardeners to help you" }
+      ],
+      "hint": "💡 'We can also find many useful things for free, from pieces of old wood, to old pots and pans... build things from materials that other people have thrown away.'"
+    },
+    {
+      "id": 14,
+      "question": "14. How does Beth feel about gardening?",
+      "options": [
+        { "letter": "A", "text": "She wants to grow everything she eats." },
+        { "letter": "B", "text": "She hasn't learnt from her mistakes." },
+        { "letter": "C", "text": "She needs to work harder in her garden." },
+        { "letter": "D", "text": "She has learned plenty of useful tips." }
+      ],
+      "hint": "💡 Đoạn 3: cô ấy đã tính toán được cây nào đáng trồng, cây nào không — đó là 1 bài học cô rút ra được."
+    },
+    {
+      "id": 15,
+      "question": "15. What would Beth text her friend about gardening?",
+      "options": [
+        { "letter": "A", "text": "I'm so excited about my new hobby; it's not only fun but I hope I'll make money out of it one day." },
+        { "letter": "B", "text": "Gardening is so hard; you have to spend a lot of money and it's stressful, too." },
+        { "letter": "C", "text": "I'm now spending lots of time watching my parents do the gardening and it looks great." },
+        { "letter": "D", "text": "Gardening needs lots of skills and money but it's certainly worth it. I love it." }
+      ],
+      "hint": "💡 Tổng kết toàn bài: Beth thấy vui, không tốn nhiều tiền, và mong sau này kiếm được tiền từ nó."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 11,
+      "ans": "B",
+      "key": "B đúng vì Beth nói ở đoạn 1: 'A garden is much more than just creating a beautiful environment. It can be a way to save or even make money and more than that it can be a place where you can express yourself' (khu vườn có thể mang nhiều ý nghĩa khác nhau với mỗi người). Đáp án A sai vì cô không nói làm vườn phải vất vả. Đáp án C sai vì cô chỉ nói chung chung có thể kiếm tiền từ vườn, không nhắc riêng đến việc bán hoa. Đáp án D sai vì cô không đề cập đến con số lợi nhuận cụ thể."
+    },
+    {
+      "q": 12,
+      "ans": "C",
+      "key": "C đúng vì Beth nói ở đoạn 2: 'Some of the gardens I think are the prettiest are just lines of plants' — nghĩa là đơn giản. Đáp án A sai vì cô nói 'There aren't many garden decorations and pathways' (không có nhiều vật trang trí). Đáp án B sai vì cô nói vườn có thể đẹp chỉ với rau quả, không nhắc đến việc cần hoa nhiều màu sắc. Đáp án D sai vì chỉ cần vài hàng cây là đủ, không cần phức tạp."
+    },
+    {
+      "q": 13,
+      "ans": "B",
+      "key": "B đúng vì Beth nói ở đoạn 2: 'We can also find many useful things for free, from pieces of old wood, to old pots and pans. Or we can build things for free from materials that other people have thrown away' (tận dụng đồ vật xung quanh). Đáp án A sai vì cô nói 'you do not need to spend a lot of money'. Đáp án C sai vì cô nói không cần tốn nhiều tiền chứ không nói là cấm tuyệt đối việc chi tiền. Đáp án D sai vì cô chỉ nhắc đến việc tận dụng đồ người khác vứt đi, không nói về việc nhờ người khác giúp."
+    },
+    {
+      "q": 14,
+      "ans": "D",
+      "key": "D đúng vì Beth nói ở đoạn 3: 'So if I had known sooner what each plant could save us, I would have told my parents to fill our garden with different plants' — cô đã rút ra được bài học hữu ích. Đáp án A sai vì cô nói 'You need to ask yourself, which plants produce enough food to make them worth growing' — nghĩa là không phải cây nào cũng đáng trồng, không phải muốn trồng hết mọi thứ mình ăn. Đáp án B sai vì cô đã học được cây nào đáng trồng cây nào không. Đáp án C sai vì Beth nói 'gardening doesn't have to be all or nothing' — không cần phải cố gắng hết sức, thậm chí được phép có 1 năm không làm vườn cũng không sao."
+    },
+    {
+      "q": 15,
+      "ans": "A",
+      "key": "A đúng vì người viết đang giải thích cô yêu thích làm vườn ra sao và đã học được cách trồng rau quả để tiết kiệm tiền, thậm chí có thể bán sau này. Đáp án B sai vì cô nói không cần tốn nhiều tiền và làm vườn có thể thư giãn chứ không nhất thiết phải căng thẳng. Đáp án C sai vì cô tự làm vườn, không chỉ ngồi xem bố mẹ làm. Đáp án D sai vì cô nói rõ không cần tốn nhiều tiền và ai cũng có thể làm được điều gì đó với khu vườn của mình."
+    }
+  ]
+}
