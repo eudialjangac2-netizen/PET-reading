@@ -1,0 +1,123 @@
+{
+  "id": "test3-part2",
+  "partType": "part2",
+  "exerciseName": "Test 3 - Part 2",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": { "6": "C", "7": "G", "8": "E", "9": "A", "10": "D" },
+  "people": [
+    {
+      "id": 6,
+      "name": "Amara and Nira",
+      "avatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150",
+      "text": "Amara and Nira love modern art and looking at interesting buildings. They don't really like traditional art and architecture. They would prefer to have lunch before they look around the museum.",
+      "hint": "💡 Tìm bảo tàng về nghệ thuật hiện đại, có kiến trúc thú vị và có chỗ ăn trưa."
+    },
+    {
+      "id": 7,
+      "name": "Greg",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "text": "Greg is very interested in history and especially anything to do with historical battles. Both his great grandfather and grandfather were in the army during World War I and II.",
+      "hint": "💡 Tìm bảo tàng liên quan đến chiến tranh và các trận đánh trong lịch sử."
+    },
+    {
+      "id": 8,
+      "name": "Michael",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "text": "Michael is excited by anything connected to planets and stars and space exploration. He'd like to visit a museum where there are things to do rather than just pictures and objects to look at.",
+      "hint": "💡 Tìm bảo tàng có trải nghiệm không gian (virtual reality space) và hoạt động 'hands-on'."
+    },
+    {
+      "id": 9,
+      "name": "Annabel",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150",
+      "text": "Annabel likes to know the latest fashions and would like to be a clothes designer when she finishes college. She is always looking for ideas for her designs and she is a very good photographer, too.",
+      "hint": "💡 Tìm bảo tàng có phòng trưng bày thời trang và bộ sưu tập nhiếp ảnh lớn."
+    },
+    {
+      "id": 10,
+      "name": "Daniel",
+      "avatar": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150",
+      "text": "Daniel is very interested in animals and the environment. He particularly enjoys museums that have more unusual things to look at. He loves reading books about explorers who have discovered new places full of strange animals and plants.",
+      "hint": "💡 Tìm bảo tàng về thế giới tự nhiên, có nhiều thứ kỳ lạ để xem."
+    }
+  ],
+  "options": [
+    {
+      "letter": "A",
+      "title": "Victoria and Albert Museum",
+      "body": "Highlights include the finest collection of Italian sculptures outside Italy. The Fashion galleries run from eighteenth-century clothing right up to modern designer clothes. The Architecture gallery has videos, models, plans and descriptions of various styles and the famous Photography collection holds over 500,000 images."
+    },
+    {
+      "letter": "B",
+      "title": "The British Museum",
+      "body": "Since it opened in 1759 - the first ever national museum for the public - the British Museum has been displaying global objects discovered by British explorers, including the Rosetta Stone and the Parthenon sculptures. The museum has over eight million objects in its collection, 50,000 of which are on display. It also has a really good cafe if you want somewhere different to go for lunch."
+    },
+    {
+      "letter": "C",
+      "title": "Tate Modern",
+      "body": "The Tate Modern is one of London's - and the world's - most famous art galleries. It has an international collection of modern artworks that few can beat, plus it is a historic piece of architecture worth visiting in its own right. On the top floor there is a restaurant with wonderful views of The River Thames."
+    },
+    {
+      "letter": "D",
+      "title": "The Natural History Museum",
+      "body": "is home to around 80 million plants, animals and rocks. This exciting museum, which is also a world-class research institution, is full of natural wonders. Here, you will come face-to-face with moving model dinosaurs, a man-sized model of an unborn baby, a dodo, a giant sequoia tree, an earthquake machine, glow-in-the-dark crystals and much more."
+    },
+    {
+      "letter": "E",
+      "title": "Science Museum",
+      "body": "An incredible, hands-on museum that has seven floors of entertaining and educational exhibits, including a virtual reality space experience, old Nokia mobiles and a sixteenth-century fake arm. This is where you can explore the incredible Information Age exhibition - which is where the Queen sent her first tweet, signed Elizabeth R."
+    },
+    {
+      "letter": "F",
+      "title": "London Transport Museum",
+      "body": "It's home to old buses, early examples of tube trains, maps, transport signs and uniforms, as well as fantastic posters, artworks and photographs showing London from 1860 to today. Once you've bought an entry ticket, you can visit anytime for an entire year."
+    },
+    {
+      "letter": "G",
+      "title": "Imperial War Museum",
+      "body": "A powerful museum shining a light on people's experiences of war from the First World War to today. A few minutes' walk from Waterloo rail station, IWM is made up of many permanent galleries, such as the amazing Curiosities of War exhibit, and temporary displays, exploring recent battles and attacks."
+    },
+    {
+      "letter": "H",
+      "title": "National Gallery",
+      "body": "An excellent and completely free-to-enter artistic institution in the heart of Trafalgar Square. Founded in 1824, The National Gallery is home to more than 2,000 works from artists such as Da Vinci, Van Gogh, Rembrandt, Michelangelo, Turner, Picasso, Matisse and Cezanne. You can even have a go at sketching in the galleries with the support of a gallery art teacher."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 6,
+      "name": "Amara and Nira",
+      "demand": "Yêu nghệ thuật hiện đại, thích kiến trúc thú vị, muốn ăn trưa trước khi tham quan.",
+      "ans": "C. Tate Modern",
+      "key": "C đúng vì Amara và Nira yêu nghệ thuật hiện đại và bảo tàng này có nhà hàng để họ ăn trưa. Đáp án H có thể gây nhầm lẫn nhưng đó không phải nghệ thuật hiện đại và không có đề cập đến cà phê/nhà hàng."
+    },
+    {
+      "q": 7,
+      "name": "Greg",
+      "demand": "Rất quan tâm lịch sử, đặc biệt là các trận chiến lịch sử.",
+      "ans": "G. Imperial War Museum",
+      "key": "G đúng vì Greg quan tâm đến chiến tranh và các trận đánh trong lịch sử. Đáp án D có thể gây nhầm lẫn nhưng đó là Bảo tàng Lịch sử Tự nhiên, nói về thế giới tự nhiên chứ không phải lịch sử."
+    },
+    {
+      "q": 8,
+      "name": "Michael",
+      "demand": "Hứng thú với hành tinh, các vì sao và khám phá vũ trụ; thích hoạt động trải nghiệm hơn là chỉ ngắm nhìn.",
+      "ans": "E. Science Museum",
+      "key": "E đúng vì Michael quan tâm đến vũ trụ và bảo tàng này có 'a virtual reality space experience' (trải nghiệm không gian thực tế ảo). Ngoài ra cậu ấy thích bảo tàng có hoạt động để làm, và bảo tàng này là 'hands-on' (có hoạt động tương tác), không chỉ để ngắm."
+    },
+    {
+      "q": 9,
+      "name": "Annabel",
+      "demand": "Thích cập nhật thời trang mới nhất, muốn làm nhà thiết kế; cũng là một nhiếp ảnh gia giỏi.",
+      "ans": "A. Victoria and Albert Museum",
+      "key": "A đúng vì Annabel rất quan tâm đến thời trang và bảo tàng này có 'The Fashion galleries run from eighteenth-century clothing right up to modern designer clothes'. Cô ấy cũng đam mê nhiếp ảnh và bảo tàng có bộ sưu tập nhiếp ảnh lớn. Đáp án F cũng có ảnh nhưng chỉ về giao thông nên không đúng."
+    },
+    {
+      "q": 10,
+      "name": "Daniel",
+      "demand": "Rất quan tâm đến động vật và môi trường; thích đọc về các nhà thám hiểm và khám phá.",
+      "ans": "D. The Natural History Museum",
+      "key": "D đúng vì Daniel rất quan tâm đến thế giới tự nhiên và những điều khác lạ. Bảo tàng này đầy 'plants, animals and rocks' (thực vật, động vật và đá)."
+    }
+  ]
+}
