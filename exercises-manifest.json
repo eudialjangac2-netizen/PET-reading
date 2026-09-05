@@ -1,5 +1,3 @@
-{
-  "exercises": [
-    { "id": "test3-part1", "displayName": "Test 3 - Part 1", "partType": "part1", "skill": "reading" }
-  ]
-}
+[
+   "test3-part1"
+]
