@@ -63,12 +63,15 @@
   <div id="mainApp">
     <div class="app-header">
       <h1 id="appTitle">PET Reading</h1>
-      <div class="highlight-toolbar">
-        <span class="hl-title">Highlight bài đọc:</span>
-        <div class="hl-btn hl-yellow" title="Vàng" onclick="PETEngine.applyHighlight('yellow')"></div>
-        <div class="hl-btn hl-green" title="Xanh lá" onclick="PETEngine.applyHighlight('green')"></div>
-        <div class="hl-btn hl-blue" title="Xanh dương" onclick="PETEngine.applyHighlight('blue')"></div>
-        <div class="hl-btn hl-remove" title="Xóa Highlight" onclick="PETEngine.applyHighlight('remove')"></div>
+      <div class="header-right-group">
+        <div class="stats-badge" id="tabBadge">Chuyển tab: 0 lần</div>
+        <div class="highlight-toolbar">
+          <span class="hl-title">Highlight bài đọc:</span>
+          <div class="hl-btn hl-yellow" title="Vàng" onclick="PETEngine.applyHighlight('yellow')"></div>
+          <div class="hl-btn hl-green" title="Xanh lá" onclick="PETEngine.applyHighlight('green')"></div>
+          <div class="hl-btn hl-blue" title="Xanh dương" onclick="PETEngine.applyHighlight('blue')"></div>
+          <div class="hl-btn hl-remove" title="Xóa Highlight" onclick="PETEngine.applyHighlight('remove')"></div>
+        </div>
       </div>
     </div>
 
