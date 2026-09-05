@@ -181,9 +181,9 @@ mark.hl-blue { background-color: #a0c4ff; color: inherit; border-radius: 4px; pa
 #mainApp.split-mode .submit-footer { position: relative; }
 #mainApp.split-mode .questions-scroll-area { padding-bottom: 24px; }
 
-.split-container { display: flex; flex: 1; overflow: hidden; position: relative; }
+.split-container { display: flex; flex: 1; min-height: 0; overflow: hidden; position: relative; }
 .left-pane, .right-pane {
-  flex: 1; overflow-y: auto; padding: 24px;
+  flex: 1; min-height: 0; overflow-y: auto; padding: 24px;
   scrollbar-width: thin; scrollbar-color: var(--primary-light) transparent;
 }
 .left-pane { border-right: 2px dashed var(--border-color); background: rgba(0,0,0,0.015); }
