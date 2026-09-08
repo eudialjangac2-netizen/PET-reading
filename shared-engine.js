@@ -438,6 +438,10 @@
     const durationText = startTime ? formatDuration(now - startTime) : "-";
     box.innerHTML = `
       <div class="result-summary-item">
+        <span class="label">📘 Bài tập</span>
+        <span class="value">${cfg.exerciseName || "-"}</span>
+      </div>
+      <div class="result-summary-item">
         <span class="label">👤 Học sinh</span>
         <span class="value">${studentName || "-"}</span>
       </div>
