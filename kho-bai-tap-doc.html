@@ -406,7 +406,12 @@
     function buildFullTestUrl(ids, durationMinutes) {
       const base = window.location.href.replace(/kho-bai-tap-doc\.html.*$/, "");
       const idsParam = encodeURIComponent(Array.from(ids).join(","));
-      return `${base}full-test-doc.html?ids=${idsParam}&duration=${durationMinutes}`;
+      const today = new Date();
+      const dd = String(today.getDate()).padStart(2, "0");
+      const mm = String(today.getMonth() + 1).padStart(2, "0");
+      const yy = String(today.getFullYear()).slice(-2);
+      const label = encodeURIComponent(`Reading full test - ${dd}.${mm}.${yy}`);
+      return `${base}full-test-doc.html?ids=${idsParam}&duration=${durationMinutes}&label=${label}`;
     }
 
     document.getElementById("fullTestModeToggle").addEventListener("click", () => {
