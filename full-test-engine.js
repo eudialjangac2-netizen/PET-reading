@@ -22,6 +22,13 @@
   };
   const FULL_READING_TOTAL = 32;
 
+  const PART_LABELS = {
+    part1: "Part 1", part2: "Part 2", part3: "Part 3",
+    part4: "Part 4", part5: "Part 5", part6: "Part 6",
+  };
+
+  let testLabel = "Reading full test";
+
   let exerciseIds = [];
   let durationMinutes = 45;
   let exercises = []; // [{ id, partType, exerciseName, data, questions: [...], tabColor }]
@@ -48,6 +55,7 @@
     const params = new URLSearchParams(window.location.search);
     exerciseIds = (params.get("ids") || "").split(",").map(s => s.trim()).filter(Boolean);
     durationMinutes = Math.max(1, parseInt(params.get("duration"), 10) || 45);
+    testLabel = params.get("label") || ("Reading full test - " + formatShortDate(new Date()));
 
     if (exerciseIds.length === 0) {
       document.body.innerHTML = "<p style='padding:40px;font-family:sans-serif;'>⚠️ Thiếu tham số <code>?ids=</code> trên URL.</p>";
@@ -114,10 +122,16 @@
     });
   }
 
+  function formatShortDate(d) {
+    const dd = String(d.getDate()).padStart(2, "0");
+    const mm = String(d.getMonth() + 1).padStart(2, "0");
+    const yy = String(d.getFullYear()).slice(-2);
+    return `${dd}.${mm}.${yy}`;
+  }
+
   function renderLoginInfoBadge() {
     const badge = document.getElementById("ftInfoBadge");
-    const partNames = exercises.map(ex => ex.exerciseName).join(", ");
-    badge.innerHTML = `📋 Bài thi gồm <b>${allQuestions.length} câu</b> (${partNames})<br>⏱️ Thời gian làm bài: <b>${durationMinutes} phút</b>`;
+    badge.innerHTML = `📋 <b>${testLabel}</b><br>Gồm <b>${allQuestions.length} câu</b> · Thời gian làm bài: <b>${durationMinutes} phút</b>`;
   }
 
   // ---------------------------------------------------------------------
@@ -175,7 +189,7 @@
 
     document.getElementById("ftLoginScreen").style.display = "none";
     document.getElementById("ftApp").style.display = "flex";
-    document.getElementById("ftTestTitle").textContent = "🧩 Full Test — " + exercises.map(e => e.exerciseName).join(" · ");
+    document.getElementById("ftTestTitle").textContent = "🧩 " + testLabel;
 
     document.getElementById("ftSubmitBtn").addEventListener("click", () => confirmSubmit(false));
   }
@@ -186,7 +200,7 @@
   function buildTabs() {
     const bar = document.getElementById("ftTabbar");
     bar.innerHTML = exercises.map((ex, i) => {
-      const label = ex.theme ? `${ex.theme.titleEmoji || ""} ${ex.exerciseName}` : ex.exerciseName;
+      const label = `${ex.theme ? ex.theme.titleEmoji || "" : ""} ${PART_LABELS[ex.partType] || ex.partType}`;
       return `<div class="ft-tab" data-index="${i}">${label}</div>`;
     }).join("");
 
@@ -283,6 +297,15 @@
     document.getElementById("ftPaletteToggle").addEventListener("click", () => {
       document.getElementById("ftPaletteDrawer").classList.toggle("open");
     });
+    document.getElementById("ftPaletteCloseBtn").addEventListener("click", () => {
+      document.getElementById("ftPaletteDrawer").classList.remove("open");
+    });
+    const rotateBtn = document.getElementById("ftRotateDismissBtn");
+    if (rotateBtn) {
+      rotateBtn.addEventListener("click", () => {
+        document.body.classList.add("ft-rotate-dismissed");
+      });
+    }
   }
 
   // ---------------------------------------------------------------------
@@ -364,7 +387,7 @@
       endTime: now.toLocaleString("vi-VN"),
       studentName: studentName + (isTeacher ? " [TEST]" : ""),
       studentCode: studentCodeUsed,
-      testName: "Full Test",
+      testName: testLabel,
       partsIncluded: exercises.map(e => e.exerciseName).join(", "),
       totalQuestions: total,
       correctCount: correctCount,
