@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="shared-styles.css">
 <style>
   /* ---- Riêng cho Full Test, không đụng shared-styles.css ---- */
-  :root { --primary: #6b3ba7; --primary-light: #a076db; --bg-main: #f5effa; --border-color: #e2d3f3; }
+  :root { --primary: #4a3a2e; --primary-light: #8a7b68; --bg-main: #faf3e8; --border-color: #ecdfc9; }
 
   #watermark {
     position: fixed; inset: 0; z-index: 30; pointer-events: none;
@@ -94,7 +94,22 @@
     box-shadow: -6px 0 20px rgba(0,0,0,0.15); transition: right 0.25s; padding: 20px; overflow-y: auto;
   }
   #ftPaletteDrawer.open { right: 0; }
-  #ftPaletteDrawer h3 { color: var(--primary); font-size: 16px; margin-bottom: 14px; }
+  #ftPaletteDrawer h3 { color: var(--primary); font-size: 16px; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; }
+  #ftPaletteCloseBtn { background: none; border: none; font-size: 18px; cursor: pointer; color: #999; }
+  #ftPaletteCloseBtn:hover { color: #333; }
+
+  /* ---- Thông báo xoay ngang trên điện thoại ---- */
+  #ftRotateNotice { display: none; }
+  body.ft-rotate-dismissed #ftRotateNotice { display: none !important; }
+  @media (max-width: 700px) and (orientation: portrait) {
+    #ftRotateNotice {
+      display: flex; position: fixed; inset: 0; z-index: 250; background: rgba(74,58,46,0.95);
+      color: white; align-items: center; justify-content: center; text-align: center; padding: 30px;
+      flex-direction: column; gap: 14px;
+    }
+    #ftRotateNotice .icon { font-size: 48px; }
+    #ftRotateNotice button { margin-top: 10px; background: #f0b23d; color: #4a3420; border: none; border-radius: 20px; padding: 10px 22px; font-weight: 700; cursor: pointer; }
+  }
   .ft-palette-legend { display: flex; flex-direction: column; gap: 6px; font-size: 12px; color: #666; margin-bottom: 16px; }
   .ft-palette-legend span { display: inline-flex; align-items: center; gap: 6px; }
   .ft-legend-dot { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
@@ -138,6 +153,12 @@
 </style>
 </head>
 <body>
+
+<div id="ftRotateNotice">
+  <div class="icon">📱↻</div>
+  <div><b>Xoay ngang màn hình để làm bài thuận tiện hơn</b><br>Bật chế độ xoay màn hình tự động (auto-rotate) trên điện thoại.</div>
+  <button id="ftRotateDismissBtn">Đã hiểu, tiếp tục</button>
+</div>
 
 <div id="watermark"></div>
 
@@ -187,7 +208,7 @@
 
 <button id="ftPaletteToggle" style="display:none;">📋</button>
 <div id="ftPaletteDrawer">
-  <h3>Danh sách câu hỏi</h3>
+  <h3>Danh sách câu hỏi <button id="ftPaletteCloseBtn">✕</button></h3>
   <div class="ft-palette-legend">
     <span><span class="ft-legend-dot" style="background:#e6f6ea;border:2px solid #b7efc5;"></span> Đã làm</span>
     <span><span class="ft-legend-dot" style="background:#fdeeee;border:2px solid #e2d3f3;"></span> Chưa làm</span>
