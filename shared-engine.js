@@ -244,6 +244,7 @@
     buildWatermark();
     document.getElementById("loginScreen").style.display = "none";
     document.getElementById("mainApp").style.display = "flex";
+    checkPendingRedo();
   };
 
   // ---------------------------------------------------------------------
@@ -444,6 +445,7 @@
 
     if (correctCount === total) {
       renderResultSummary();
+      sendRedoCompleteSignal(); // tín hiệu riêng, gửi MỌI lần đạt 100% (không giới hạn 1 lần như log điểm)
       const resultModal = document.getElementById("resultModal");
       if (resultModal) resultModal.style.display = "block";
     } else {
@@ -535,6 +537,53 @@
     })
       .then(() => console.log("Đã gửi dữ liệu thành công tới Google Sheets!"))
       .catch(err => console.log("Google Sheets logging error: ", err));
+  }
+
+  // Tín hiệu riêng: học sinh vừa đạt 100% ở bài này (dùng để tự xoá cờ "cần làm lại"
+  // do Full Test đánh dấu trước đó). Gửi MỌI lần đạt 100%, không giới hạn 1 lần.
+  function sendRedoCompleteSignal() {
+    if (!cfg.webhookUrl || !cfg.exerciseId || isTeacher) return; // giáo viên không tính vào tiến trình học sinh
+    const payload = {
+      recordType: "redo_complete",
+      studentCode: studentCodeUsed,
+      studentName: studentName,
+      exerciseId: cfg.exerciseId,
+      completedAt: new Date().toLocaleString("vi-VN"),
+    };
+    fetch(cfg.webhookUrl, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload),
+    }).catch(err => console.log("Redo-complete logging error: ", err));
+  }
+
+  // ---------------------------------------------------------------------
+  // BANNER NHẮC LÀM LẠI (tra cứu theo mã học sinh sau khi đăng nhập)
+  // ---------------------------------------------------------------------
+  async function checkPendingRedo() {
+    if (isTeacher || !studentCodeUsed || !cfg.webhookUrl) return;
+    try {
+      const res = await fetch(`${cfg.webhookUrl}?studentCode=${encodeURIComponent(studentCodeUsed)}`);
+      if (!res.ok) return;
+      const data = await res.json();
+      const pending = (data.pending || []).filter(id => id !== cfg.exerciseId); // không tự nhắc lại đúng bài đang làm
+      if (pending.length === 0) return;
+      renderRedoBanner(pending);
+    } catch (err) {
+      console.warn("Không tra được danh sách cần làm lại:", err);
+    }
+  }
+
+  function renderRedoBanner(pendingIds) {
+    const container = document.getElementById("mainApp");
+    if (!container) return;
+    const banner = document.createElement("div");
+    banner.id = "redoBanner";
+    banner.style.cssText = "background:#fff3e1;border-bottom:2px solid #f6ad55;padding:12px 20px;font-size:13.5px;color:#9a6a1c;display:flex;align-items:center;gap:10px;flex-wrap:wrap;";
+    const linksHtml = pendingIds.map(id => `<a href="bai-tap-doc.html?id=${id}" style="color:#c05621;font-weight:700;text-decoration:underline;">${id}</a>`).join(", ");
+    banner.innerHTML = `⏳ <b>Bạn còn ${pendingIds.length} Part từ lần thi Full Test trước chưa làm lại đúng 100%:</b> ${linksHtml}`;
+    container.insertBefore(banner, container.firstChild);
   }
 
   PETEngine.changeWebhookUrl = function () {
