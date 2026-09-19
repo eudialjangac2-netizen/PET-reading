@@ -192,6 +192,28 @@
     document.getElementById("ftTestTitle").textContent = "🧩 " + testLabel;
 
     document.getElementById("ftSubmitBtn").addEventListener("click", () => confirmSubmit(false));
+    checkPendingRedo();
+  }
+
+  async function checkPendingRedo() {
+    if (isTeacher || !studentCodeUsed) return;
+    try {
+      const res = await fetch(`${WEBHOOK_URL}?studentCode=${encodeURIComponent(studentCodeUsed)}`);
+      if (!res.ok) return;
+      const data = await res.json();
+      const currentIds = new Set(exercises.map(e => e.id));
+      const pending = (data.pending || []).filter(id => !currentIds.has(id));
+      if (pending.length === 0) return;
+      const banner = document.createElement("div");
+      banner.id = "ftRedoBanner";
+      banner.style.cssText = "background:#fff3e1;border-bottom:2px solid #f6ad55;padding:10px 20px;font-size:13px;color:#9a6a1c;";
+      banner.innerHTML = `⏳ <b>Bạn còn ${pending.length} Part khác từ lần thi trước chưa làm lại đúng 100%:</b> ` +
+        pending.map(id => `<a href="bai-tap-doc.html?id=${id}" style="color:#c05621;font-weight:700;">${id}</a>`).join(", ");
+      const app = document.getElementById("ftApp");
+      app.insertBefore(banner, app.firstChild);
+    } catch (err) {
+      console.warn("Không tra được danh sách cần làm lại:", err);
+    }
   }
 
   // ---------------------------------------------------------------------
@@ -375,6 +397,11 @@
       .slice(0, 3)
       .map(([skill, count]) => `${skill} (sai ${count} câu)`);
 
+    // Danh sách CHÍNH XÁC id các bài (Part) có ít nhất 1 câu sai -> dùng để tạo link "làm lại"
+    const weakPartIds = exercises
+      .filter(ex => ex.questions.some(q => !q.isCorrect(q.getValue())))
+      .map(ex => ex.id);
+
     const now = new Date();
     const durationUsedMs = startTime ? (now - startTime) : 0;
     const durationUsedText = formatDuration(durationUsedMs);
@@ -393,6 +420,7 @@
       correctCount: correctCount,
       scoreBand: isFullReading ? `PET Score: ${petScore}/170` : "Không đủ 32 câu - chưa quy đổi",
       weakestSubskills: weakest.join("; ") || "-",
+      weakPartIds: weakPartIds.join(","),
       tabSwitchCount: tabSwitchCount,
       durationUsed: durationUsedText,
       autoSubmitted: isAuto,
