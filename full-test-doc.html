@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PET Reading - Full Test</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared-styles.css">
+<style>
+  /* ---- Riêng cho Full Test, không đụng shared-styles.css ---- */
+  :root { --primary: #6b3ba7; --primary-light: #a076db; --bg-main: #f5effa; --border-color: #e2d3f3; }
+
+  #watermark {
+    position: fixed; inset: 0; z-index: 30; pointer-events: none;
+    display: flex; flex-wrap: wrap; align-content: flex-start; overflow: hidden;
+    opacity: 0.05; transform: rotate(-22deg) scale(1.3);
+  }
+  #watermark span { font-size: 0.72rem; font-weight: 700; white-space: nowrap; padding: 26px 34px; color: #000; }
+
+  #ftLoginScreen {
+    display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px;
+    background: radial-gradient(circle at center, #ffffff 0%, var(--bg-main) 100%);
+  }
+  .ft-login-card {
+    background: white; border-radius: 28px; padding: 32px 28px; max-width: 460px; width: 100%;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12); border: 3px solid var(--border-color); text-align: center;
+  }
+  .ft-login-card h2 { color: var(--primary); font-size: 24px; margin-bottom: 6px; }
+  .ft-login-card p { color: #8a7b68; font-size: 14px; margin-bottom: 20px; }
+  .ft-login-card .badge-info {
+    background: #fff8e7; border: 2px dashed #f6ad55; border-radius: 14px; padding: 10px 14px;
+    font-size: 13px; color: #975a16; margin-bottom: 18px; text-align: left;
+  }
+
+  #ftApp { display: none; flex-direction: column; height: 100vh; }
+  #ftTeacherBar {
+    display: none; background: #4a3524; color: white; padding: 10px 20px; align-items: center;
+    justify-content: center; gap: 10px; font-size: 13.5px; font-weight: 700; flex-wrap: wrap;
+    position: sticky; top: 0; z-index: 1000;
+  }
+  #ftTeacherBar button {
+    background: var(--primary); border: none; color: white; padding: 6px 14px; border-radius: 20px;
+    cursor: pointer; font-weight: 700;
+  }
+
+  .ft-topbar {
+    position: sticky; top: 0; z-index: 100; background: white; border-bottom: 2px solid var(--border-color);
+    padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  }
+  .ft-topbar h1 { font-size: 17px; color: var(--primary); }
+  .ft-topbar-right { display: flex; align-items: center; gap: 10px; }
+  #ftTimer {
+    font-weight: 700; font-size: 16px; padding: 7px 16px; border-radius: 20px; background: #fff3e1; color: #9a6a1c;
+  }
+  #ftTimer.low { background: #fff0f0; color: #c53030; }
+  #ftTabBadge { font-size: 12.5px; font-weight: 700; padding: 6px 12px; border-radius: 16px; background: rgba(0,0,0,0.04); color: var(--primary); }
+  .ft-btn {
+    border: none; border-radius: 20px; padding: 9px 18px; font-family: inherit; font-weight: 700;
+    font-size: 13.5px; cursor: pointer;
+  }
+  .ft-btn-primary { background: var(--primary); color: white; }
+  .ft-btn-outline { background: white; color: var(--primary); border: 2px solid var(--primary-light); }
+
+  .ft-body { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+
+  .ft-tabbar {
+    display: flex; gap: 8px; padding: 10px 20px; background: #faf7fd; border-bottom: 2px solid var(--border-color);
+    overflow-x: auto; flex-wrap: nowrap;
+  }
+  .ft-tab {
+    flex-shrink: 0; border: 2px solid #e2d3f3; border-radius: 20px; padding: 7px 16px; font-size: 13px;
+    font-weight: 700; color: #6b6558; background: white; cursor: pointer; white-space: nowrap;
+  }
+  .ft-tab.active { color: white; }
+
+  .ft-part-view { display: none; }
+  .ft-part-view.active.layout-grid { display: block; overflow-y: auto; flex: 1; min-height: 0; }
+  .ft-part-view.active.layout-split { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+
+  .ft-part-view.layout-split .split-container { height: 100%; }
+
+  .ft-question { scroll-margin-top: 14px; }
+  .ft-options-pool { margin-top: 20px; }
+  .ft-options-pool h4 { color: var(--primary); font-size: 15px; margin-bottom: 10px; }
+
+  /* ---- Palette (drawer bên phải) ---- */
+  #ftPaletteToggle {
+    position: fixed; right: 16px; bottom: 16px; z-index: 150; background: var(--primary); color: white;
+    border: none; border-radius: 50%; width: 56px; height: 56px; font-size: 20px; cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  }
+  #ftPaletteDrawer {
+    position: fixed; top: 0; right: -320px; width: 300px; height: 100vh; background: white; z-index: 400;
+    box-shadow: -6px 0 20px rgba(0,0,0,0.15); transition: right 0.25s; padding: 20px; overflow-y: auto;
+  }
+  #ftPaletteDrawer.open { right: 0; }
+  #ftPaletteDrawer h3 { color: var(--primary); font-size: 16px; margin-bottom: 14px; }
+  .ft-palette-legend { display: flex; flex-direction: column; gap: 6px; font-size: 12px; color: #666; margin-bottom: 16px; }
+  .ft-palette-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .ft-legend-dot { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
+  .ft-palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+  .ft-pal-box {
+    aspect-ratio: 1; border-radius: 8px; border: 2px solid #e2d3f3; background: #fdeeee; color: #c53030;
+    font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center;
+    cursor: pointer; position: relative;
+  }
+  .ft-pal-box.answered { background: #e6f6ea; color: #2e9b5f; border-color: #b7efc5; }
+  .ft-pal-box.marked::after {
+    content: "🚩"; position: absolute; top: -6px; right: -6px; font-size: 11px;
+  }
+
+  #ftContextMenu {
+    display: none; position: fixed; z-index: 500; background: white; border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2); overflow: hidden; font-size: 13px;
+  }
+  #ftContextMenu div { padding: 10px 16px; cursor: pointer; }
+  #ftContextMenu div:hover { background: #f3ebfa; }
+
+  /* ---- Kết quả ---- */
+  #ftResultScreen { display: none; max-width: 720px; margin: 40px auto; padding: 0 20px 60px; }
+  .ft-result-card { background: white; border-radius: 24px; padding: 32px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .ft-result-summary-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px;
+    margin: 18px 0; padding: 14px 16px; background: rgba(0,0,0,0.03); border-radius: 16px;
+  }
+  .ft-result-summary-grid .label { display: block; font-size: 12px; color: #8a7b68; font-weight: 700; margin-bottom: 3px; }
+  .ft-result-summary-grid .value { display: block; font-size: 15px; color: var(--primary); font-weight: 700; }
+  .ft-band-box {
+    background: #f3ebfa; border-radius: 16px; padding: 16px; text-align: center; margin: 18px 0;
+  }
+  .ft-band-box .band { font-size: 26px; font-weight: 700; color: var(--primary); }
+  .ft-band-disclaimer { font-size: 11.5px; color: #999; margin-top: 6px; }
+  .ft-improve-list { list-style: none; padding: 0; }
+  .ft-improve-list li {
+    background: #fff8e7; border-left: 4px solid #f6ad55; border-radius: 10px; padding: 12px 16px;
+    margin-bottom: 10px; font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<div id="watermark"></div>
+
+<div id="ftTeacherBar">
+  <span>🧪 Chế độ Giáo viên - Full Test</span>
+  <button id="ftAutoFillCorrect">Auto-Fill Đúng hết</button>
+  <button id="ftAutoFillMixed">Auto-Fill Sai 1 nửa</button>
+  <button id="ftForceTimeout">⏰ Test hết giờ</button>
+  <button id="ftTestSendSheet">📤 Test gửi Sheet</button>
+</div>
+
+<!-- ================= LOGIN ================= -->
+<div id="ftLoginScreen">
+  <div class="ft-login-card">
+    <h2>🧩 PET Reading - Full Test</h2>
+    <p>Bài thi thử tổng hợp nhiều Part, có tính giờ</p>
+    <div class="badge-info" id="ftInfoBadge">Đang tải thông tin bài thi...</div>
+
+    <div class="form-group">
+      <label for="ftStudentCode">Mã học sinh *</label>
+      <input type="text" id="ftStudentCode" autocomplete="off" placeholder="Vd: 72001ND">
+      <div class="field-err" id="ftLoginErr"></div>
+    </div>
+    <div class="form-group">
+      <label for="ftAccessCode">Mã xác nhận bài tập *</label>
+      <input type="text" id="ftAccessCode" autocomplete="off">
+    </div>
+    <button class="btn-start" id="ftStartBtn">Bắt Đầu Làm Bài</button>
+  </div>
+</div>
+
+<!-- ================= APP ================= -->
+<div id="ftApp">
+  <div class="ft-topbar">
+    <h1 id="ftTestTitle">Full Test</h1>
+    <div class="ft-topbar-right">
+      <span id="ftTabBadge">Chuyển tab: 0 lần</span>
+      <span id="ftTimer">45:00</span>
+      <button class="ft-btn ft-btn-primary" id="ftSubmitBtn">Nộp Bài</button>
+    </div>
+  </div>
+  <div class="ft-body">
+    <div class="ft-tabbar" id="ftTabbar"></div>
+    <div id="ftMainContent" style="flex:1; min-height:0; display:flex; flex-direction:column;"></div>
+  </div>
+</div>
+
+<button id="ftPaletteToggle" style="display:none;">📋</button>
+<div id="ftPaletteDrawer">
+  <h3>Danh sách câu hỏi</h3>
+  <div class="ft-palette-legend">
+    <span><span class="ft-legend-dot" style="background:#e6f6ea;border:2px solid #b7efc5;"></span> Đã làm</span>
+    <span><span class="ft-legend-dot" style="background:#fdeeee;border:2px solid #e2d3f3;"></span> Chưa làm</span>
+    <span>🚩 Đã đánh dấu xem lại (chuột phải vào ô số)</span>
+  </div>
+  <div class="ft-palette-grid" id="ftPaletteGrid"></div>
+</div>
+<div id="ftContextMenu"></div>
+
+<!-- ================= RESULT ================= -->
+<div id="ftResultScreen">
+  <div class="ft-result-card">
+    <div style="text-align:center;">
+      <div style="font-size:56px;">🎉</div>
+      <h2 style="color:var(--primary);">Đã hoàn thành Full Test!</h2>
+    </div>
+    <div class="ft-result-summary-grid" id="ftResultSummary"></div>
+    <div class="ft-band-box" id="ftBandBox"></div>
+    <h3 style="color:var(--primary); margin-bottom:10px;">📌 3 điểm cần cải thiện</h3>
+    <ul class="ft-improve-list" id="ftImproveList"></ul>
+  </div>
+</div>
+
+<script src="full-test-render.js"></script>
+<script src="full-test-engine.js"></script>
+</body>
+</html>
