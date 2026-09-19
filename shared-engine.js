@@ -75,6 +75,9 @@
   // ---------------------------------------------------------------------
   let cfg = null;
   let studentName = "";
+  let studentCodeUsed = "";
+  let studentRoster = null; // Map<code, name>, nạp 1 lần từ students.json
+  let rosterLoadPromise = null;
   let isTeacher = false;
   let startTime = null;
   let attemptCount = 0;
@@ -107,10 +110,26 @@
     wireAntiCopy();
     wireTabSwitchCounter();
     wireHighlightListener();
+    rosterLoadPromise = loadRoster(); // bắt đầu nạp ngay, không chờ, để lúc bấm nút đã có sẵn
 
     // Trạng thái nút nộp bài ban đầu
     validateAnswersState();
   };
+
+  // ---------------------------------------------------------------------
+  // DANH SÁCH MÃ HỌC SINH (students.json — dùng chung cho toàn hệ Reading)
+  // ---------------------------------------------------------------------
+  async function loadRoster() {
+    try {
+      const res = await fetch("students.json");
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const list = await res.json();
+      studentRoster = new Map(list.map(s => [String(s.code).toUpperCase(), s.name]));
+    } catch (err) {
+      console.warn("Không tải được students.json — đăng nhập bằng mã học sinh sẽ không hoạt động.", err);
+      studentRoster = new Map();
+    }
+  }
 
   // ---------------------------------------------------------------------
   // THEME
@@ -174,22 +193,53 @@
   // ---------------------------------------------------------------------
   // LOGIN
   // ---------------------------------------------------------------------
-  PETEngine.startExercise = function () {
-    const nameInput = (document.getElementById("studentName").value || "").trim();
-    const codeInput = (document.getElementById("accessCode").value || "").trim();
-    if (!nameInput) { alert("Vui lòng nhập Họ và Tên!"); return; }
+  PETEngine.startExercise = async function () {
+    const codeFieldRaw = (document.getElementById("studentName").value || "").trim();
+    const accessCodeInput = (document.getElementById("accessCode").value || "").trim();
+    const errEl = document.getElementById("studentCodeErr");
+    if (errEl) errEl.textContent = "";
 
-    if (nameInput === cfg.teacherName && codeInput === cfg.teacherCode) {
+    if (!codeFieldRaw) { alert("Vui lòng nhập Mã học sinh!"); return; }
+
+    // --- Giáo viên: đăng nhập KHÔNG đổi gì, vẫn dùng đúng tên/mã cố định như cũ ---
+    if (codeFieldRaw === cfg.teacherName && accessCodeInput === cfg.teacherCode) {
       isTeacher = true;
       antiCheatBypassed = true; // Giáo viên đăng nhập -> tự động bypass toàn bộ anti-cheat/spam
+      studentName = "Giáo viên (QA)";
+      studentCodeUsed = codeFieldRaw;
       const toolbar = document.getElementById("teacherToolbar");
       if (toolbar) toolbar.style.display = "flex";
-    } else if (codeInput !== cfg.studentCode) {
+      finishLogin();
+      return;
+    }
+
+    // --- Học sinh: bắt buộc đúng mã xác nhận bài tập trước ---
+    if (accessCodeInput !== cfg.studentCode) {
       alert("Mã xác nhận bài tập không đúng!");
       return;
     }
 
-    studentName = nameInput;
+    // --- Tra mã học sinh trong danh sách lớp (students.json) ---
+    if (rosterLoadPromise) await rosterLoadPromise; // đảm bảo đã nạp xong roster
+    const normalizedCode = codeFieldRaw.toUpperCase();
+    const matchedName = studentRoster ? studentRoster.get(normalizedCode) : undefined;
+
+    if (!matchedName) {
+      if (errEl) {
+        errEl.textContent = "Mã học sinh không có trong danh sách lớp. Kiểm tra lại hoặc hỏi giáo viên.";
+      } else {
+        alert("Mã học sinh không có trong danh sách lớp. Kiểm tra lại hoặc hỏi giáo viên.");
+      }
+      return;
+    }
+
+    isTeacher = false;
+    studentName = matchedName;
+    studentCodeUsed = normalizedCode;
+    finishLogin();
+  };
+
+  function finishLogin() {
     startTime = new Date();
     buildWatermark();
     document.getElementById("loginScreen").style.display = "none";
@@ -470,6 +520,7 @@
       endTime: new Date().toLocaleString("vi-VN"),
       exerciseName: cfg.exerciseName,
       studentName: studentName + (isTeacher ? " [TEST]" : ""),
+      studentCode: studentCodeUsed,
       firstScore: `${firstScore}/${total}`,
       attemptCount: attemptCount,
       tabSwitchCount: tabSwitchCount,
