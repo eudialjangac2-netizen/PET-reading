@@ -575,6 +575,21 @@
     }
   }
 
+  // Nút test riêng cho giáo viên — hiện NGUYÊN VĂN phản hồi từ Apps Script để debug,
+  // không nuốt lỗi âm thầm như checkPendingRedo() ở trên.
+  PETEngine.testRedoLookup = async function () {
+    const testCode = prompt("Nhập mã học sinh cần tra cứu (vd: 72013NT):", studentCodeUsed || "");
+    if (!testCode) return;
+    const url = `${cfg.webhookUrl}?studentCode=${encodeURIComponent(testCode)}`;
+    try {
+      const res = await fetch(url);
+      const rawText = await res.text();
+      alert(`URL đã gọi:\n${url}\n\nHTTP status: ${res.status}\n\nPhản hồi thô nhận được:\n${rawText}`);
+    } catch (err) {
+      alert(`LỖI khi gọi: ${err.message}\n\nURL đã gọi:\n${url}`);
+    }
+  };
+
   function renderRedoBanner(pendingIds) {
     const container = document.getElementById("mainApp");
     if (!container) return;
