@@ -442,6 +442,14 @@
     const screen = document.getElementById("ftResultScreen");
     screen.style.display = "block";
 
+    const pct = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+    let emoji, heading;
+    if (pct >= 80) { emoji = "🎉"; heading = "Đã hoàn thành xuất sắc!"; }
+    else if (pct >= 50) { emoji = "👍"; heading = "Đã hoàn thành bài thi"; }
+    else { emoji = "📝"; heading = "Đã hoàn thành bài thi — cần luyện tập thêm"; }
+    document.getElementById("ftResultEmoji").textContent = emoji;
+    document.getElementById("ftResultHeading").textContent = heading;
+
     document.getElementById("ftResultSummary").innerHTML = `
       <div><span class="label">👤 Học sinh</span><span class="value">${studentName}</span></div>
       <div><span class="label">📅 Ngày làm bài</span><span class="value">${now.toLocaleDateString("vi-VN")}</span></div>
@@ -463,10 +471,13 @@
     }
 
     const improveList = document.getElementById("ftImproveList");
-    if (weakest.length === 0) {
+    const allCorrect = correctCount === total;
+    if (weakest.length > 0) {
+      improveList.innerHTML = weakest.map(w => `<li>${w}</li>`).join("");
+    } else if (allCorrect) {
       improveList.innerHTML = `<li>🎉 Không có điểm yếu nổi bật — làm rất tốt!</li>`;
     } else {
-      improveList.innerHTML = weakest.map(w => `<li>${w}</li>`).join("");
+      improveList.innerHTML = `<li>Bài này có ${total - correctCount} câu sai, nhưng chưa có đủ dữ liệu phân loại kỹ năng (subskill) để đưa ra gợi ý cụ thể. Xem lại đáp án đúng trực tiếp trong từng Part.</li>`;
     }
   }
 
@@ -554,6 +565,18 @@
         autoSubmitted: false,
       });
       alert("Đã gửi 1 gói dữ liệu test tới Google Sheet (tab Full Test Results).");
+    });
+    document.getElementById("ftTestRedoLookup").addEventListener("click", async () => {
+      const testCode = prompt("Nhập mã học sinh cần tra cứu (vd: 72013NT):", "");
+      if (!testCode) return;
+      const url = `${WEBHOOK_URL}?studentCode=${encodeURIComponent(testCode)}`;
+      try {
+        const res = await fetch(url);
+        const rawText = await res.text();
+        alert(`URL đã gọi:\n${url}\n\nHTTP status: ${res.status}\n\nPhản hồi thô nhận được:\n${rawText}`);
+      } catch (err) {
+        alert(`LỖI khi gọi: ${err.message}\n\nURL đã gọi:\n${url}`);
+      }
     });
   }
 
