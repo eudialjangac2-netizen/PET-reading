@@ -65,6 +65,7 @@ function renderPart1(data, theme) {
   // ---- Khởi động Shared Engine với các hàm đọc/ghi DOM riêng của Part 1 ----
   PETEngine.init({
     exerciseName: data.exerciseName,
+    exerciseId: data.id,
     webhookUrl: data.webhookUrl,
     theme: theme,
     highlightScope: "full",       // Part 1 cho highlight cả 2 bên
