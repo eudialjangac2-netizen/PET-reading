@@ -47,6 +47,7 @@
   let timerInterval = null;
   let endTimestamp = null;
   let submitted = false;
+  let lastPerQuestionResult = []; // lưu lại để dùng cho chế độ "Xem lại bài làm"
 
   // ---------------------------------------------------------------------
   // KHỞI ĐỘNG
@@ -193,6 +194,19 @@
     document.getElementById("ftTestTitle").textContent = "🧩 " + testLabel;
 
     document.getElementById("ftSubmitBtn").addEventListener("click", () => confirmSubmit(false));
+    document.getElementById("ftConfirmCancelBtn").addEventListener("click", () => {
+      document.getElementById("ftConfirmSubmitModal").classList.remove("show");
+    });
+    document.getElementById("ftConfirmOkBtn").addEventListener("click", () => {
+      document.getElementById("ftConfirmSubmitModal").classList.remove("show");
+      submitFullTest(false);
+    });
+    document.getElementById("ftBackToResultBtn").addEventListener("click", () => {
+      document.getElementById("ftApp").style.display = "none";
+      document.getElementById("ftPaletteDrawer").classList.remove("open");
+      document.getElementById("ftPaletteToggle").style.display = "none";
+      document.getElementById("ftResultScreen").style.display = "block";
+    });
     checkPendingRedo();
   }
 
@@ -286,6 +300,7 @@
       });
       box.addEventListener("contextmenu", (e) => {
         e.preventDefault();
+        if (submitted) return; // đã nộp bài (đang ở chế độ xem lại) -> không cho đánh dấu nữa
         showContextMenu(e.pageX, e.pageY, g);
       });
     });
@@ -363,14 +378,42 @@
   // ---------------------------------------------------------------------
   function confirmSubmit(isAuto) {
     if (submitted) return;
-    if (!isAuto) {
-      const unanswered = allQuestions.length - answeredSet.size;
-      if (unanswered > 0) {
-        const ok = window.confirm(`Bạn còn ${unanswered} câu chưa làm. Vẫn nộp bài?`);
-        if (!ok) return;
-      }
+    if (isAuto) { submitFullTest(true); return; } // hết giờ -> nộp thẳng, không hỏi
+    showConfirmSubmitModal();
+  }
+
+  function showConfirmSubmitModal() {
+    const total = allQuestions.length;
+    const unansweredIds = allQuestions.filter(q => !answeredSet.has(q.globalIndex)).map(q => q.globalIndex);
+    const markedIds = Array.from(markedSet);
+
+    const modal = document.getElementById("ftConfirmSubmitModal");
+    const body = document.getElementById("ftConfirmSubmitBody");
+
+    let html = `<p><b>Đã làm ${total - unansweredIds.length}/${total} câu.</b></p>`;
+    if (unansweredIds.length > 0) {
+      html += `<p style="color:#c53030; margin-top:10px;">⚠️ Còn <b>${unansweredIds.length} câu chưa làm</b>:</p>
+        <div class="ft-confirm-chip-row">${unansweredIds.map(g => `<span class="ft-confirm-chip ft-confirm-chip-unanswered" data-g="${g}">${g}</span>`).join("")}</div>`;
+    } else {
+      html += `<p style="color:#2e9b5f; margin-top:10px;">✅ Đã làm đủ tất cả các câu.</p>`;
     }
-    submitFullTest(isAuto);
+    if (markedIds.length > 0) {
+      html += `<p style="margin-top:14px;">🚩 Đã đánh dấu xem lại <b>${markedIds.length} câu</b>:</p>
+        <div class="ft-confirm-chip-row">${markedIds.map(g => `<span class="ft-confirm-chip ft-confirm-chip-marked" data-g="${g}">${g}</span>`).join("")}</div>`;
+    }
+    html += `<p style="margin-top:16px; font-weight:700;">Bạn có chắc chắn muốn nộp bài không? Sau khi nộp sẽ không thể sửa lại đáp án.</p>`;
+
+    body.innerHTML = html;
+    modal.classList.add("show");
+
+    body.querySelectorAll(".ft-confirm-chip").forEach(chip => {
+      chip.addEventListener("click", () => {
+        const g = Number(chip.getAttribute("data-g"));
+        modal.classList.remove("show");
+        const idx = tabIndexForGlobalQuestion(g);
+        showTab(idx, g);
+      });
+    });
   }
 
   function submitFullTest(isAuto) {
@@ -416,6 +459,7 @@
     const durationUsedMs = startTime ? (now - startTime) : 0;
     const durationUsedText = formatDuration(durationUsedMs);
 
+    lastPerQuestionResult = perQuestionResult;
     renderResultScreen({ correctCount, total, petScore, isFullReading, weakest, perQuestionResult, durationUsedText, isAuto, now });
 
     // Hướng 1: gửi chi tiết CÂU SAI riêng cho giáo viên xem trong Sheet (học sinh không thấy phần này)
@@ -530,6 +574,42 @@
     if (retryBtn) {
       retryBtn.onclick = () => { window.location.reload(); };
     }
+    const reviewBtn = document.getElementById("ftReviewBtn");
+    if (reviewBtn) {
+      reviewBtn.onclick = enterReviewMode;
+    }
+  }
+
+  // ---------------------------------------------------------------------
+  // CHẾ ĐỘ XEM LẠI BÀI LÀM (sau khi đã có kết quả)
+  // ---------------------------------------------------------------------
+  function enterReviewMode() {
+    document.getElementById("ftResultScreen").style.display = "none";
+    document.getElementById("ftApp").style.display = "flex";
+    document.getElementById("ftSubmitBtn").style.display = "none";
+    document.getElementById("ftBackToResultBtn").style.display = "inline-block";
+    document.getElementById("ftReviewModeBadge").style.display = "inline-block";
+    document.getElementById("ftTimer").style.display = "none";
+
+    // Khoá toàn bộ input, không cho sửa đáp án nữa
+    document.querySelectorAll('#ftMainContent input, #ftMainContent select, #ftMainContent textarea').forEach(el => {
+      el.disabled = true;
+    });
+
+    // Tô màu đúng/sai lên từng câu + cập nhật bảng số câu hỏi
+    lastPerQuestionResult.forEach(r => {
+      const el = document.getElementById(`ft-q-${r.globalIndex}`);
+      if (el) el.classList.add(r.isCorrect ? "ft-review-correct" : "ft-review-wrong");
+
+      const box = document.querySelector(`.ft-pal-box[data-g="${r.globalIndex}"]`);
+      if (box) {
+        box.classList.remove("answered", "marked");
+        box.classList.add(r.isCorrect ? "review-correct" : "review-wrong");
+      }
+    });
+
+    showTab(0);
+    document.getElementById("ftPaletteToggle").style.display = "flex";
   }
 
   function sendToGoogleSheets(payload) {
