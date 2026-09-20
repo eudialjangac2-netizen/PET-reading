@@ -117,6 +117,7 @@
       ex.html = result.html;
       ex.questions = result.questions;
       ex.layout = result.layout;
+      result.questions.forEach(q => { q.partLabel = PART_LABELS[ex.partType] || ex.partType; });
       cursor += result.questions.length;
       allQuestions = allQuestions.concat(result.questions);
     });
@@ -378,6 +379,7 @@
 
     let correctCount = 0;
     const subskillWrongCount = {};
+    const perQuestionResult = []; // dùng cho bảng chi tiết hiển thị + gửi Sheet
     allQuestions.forEach(q => {
       const val = q.getValue();
       const ok = q.isCorrect(val);
@@ -386,6 +388,14 @@
       } else if (q.subskill) {
         subskillWrongCount[q.subskill] = (subskillWrongCount[q.subskill] || 0) + 1;
       }
+      perQuestionResult.push({
+        globalIndex: q.globalIndex,
+        localId: q.localId,
+        partLabel: q.partLabel,
+        subskill: q.subskill,
+        isCorrect: ok,
+        correctReason: ok ? q.correctReason : null, // CHỈ đưa lý do khi ĐÚNG — không lộ đáp án/lý do cho câu sai
+      });
     });
 
     const total = allQuestions.length;
@@ -406,7 +416,25 @@
     const durationUsedMs = startTime ? (now - startTime) : 0;
     const durationUsedText = formatDuration(durationUsedMs);
 
-    renderResultScreen({ correctCount, total, petScore, isFullReading, weakest, durationUsedText, isAuto, now });
+    renderResultScreen({ correctCount, total, petScore, isFullReading, weakest, perQuestionResult, durationUsedText, isAuto, now });
+
+    // Hướng 1: gửi chi tiết CÂU SAI riêng cho giáo viên xem trong Sheet (học sinh không thấy phần này)
+    const wrongItems = perQuestionResult.filter(r => !r.isCorrect);
+    if (wrongItems.length > 0) {
+      sendToGoogleSheets({
+        recordType: "full_test_detail",
+        studentCode: studentCodeUsed,
+        studentName: studentName + (isTeacher ? " [TEST]" : ""),
+        testName: testLabel,
+        submittedAt: now.toLocaleString("vi-VN"),
+        wrongItems: wrongItems.map(w => ({
+          partLabel: w.partLabel,
+          localId: w.localId,
+          globalIndex: w.globalIndex,
+          subskill: w.subskill || "-",
+        })),
+      });
+    }
 
     sendToGoogleSheets({
       recordType: "full_test",
@@ -435,7 +463,7 @@
     return `${minutes} phút ${seconds} giây`;
   }
 
-  function renderResultScreen({ correctCount, total, petScore, isFullReading, weakest, durationUsedText, isAuto, now }) {
+  function renderResultScreen({ correctCount, total, petScore, isFullReading, weakest, perQuestionResult, durationUsedText, isAuto, now }) {
     document.getElementById("ftApp").style.display = "none";
     document.getElementById("ftPaletteToggle").style.display = "none";
     document.getElementById("ftPaletteDrawer").classList.remove("open");
@@ -478,6 +506,29 @@
       improveList.innerHTML = `<li>🎉 Không có điểm yếu nổi bật — làm rất tốt!</li>`;
     } else {
       improveList.innerHTML = `<li>Bài này có ${total - correctCount} câu sai, nhưng chưa có đủ dữ liệu phân loại kỹ năng (subskill) để đưa ra gợi ý cụ thể. Xem lại đáp án đúng trực tiếp trong từng Part.</li>`;
+    }
+
+    // Bảng chi tiết từng câu: ĐÚNG -> hiện lý do; SAI -> chỉ báo sai, KHÔNG hiện đáp án/lý do
+    const detailBox = document.getElementById("ftDetailList");
+    if (detailBox) {
+      detailBox.innerHTML = perQuestionResult.map(r => {
+        if (r.isCorrect) {
+          return `
+            <li class="ft-detail-item ft-detail-correct">
+              <div class="ft-detail-head">✅ Câu ${r.globalIndex} — ${r.partLabel}</div>
+              ${r.correctReason ? `<div class="ft-detail-reason">${r.correctReason}</div>` : ""}
+            </li>`;
+        }
+        return `
+          <li class="ft-detail-item ft-detail-wrong">
+            <div class="ft-detail-head">❌ Câu ${r.globalIndex} — ${r.partLabel}</div>
+          </li>`;
+      }).join("");
+    }
+
+    const retryBtn = document.getElementById("ftRetryBtn");
+    if (retryBtn) {
+      retryBtn.onclick = () => { window.location.reload(); };
     }
   }
 
