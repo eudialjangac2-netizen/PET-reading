@@ -3,7 +3,13 @@
   "partType": "part2",
   "exerciseName": "Test 3 - Part 2",
   "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
-  "correctAnswers": { "6": "C", "7": "G", "8": "E", "9": "A", "10": "D" },
+  "correctAnswers": {
+    "6": "C",
+    "7": "G",
+    "8": "E",
+    "9": "A",
+    "10": "D"
+  },
   "people": [
     {
       "id": 6,
@@ -89,35 +95,45 @@
       "name": "Amara and Nira",
       "demand": "Yêu nghệ thuật hiện đại, thích kiến trúc thú vị, muốn ăn trưa trước khi tham quan.",
       "ans": "C. Tate Modern",
-      "key": "C đúng vì Amara và Nira yêu nghệ thuật hiện đại và bảo tàng này có nhà hàng để họ ăn trưa. Đáp án H có thể gây nhầm lẫn nhưng đó không phải nghệ thuật hiện đại và không có đề cập đến cà phê/nhà hàng."
+      "key": "C đúng vì Amara và Nira yêu nghệ thuật hiện đại và bảo tàng này có nhà hàng để họ ăn trưa. Đáp án H có thể gây nhầm lẫn nhưng đó không phải nghệ thuật hiện đại và không có đề cập đến cà phê/nhà hàng.",
+      "subskill": "Đọc hiểu & ghép nối theo nhu cầu người đọc",
+      "grammarVocabPoint": "Ghép nhu cầu người đọc với đặc điểm địa điểm (nghệ thuật hiện đại + nơi ăn trưa)"
     },
     {
       "q": 7,
       "name": "Greg",
       "demand": "Rất quan tâm lịch sử, đặc biệt là các trận chiến lịch sử.",
       "ans": "G. Imperial War Museum",
-      "key": "G đúng vì Greg quan tâm đến chiến tranh và các trận đánh trong lịch sử. Đáp án D có thể gây nhầm lẫn nhưng đó là Bảo tàng Lịch sử Tự nhiên, nói về thế giới tự nhiên chứ không phải lịch sử."
+      "key": "G đúng vì Greg quan tâm đến chiến tranh và các trận đánh trong lịch sử. Đáp án D có thể gây nhầm lẫn nhưng đó là Bảo tàng Lịch sử Tự nhiên, nói về thế giới tự nhiên chứ không phải lịch sử.",
+      "subskill": "Đọc hiểu & ghép nối theo nhu cầu người đọc",
+      "grammarVocabPoint": "Ghép theo từ khoá chủ đề (chiến tranh, lịch sử quân đội)"
     },
     {
       "q": 8,
       "name": "Michael",
       "demand": "Hứng thú với hành tinh, các vì sao và khám phá vũ trụ; thích hoạt động trải nghiệm hơn là chỉ ngắm nhìn.",
       "ans": "E. Science Museum",
-      "key": "E đúng vì Michael quan tâm đến vũ trụ và bảo tàng này có 'a virtual reality space experience' (trải nghiệm không gian thực tế ảo). Ngoài ra cậu ấy thích bảo tàng có hoạt động để làm, và bảo tàng này là 'hands-on' (có hoạt động tương tác), không chỉ để ngắm."
+      "key": "E đúng vì Michael quan tâm đến vũ trụ và bảo tàng này có 'a virtual reality space experience' (trải nghiệm không gian thực tế ảo). Ngoài ra cậu ấy thích bảo tàng có hoạt động để làm, và bảo tàng này là 'hands-on' (có hoạt động tương tác), không chỉ để ngắm.",
+      "subskill": "Đọc hiểu & ghép nối theo nhu cầu người đọc",
+      "grammarVocabPoint": "Ghép theo nhu cầu trải nghiệm tương tác (hands-on, virtual reality)"
     },
     {
       "q": 9,
       "name": "Annabel",
       "demand": "Thích cập nhật thời trang mới nhất, muốn làm nhà thiết kế; cũng là một nhiếp ảnh gia giỏi.",
       "ans": "A. Victoria and Albert Museum",
-      "key": "A đúng vì Annabel rất quan tâm đến thời trang và bảo tàng này có 'The Fashion galleries run from eighteenth-century clothing right up to modern designer clothes'. Cô ấy cũng đam mê nhiếp ảnh và bảo tàng có bộ sưu tập nhiếp ảnh lớn. Đáp án F cũng có ảnh nhưng chỉ về giao thông nên không đúng."
+      "key": "A đúng vì Annabel rất quan tâm đến thời trang và bảo tàng này có 'The Fashion galleries run from eighteenth-century clothing right up to modern designer clothes'. Cô ấy cũng đam mê nhiếp ảnh và bảo tàng có bộ sưu tập nhiếp ảnh lớn. Đáp án F cũng có ảnh nhưng chỉ về giao thông nên không đúng.",
+      "subskill": "Đọc hiểu & ghép nối theo nhu cầu người đọc",
+      "grammarVocabPoint": "Ghép khi có 2 tiêu chí cùng lúc (thời trang + nhiếp ảnh)"
     },
     {
       "q": 10,
       "name": "Daniel",
       "demand": "Rất quan tâm đến động vật và môi trường; thích đọc về các nhà thám hiểm và khám phá.",
       "ans": "D. The Natural History Museum",
-      "key": "D đúng vì Daniel rất quan tâm đến thế giới tự nhiên và những điều khác lạ. Bảo tàng này đầy 'plants, animals and rocks' (thực vật, động vật và đá)."
+      "key": "D đúng vì Daniel rất quan tâm đến thế giới tự nhiên và những điều khác lạ. Bảo tàng này đầy 'plants, animals and rocks' (thực vật, động vật và đá).",
+      "subskill": "Đọc hiểu & ghép nối theo nhu cầu người đọc",
+      "grammarVocabPoint": "Ghép theo từ khoá chủ đề (thế giới tự nhiên, động/thực vật)"
     }
   ]
 }
