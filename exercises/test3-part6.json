@@ -4,12 +4,24 @@
   "exerciseName": "Test 3 - Part 6",
   "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
   "correctAnswers": {
-    "27": ["on"],
-    "28": ["all"],
-    "29": ["so"],
-    "30": ["in"],
-    "31": ["out"],
-    "32": ["see"]
+    "27": [
+      "on"
+    ],
+    "28": [
+      "all"
+    ],
+    "29": [
+      "so"
+    ],
+    "30": [
+      "in"
+    ],
+    "31": [
+      "out"
+    ],
+    "32": [
+      "see"
+    ]
   },
   "article": {
     "title": "The British Museum",
@@ -59,11 +71,47 @@
     }
   ],
   "explanation": [
-    { "q": 27, "ans": "on", "key": "<strong>on</strong>: dùng trước 1 ngày tháng cụ thể (a particular date), ví dụ 'on 15th January, 1759'." },
-    { "q": 28, "ans": "all", "key": "<strong>all</strong>: cụm 'all over' nghĩa là ở khắp mọi nơi. Khi nói 'all over the world' nghĩa là 'khắp mọi nơi trên thế giới'." },
-    { "q": 29, "ans": "so", "key": "<strong>so</strong>: khi đứng trước tính từ hoặc trạng từ, 'so' nhấn mạnh mức độ, thường đi kèm mệnh đề 'that' phía sau chỉ kết quả." },
-    { "q": 30, "ans": "in", "key": "<strong>in</strong>: cụm 'in order to' nghĩa là với mục đích làm điều gì đó, giải thích lý do tại sao ai đó làm việc gì." },
-    { "q": 31, "ans": "out", "key": "<strong>out</strong>: 'run out of' là cụm động từ nghĩa là dùng hết thứ gì đó và không còn đủ nữa (ví dụ hết thời gian)." },
-    { "q": 32, "ans": "see", "key": "<strong>see</strong>: câu cần động từ nguyên mẫu (infinitive), và ngữ cảnh đang nói về việc ngắm nhìn mọi thứ trong bảo tàng." }
+    {
+      "q": 27,
+      "ans": "on",
+      "key": "<strong>on</strong>: dùng trước 1 ngày tháng cụ thể (a particular date), ví dụ 'on 15th January, 1759'.",
+      "subskill": "Ngữ pháp (open cloze)",
+      "grammarVocabPoint": "Giới từ chỉ thời gian (on + ngày cụ thể)"
+    },
+    {
+      "q": 28,
+      "ans": "all",
+      "key": "<strong>all</strong>: cụm 'all over' nghĩa là ở khắp mọi nơi. Khi nói 'all over the world' nghĩa là 'khắp mọi nơi trên thế giới'.",
+      "subskill": "Ngữ pháp (open cloze)",
+      "grammarVocabPoint": "Cụm cố định 'all over'"
+    },
+    {
+      "q": 29,
+      "ans": "so",
+      "key": "<strong>so</strong>: khi đứng trước tính từ hoặc trạng từ, 'so' nhấn mạnh mức độ, thường đi kèm mệnh đề 'that' phía sau chỉ kết quả.",
+      "subskill": "Ngữ pháp (open cloze)",
+      "grammarVocabPoint": "Trạng từ nhấn mạnh mức độ + mệnh đề kết quả (so...that)"
+    },
+    {
+      "q": 30,
+      "ans": "in",
+      "key": "<strong>in</strong>: cụm 'in order to' nghĩa là với mục đích làm điều gì đó, giải thích lý do tại sao ai đó làm việc gì.",
+      "subskill": "Ngữ pháp (open cloze)",
+      "grammarVocabPoint": "Cụm giới từ chỉ mục đích 'in order to'"
+    },
+    {
+      "q": 31,
+      "ans": "out",
+      "key": "<strong>out</strong>: 'run out of' là cụm động từ nghĩa là dùng hết thứ gì đó và không còn đủ nữa (ví dụ hết thời gian).",
+      "subskill": "Ngữ pháp (open cloze)",
+      "grammarVocabPoint": "Cụm động từ 'run out of'"
+    },
+    {
+      "q": 32,
+      "ans": "see",
+      "key": "<strong>see</strong>: câu cần động từ nguyên mẫu (infinitive), và ngữ cảnh đang nói về việc ngắm nhìn mọi thứ trong bảo tàng.",
+      "subskill": "Ngữ pháp (open cloze)",
+      "grammarVocabPoint": "Động từ nguyên mẫu sau tính từ 'impossible to'"
+    }
   ]
 }
