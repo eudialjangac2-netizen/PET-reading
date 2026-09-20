@@ -23,6 +23,7 @@ function ftRenderPart1(data, startIndex) {
     questions.push({
       globalIndex: g, localId: q.id,
       subskill: subskillFor(data, q.id),
+      correctReason: correctReasonFor(data, q.id),
       getValue: () => { const el = document.querySelector(`input[name="ft_q_${g}"]:checked`); return el ? el.value : ""; },
       setValue: (val) => { const el = document.querySelector(`input[name="ft_q_${g}"][value="${val}"]`); if (el) { el.checked = true; FullTest.onAnswer(g); } },
       correctValue: data.correctAnswers[q.id],
@@ -61,6 +62,7 @@ function ftRenderPart2(data, startIndex) {
     questions.push({
       globalIndex: g, localId: p.id,
       subskill: subskillFor(data, p.id),
+      correctReason: correctReasonFor(data, p.id),
       getValue: () => { const el = document.getElementById(`ft-select-${g}`); return el ? el.value : ""; },
       setValue: (val) => { const el = document.getElementById(`ft-select-${g}`); if (el) { el.value = val; FullTest.onAnswer(g); } },
       correctValue: data.correctAnswers[p.id],
@@ -116,6 +118,7 @@ function ftRenderPart3(data, startIndex) {
     questions.push({
       globalIndex: g, localId: q.id,
       subskill: subskillFor(data, q.id),
+      correctReason: correctReasonFor(data, q.id),
       getValue: () => { const el = document.querySelector(`input[name="ft_q_${g}"]:checked`); return el ? el.value : ""; },
       setValue: (val) => { const el = document.querySelector(`input[name="ft_q_${g}"][value="${val}"]`); if (el) { el.checked = true; FullTest.onAnswer(g); } },
       correctValue: data.correctAnswers[q.id],
@@ -153,6 +156,7 @@ function ftRenderPart4(data, startIndex) {
     questions.push({
       globalIndex: g, localId: gapId,
       subskill: subskillFor(data, gapId),
+      correctReason: correctReasonFor(data, gapId),
       getValue: () => { const el = document.getElementById(`ft-q-${g}`); return el ? el.value : ""; },
       setValue: (val) => { const el = document.getElementById(`ft-q-${g}`); if (el) { el.value = val; FullTest.onAnswer(g); } },
       correctValue: data.correctAnswers[gapId],
@@ -206,6 +210,7 @@ function ftRenderPart6(data, startIndex) {
     questions.push({
       globalIndex: g, localId: q.id,
       subskill: subskillFor(data, q.id),
+      correctReason: correctReasonFor(data, q.id),
       getValue: () => { const el = document.getElementById(`ft-input-${g}`); return el ? el.value : ""; },
       setValue: (val) => { const el = document.getElementById(`ft-input-${g}`); if (el) { el.value = val; FullTest.onAnswer(g); } },
       correctValue: data.correctAnswers[q.id][0],
@@ -242,6 +247,11 @@ function ftRenderPart6(data, startIndex) {
 function subskillFor(data, localId) {
   const e = (data.explanation || []).find(x => x.q === localId);
   return e ? (e.subskill || null) : null;
+}
+
+function correctReasonFor(data, localId) {
+  const e = (data.explanation || []).find(x => x.q === localId);
+  return e ? (e.key || null) : null;
 }
 
 const FT_RENDERERS = {
