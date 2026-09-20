@@ -3,8 +3,20 @@
   "partType": "part4",
   "exerciseName": "Test 3 - Part 4",
   "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
-  "correctAnswers": { "16": "D", "17": "H", "18": "A", "19": "F", "20": "C" },
-  "gapIds": [16, 17, 18, 19, 20],
+  "correctAnswers": {
+    "16": "D",
+    "17": "H",
+    "18": "A",
+    "19": "F",
+    "20": "C"
+  },
+  "gapIds": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
   "article": {
     "title": "Achieving your dreams",
     "author": "A psychologist reaching out to teens around the world",
@@ -17,40 +29,82 @@
     ]
   },
   "options": [
-    { "letter": "A", "title": "On the other hand, others who are more talented may not.", "body": "" },
-    { "letter": "B", "title": "You should never try to do anything that is difficult.", "body": "" },
-    { "letter": "C", "title": "Hope is belief - belief in yourself and belief in the power of possibility.", "body": "" },
-    { "letter": "D", "title": "Many of you may be afraid to do what you really love.", "body": "" },
-    { "letter": "E", "title": "I believe that you should always obey the rules.", "body": "" },
-    { "letter": "F", "title": "Well, I say that you do not need to know the details of how your dream will happen.", "body": "" },
-    { "letter": "G", "title": "It's very important that you listen to this advice.", "body": "" },
-    { "letter": "H", "title": "I disagree; I believe there is a HUGE grey area.", "body": "" }
+    {
+      "letter": "A",
+      "title": "On the other hand, others who are more talented may not.",
+      "body": ""
+    },
+    {
+      "letter": "B",
+      "title": "You should never try to do anything that is difficult.",
+      "body": ""
+    },
+    {
+      "letter": "C",
+      "title": "Hope is belief - belief in yourself and belief in the power of possibility.",
+      "body": ""
+    },
+    {
+      "letter": "D",
+      "title": "Many of you may be afraid to do what you really love.",
+      "body": ""
+    },
+    {
+      "letter": "E",
+      "title": "I believe that you should always obey the rules.",
+      "body": ""
+    },
+    {
+      "letter": "F",
+      "title": "Well, I say that you do not need to know the details of how your dream will happen.",
+      "body": ""
+    },
+    {
+      "letter": "G",
+      "title": "It's very important that you listen to this advice.",
+      "body": ""
+    },
+    {
+      "letter": "H",
+      "title": "I disagree; I believe there is a HUGE grey area.",
+      "body": ""
+    }
   ],
   "explanation": [
     {
       "q": 16,
       "ans": "D",
-      "key": "D đúng vì câu tiếp theo tác giả viết 'To you I say, you are more able...' — chữ 'you' ở đây đang ám chỉ những người sợ không dám làm điều mình yêu thích. Không có đáp án nào khác nhắc đến 'người' (con người cụ thể), ngoại trừ G, nhưng G không phải đáp án đúng."
+      "key": "D đúng vì câu tiếp theo tác giả viết 'To you I say, you are more able...' — chữ 'you' ở đây đang ám chỉ những người sợ không dám làm điều mình yêu thích. Không có đáp án nào khác nhắc đến 'người' (con người cụ thể), ngoại trừ G, nhưng G không phải đáp án đúng.",
+      "subskill": "Liên kết & mạch văn bản (nối câu, discourse markers)",
+      "grammarVocabPoint": "Liên kết đại từ nhân xưng 'you' với đối tượng được nhắc ở câu sau"
     },
     {
       "q": 17,
       "ans": "H",
-      "key": "H đúng vì có sự liên kết giữa hình ảnh 'màu đen và trắng' (black and white) ở câu trước với 'vùng xám khổng lồ' (HUGE grey area) trong đáp án H. Đáp án E có thể gây phân vân vì cũng nhắc đến 'rules', nhưng tác giả nói làm theo luật lệ chưa chắc là ý hay, nên không khớp với nội dung E (E cổ vũ việc luôn tuân theo luật lệ)."
+      "key": "H đúng vì có sự liên kết giữa hình ảnh 'màu đen và trắng' (black and white) ở câu trước với 'vùng xám khổng lồ' (HUGE grey area) trong đáp án H. Đáp án E có thể gây phân vân vì cũng nhắc đến 'rules', nhưng tác giả nói làm theo luật lệ chưa chắc là ý hay, nên không khớp với nội dung E (E cổ vũ việc luôn tuân theo luật lệ).",
+      "subskill": "Liên kết & mạch văn bản (nối câu, discourse markers)",
+      "grammarVocabPoint": "Liên kết qua hình ảnh ẩn dụ (black and white ↔ grey area)"
     },
     {
       "q": 18,
       "ans": "A",
-      "key": "A đúng vì câu trước nói về việc con người có thể đạt được mục tiêu dù không tài năng, và ngược lại, câu A nói rằng người tài năng mà thiếu nhiệt huyết/đam mê thì có thể không đạt được."
+      "key": "A đúng vì câu trước nói về việc con người có thể đạt được mục tiêu dù không tài năng, và ngược lại, câu A nói rằng người tài năng mà thiếu nhiệt huyết/đam mê thì có thể không đạt được.",
+      "subskill": "Liên kết & mạch văn bản (nối câu, discourse markers)",
+      "grammarVocabPoint": "Liên kết ý tương phản (on the other hand)"
     },
     {
       "q": 19,
       "ans": "F",
-      "key": "F đúng vì tiếp nối ý tưởng về việc theo đuổi ước mơ. Đáp án G có vẻ hợp lý vì câu trước nói về việc người khác đưa ra lời khuyên, nhưng tác giả rõ ràng không đồng tình với lời khuyên đó nên sẽ không nói rằng bạn nên nghe theo nó."
+      "key": "F đúng vì tiếp nối ý tưởng về việc theo đuổi ước mơ. Đáp án G có vẻ hợp lý vì câu trước nói về việc người khác đưa ra lời khuyên, nhưng tác giả rõ ràng không đồng tình với lời khuyên đó nên sẽ không nói rằng bạn nên nghe theo nó.",
+      "subskill": "Liên kết & mạch văn bản (nối câu, discourse markers)",
+      "grammarVocabPoint": "Liên kết mạch ý kết hợp loại trừ theo thái độ người viết (disagreement)"
     },
     {
       "q": 20,
       "ans": "C",
-      "key": "C đúng vì tiếp nối ý tưởng về tầm quan trọng của hy vọng (hope) và sức mạnh của nó."
+      "key": "C đúng vì tiếp nối ý tưởng về tầm quan trọng của hy vọng (hope) và sức mạnh của nó.",
+      "subskill": "Liên kết & mạch văn bản (nối câu, discourse markers)",
+      "grammarVocabPoint": "Liên kết ý tiếp nối chủ đề chính xuyên suốt bài (hope)"
     }
   ]
 }
