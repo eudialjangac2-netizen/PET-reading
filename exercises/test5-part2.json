@@ -1,0 +1,129 @@
+{
+  "id": "test5-part2",
+  "partType": "part2",
+  "exerciseName": "Test 5 - Part 2",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "6": "H",
+    "7": "B",
+    "8": "A",
+    "9": "F",
+    "10": "G"
+  },
+  "people": [
+    {
+      "id": 6,
+      "name": "Jake",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "text": "Jake is interested in history, but especially historical figures and buildings. He likes illustrations to help him imagine what life was like in the past. He would love to read an exciting story.",
+      "hint": "💡 Cần lịch sử + nhân vật/công trình + nhiều hình minh họa + câu chuyện hấp dẫn."
+    },
+    {
+      "id": 7,
+      "name": "Julia",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150",
+      "text": "Julia wants to buy a book for her mum. She lives a busy life running her travel company. She enjoys cooking, but wants simple recipe ideas as her free time is limited.",
+      "hint": "💡 Cần sách nấu ăn với món đơn giản, nhanh và tiện."
+    },
+    {
+      "id": 8,
+      "name": "Paul",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "text": "Paul loves mysteries, especially ones where you are left guessing until the very end. He reads every day on the school bus, so the longer the better! He would love something that would grab his attention.",
+      "hint": "💡 Cần mystery dài, giữ bí mật đến cuối và gây cuốn hút."
+    },
+    {
+      "id": 9,
+      "name": "Timothy",
+      "avatar": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150",
+      "text": "Timothy would like to give a book to his grandad. He is a retired nature photographer of eighty years old. He used to love travelling and learning about different cultures when he was younger.",
+      "hint": "💡 Cần nature + travel + photography."
+    },
+    {
+      "id": 10,
+      "name": "Sharon and Tom",
+      "avatar": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=150",
+      "text": "Sharon and Tom dream of an exciting life and they like being outdoors. They have decided to travel the world for a year and go to unusual places when they finish school.",
+      "hint": "💡 Cần travelling + outdoors + unusual/exciting places."
+    }
+  ],
+  "options": [
+    {
+      "letter": "A",
+      "title": "The Return",
+      "body": "A mother's missing son turns up at her door one day. He was gone for the past 10 years. Who took him? Where has he been all this time? You won't be disappointed with this excellent crime novel. And if you like to be kept waiting, this is the book for you. It is the first in a series of three, so you won't find out who did it until the third book!"
+    },
+    {
+      "letter": "B",
+      "title": "Tasty treats",
+      "body": "This is a great idea for friends or family who can't stop asking themselves and others 'What am I supposed to cook today?'. Basic simple food, quick to prepare and at a low cost. The author uses ingredients that everybody has in their kitchen cupboards. Nothing complicated, only healthy and convenient."
+    },
+    {
+      "letter": "C",
+      "title": "A Life Well Lived",
+      "body": "A Life Well Lived is an interesting piece of fiction based on the life of Blues singer Billy Holiday. Billy Holiday has been one of the very few musicians who has been such a great inspiration to other musicians as well as music itself. A perfect find for music lovers, or anyone who is interested in the history of Blues music and its influence."
+    },
+    {
+      "letter": "D",
+      "title": "The Long Road",
+      "body": "Although this is quite an old-fashioned book in the way it is written, this excellent translation gives this historical work new life. The Long Road is great for history lovers but especially for anybody interested in other cultures and languages. Many may find it boring, but the few who will actually understand it will be amazed."
+    },
+    {
+      "letter": "E",
+      "title": "The History of Food",
+      "body": "Do not rely on the title to get the full picture! It is, in fact, a recipe book but it is based on what people used to eat in the past and is full of interesting food from all around the world. The History of Food is a great book for anybody who likes to spend hours in the kitchen."
+    },
+    {
+      "letter": "F",
+      "title": "The Search",
+      "body": "Do you love wildlife and nature? With this book there is no need to bother to get off the sofa to travel to beautiful destinations. It's better than any travel brochure and full of wonderful photography and interesting facts for the curious. You'll feel like you're actually there."
+    },
+    {
+      "letter": "G",
+      "title": "Going to Extremes",
+      "body": "Do you like travelling and taking part in extreme sports? Written by an extreme sports athlete who has done just about everything in every location, this book is the perfect guide to the best places for those who love excitement and want to achieve their dream. A book for the brave ones!"
+    },
+    {
+      "letter": "H",
+      "title": "The Emperors",
+      "body": "This is history brought to life for anybody with an interest in the deep drama and danger of Ancient Rome, where life or death depended on the mood of the Emperor. The Emperors is beautifully illustrated with interesting information about the architecture and culture of this ancient civilisation."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 6,
+      "name": "Jake",
+      "demand": "Lịch sử, nhân vật/công trình lịch sử, thích hình minh họa và câu chuyện hấp dẫn.",
+      "ans": "H. The Emperors",
+      "key": "H đúng vì Jake thích lịch sử và sách có hình minh họa; phần review nói sách 'is beautifully illustrated with interesting information about the architecture and culture of this ancient civilisation'. D sai vì dù là sách lịch sử nhưng không có minh họa."
+    },
+    {
+      "q": 7,
+      "name": "Julia",
+      "demand": "Sách nấu ăn đơn giản, nhanh vì mẹ bận rộn.",
+      "ans": "B. Tasty treats",
+      "key": "B đúng vì sách có 'Basic simple food, quick to prepare and at a low cost'. E sai vì các công thức từ khắp thế giới nên không phù hợp với nhu cầu đơn giản, nhanh và dùng nguyên liệu thường có sẵn."
+    },
+    {
+      "q": 8,
+      "name": "Paul",
+      "demand": "Mystery/thriller dài, giữ bí mật đến cuối, gây chú ý.",
+      "ans": "A. The Return",
+      "key": "A đúng vì Paul thích bí ẩn và muốn bị giữ trong trạng thái đoán đến cuối; review nói 'if you like to be kept waiting, this is the book for you' và đây là phần đầu của bộ ba nên chưa biết thủ phạm cho tới cuốn thứ ba."
+    },
+    {
+      "q": 9,
+      "name": "Timothy",
+      "demand": "Nhiếp ảnh thiên nhiên, du lịch, văn hóa.",
+      "ans": "F. The Search",
+      "key": "F đúng vì Timothy's grandad thích photography và travelling; review nói sách 'is better than any travel brochure and full of wonderful photography and interesting facts'."
+    },
+    {
+      "q": 10,
+      "name": "Sharon and Tom",
+      "demand": "Cuộc sống phiêu lưu, thích ngoài trời, đi khắp thế giới và đến nơi lạ.",
+      "ans": "G. Going to Extremes",
+      "key": "G đúng vì Sharon và Tom mơ về một cuộc sống thú vị, thích ngoài trời và khám phá; review nhấn mạnh travelling, extreme sports và 'the best places for those who love excitement and want to achieve their dream'."
+    }
+  ]
+}

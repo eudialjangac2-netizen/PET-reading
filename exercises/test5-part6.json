@@ -1,0 +1,106 @@
+{
+  "id": "test5-part6",
+  "partType": "part6",
+  "exerciseName": "Test 5 - Part 6",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "27": [
+      "before"
+    ],
+    "28": [
+      "enough"
+    ],
+    "29": [
+      "was"
+    ],
+    "30": [
+      "be"
+    ],
+    "31": [
+      "to"
+    ],
+    "32": [
+      "not"
+    ]
+  },
+  "article": {
+    "title": "A person I admire",
+    "author": "by Lea Carson",
+    "image": "https://images.unsplash.com/photo-1530137073520-4ea6e2f10a48?w=500",
+    "paragraphs": [
+      "People are always trying to do things never achieved <span class='gap-tag'>(27)</span>...................., and Ross Edgley is definitely one of the few who are brave <span class='gap-tag'>(28)</span>.................... to try to do the incredible. Ross, a thirty-three-year-old fitness expert, is the first person in history to swim the 1,792-mile journey around Great Britain. His amazing journey of 157 days <span class='gap-tag'>(29)</span>.................... even recorded in a weekly internet series, “Ross Edgley's Great British Swim”.",
+      "Although he may <span class='gap-tag'>(30)</span>.................... best-known for this achievement, he has done plenty of other extraordinary things, ranging from running a marathon while pulling a 1.4 tonne car <span class='gap-tag'>(31)</span>.................... completing an Olympic Distance Triathlon carrying a 100-lbs tree.",
+      "The reason I admire Ross, however, is <span class='gap-tag'>(32)</span>.................... so much that he is one of the fittest men alive, but for the fact that he wishes to teach us that the human body is much more powerful than our minds often lead us to believe."
+    ]
+  },
+  "questions": [
+    {
+      "id": 27,
+      "label": "Câu 27",
+      "placeholder": "Nhập từ cho ô (27)...",
+      "hint": "💡 Cần từ mang nghĩa 'trước đây/trước thời điểm này'."
+    },
+    {
+      "id": 28,
+      "label": "Câu 28",
+      "placeholder": "Nhập từ cho ô (28)...",
+      "hint": "💡 Cấu trúc 'adjective + enough + to-infinitive'."
+    },
+    {
+      "id": 29,
+      "label": "Câu 29",
+      "placeholder": "Nhập từ cho ô (29)...",
+      "hint": "💡 Cần past simple của 'be' để tạo passive voice: 'was recorded'."
+    },
+    {
+      "id": 30,
+      "label": "Câu 30",
+      "placeholder": "Nhập từ cho ô (30)...",
+      "hint": "💡 Sau modal verb 'may' dùng động từ nguyên mẫu."
+    },
+    {
+      "id": 31,
+      "label": "Câu 31",
+      "placeholder": "Nhập từ cho ô (31)...",
+      "hint": "💡 Cụm 'ranging from ... to ...'."
+    },
+    {
+      "id": 32,
+      "label": "Câu 32",
+      "placeholder": "Nhập từ cho ô (32)...",
+      "hint": "💡 Cấu trúc so sánh/đối lập: 'not so much ... but ...'."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 27,
+      "ans": "before",
+      "key": "<strong>before</strong>: đúng vì ở đây mang nghĩa 'trong quá khứ hoặc trước thời điểm này'."
+    },
+    {
+      "q": 28,
+      "ans": "enough",
+      "key": "<strong>enough</strong>: đúng vì mang nghĩa 'đủ mức cần thiết' và theo sau là to-infinitive: 'brave enough to try'."
+    },
+    {
+      "q": 29,
+      "ans": "was",
+      "key": "<strong>was</strong>: đúng vì cần past simple của 'to be' để tạo câu bị động với động từ 'record': 'was recorded'."
+    },
+    {
+      "q": 30,
+      "ans": "be",
+      "key": "<strong>be</strong>: đúng vì sau modal verb 'may' cần infinitive. 'be best-known for something' = nổi tiếng nhất vì điều gì đó."
+    },
+    {
+      "q": 31,
+      "ans": "to",
+      "key": "<strong>to</strong>: đúng vì là một phần của cụm 'ranging from (something) to (something else)', diễn tả nhiều hoạt động/sự việc khác nhau."
+    },
+    {
+      "q": 32,
+      "ans": "not",
+      "key": "<strong>not</strong>: đúng vì cấu trúc 'not so much ... but ...' dùng để so sánh hai lý do và cho thấy lý do thứ hai quan trọng hơn lý do thứ nhất."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "test5-part4",
+  "partType": "part4",
+  "exerciseName": "Test 5 - Part 4",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "16": "H",
+    "17": "G",
+    "18": "A",
+    "19": "F",
+    "20": "C"
+  },
+  "gapIds": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "article": {
+    "title": "Cycling the Most Dangerous Road",
+    "author": "",
+    "image": "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=500",
+    "paragraphs": [
+      "Like most children, I got my first bicycle at a young age. You could easily tell from all the pictures that I fell in love with it from the moment I saw it. So, while most children grow out of cycling, I took it to a whole new level. {{gap:16}} My mum was not too keen on the idea but soon got used to it.",
+      "Nowadays, every spare moment I ever have I'm out, exploring different places. {{gap:17}} Hills, mountains, forests, nothing beats that sense of achievement when you manage to get through some of the most difficult landscapes on a bike. It's not so much about others knowing what you can do, but rather proving to yourself that you are able to do it.",
+      "And of course, there's being in the natural environment. {{gap:18}} Breathing some fresh air while getting away from the city not only relaxes you but also keeps you healthy.",
+      "So, when I saw an advertisement for cyclists to join a group to cycle in Bolivia, I was not just keen. {{gap:19}} My mum was terrified when I announced I wanted to go, but as my father is a keen cyclist himself, he managed to persuade her that we should definitely go.",
+      "The Yungas Hwy is the world's most dangerous road. An average of twenty six vehicles disappear over its edge every year. {{gap:20}} With only space for one vehicle the 1,000 metre drops are terrifying. Add to that the waterfalls, which fall directly onto the road, and the journey becomes even more dangerous as you try to avoid the frequent speeding lorries. But despite this, the excitement draws cyclists from around the world. And I just couldn't be the one to miss it."
+    ]
+  },
+  "options": [
+    {
+      "letter": "A",
+      "title": "Just to be outside, travelling through nature, is enough of a reason to do this.",
+      "body": ""
+    },
+    {
+      "letter": "B",
+      "title": "I must admit, it was a country I had never wanted to visit.",
+      "body": ""
+    },
+    {
+      "letter": "C",
+      "title": "Actually, it's more of a track than a road.",
+      "body": ""
+    },
+    {
+      "letter": "D",
+      "title": "All my friends got motorbikes or cars.",
+      "body": ""
+    },
+    {
+      "letter": "E",
+      "title": "The trouble is finding the free time.",
+      "body": ""
+    },
+    {
+      "letter": "F",
+      "title": "It was a dream opportunity not to be missed.",
+      "body": ""
+    },
+    {
+      "letter": "G",
+      "title": "The more challenging, the better.",
+      "body": ""
+    },
+    {
+      "letter": "H",
+      "title": "This meant getting myself a mountain bike and being out in all weathers.",
+      "body": ""
+    }
+  ],
+  "explanation": [
+    {
+      "q": 16,
+      "ans": "H",
+      "key": "H đúng vì 'This meant getting myself a mountain bike ...' nối trực tiếp với câu trước nói người viết đưa niềm đam mê cycling lên một cấp độ mới. D sai vì toàn bài nói về tình yêu đạp xe, không phải đi motorbike hay car."
+    },
+    {
+      "q": 17,
+      "ans": "G",
+      "key": "G đúng vì ngay sau đó người viết đưa ví dụ về những nơi đầy thử thách mà mình đạp xe qua. A có vẻ hợp nhưng phù hợp hơn ở câu 18, còn G không thể đặt ở đó."
+    },
+    {
+      "q": 18,
+      "ans": "A",
+      "key": "A đúng vì câu này nói về việc người viết yêu thích được ở ngoài trời, trong thiên nhiên, và câu sau tiếp tục ý đó bằng việc hít thở không khí trong lành."
+    },
+    {
+      "q": 19,
+      "ans": "F",
+      "key": "F đúng vì người viết nói mình không chỉ 'keen' mà còn hơn thế nữa; câu F diễn đạt đúng mức độ hào hứng: 'a dream opportunity not to be missed'. B sai vì người viết rất hào hứng với chuyến đi."
+    },
+    {
+      "q": 20,
+      "ans": "C",
+      "key": "C đúng vì đoạn này đang mô tả mức độ nguy hiểm của con đường; câu 'Actually, it's more of a track than a road' bổ sung thông tin giải thích vì sao con đường lại nguy hiểm đến vậy."
+    }
+  ]
+}

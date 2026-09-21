@@ -1,0 +1,196 @@
+{
+  "id": "test5-part5",
+  "partType": "part5",
+  "exerciseName": "Test 5 - Part 5",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "21": "B",
+    "22": "C",
+    "23": "A",
+    "24": "B",
+    "25": "A",
+    "26": "D"
+  },
+  "article": {
+    "title": "An interesting school project",
+    "author": "by Terry Smith",
+    "image": "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=500",
+    "paragraphs": [
+      "This month we're doing a project on unusual animals and my team got the Japanese Macaques, or as they are often called, snow monkeys. It was exciting to <strong>(21) ....................</strong> out so much about them.",
+      "These monkeys live at much lower temperatures than any other monkeys, feeding on a few plants while trying hard to stay warm. But what makes them so strange is their <strong>(22) ....................</strong> to pass on new ideas to each other, something <strong>(23) ....................</strong> in a scientific study when a single snow monkey started washing her food in the ocean. Following this, after a few generations, every monkey was doing it.",
+      "People who are <strong>(24) ....................</strong> in the Macaques often visit the Jigokudani Monkey Park in Jigokudani Valley, Japan. There the Macaques often have hot baths on a snowy winter's day. Well, this is not part of their typical <strong>(25) ....................</strong>. They have once again copied a single snow monkey who decided to jump into the hot spring water back in 1963 on a(n) <strong>(26) ....................</strong> cold day."
+    ]
+  },
+  "questions": [
+    {
+      "id": 21,
+      "question": "21. Choose the correct word for gap (21):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "carry"
+        },
+        {
+          "letter": "B",
+          "text": "find"
+        },
+        {
+          "letter": "C",
+          "text": "check"
+        },
+        {
+          "letter": "D",
+          "text": "hand"
+        }
+      ],
+      "hint": "💡 Phrasal verb 'find out' = discover/learn information."
+    },
+    {
+      "id": 22,
+      "question": "22. Choose the correct word for gap (22):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "possibility"
+        },
+        {
+          "letter": "B",
+          "text": "qualification"
+        },
+        {
+          "letter": "C",
+          "text": "ability"
+        },
+        {
+          "letter": "D",
+          "text": "lesson"
+        }
+      ],
+      "hint": "💡 'ability to do something' = khả năng làm điều gì đó."
+    },
+    {
+      "id": 23,
+      "question": "23. Choose the correct word for gap (23):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "discovered"
+        },
+        {
+          "letter": "B",
+          "text": "invented"
+        },
+        {
+          "letter": "C",
+          "text": "designed"
+        },
+        {
+          "letter": "D",
+          "text": "located"
+        }
+      ],
+      "hint": "💡 A scientific study can 'discover' a fact for the first time."
+    },
+    {
+      "id": 24,
+      "question": "24. Choose the correct word for gap (24):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "amazed"
+        },
+        {
+          "letter": "B",
+          "text": "interested"
+        },
+        {
+          "letter": "C",
+          "text": "curious"
+        },
+        {
+          "letter": "D",
+          "text": "excited"
+        }
+      ],
+      "hint": "💡 Cụm đúng là 'interested in'."
+    },
+    {
+      "id": 25,
+      "question": "25. Choose the correct word for gap (25):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "behaviour"
+        },
+        {
+          "letter": "B",
+          "text": "portrait"
+        },
+        {
+          "letter": "C",
+          "text": "act"
+        },
+        {
+          "letter": "D",
+          "text": "role"
+        }
+      ],
+      "hint": "💡 'typical behaviour' = cách hành xử điển hình."
+    },
+    {
+      "id": 26,
+      "question": "26. Choose the correct word for gap (26):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "frozen"
+        },
+        {
+          "letter": "B",
+          "text": "extreme"
+        },
+        {
+          "letter": "C",
+          "text": "spring"
+        },
+        {
+          "letter": "D",
+          "text": "freezing"
+        }
+      ],
+      "hint": "💡 Cụm tự nhiên là 'a freezing cold day'."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 21,
+      "ans": "B",
+      "key": "B (find) đúng vì phrasal verb 'find out' nghĩa là tìm ra thông tin hoặc học được điều gì đó. A sai vì 'carry out' nghĩa là thực hiện một việc. C sai vì 'check out' mang nghĩa kiểm tra/xem xét một thứ lần đầu theo cách thân mật. D sai vì 'hand out' nghĩa là phát thứ gì cho nhiều người."
+    },
+    {
+      "q": 22,
+      "ans": "C",
+      "key": "C (ability) đúng vì nếu bạn có 'ability to do something' thì bạn có khả năng làm việc đó. A sai vì cấu trúc sẽ là 'the possibility that they can pass on new ideas'. B sai vì 'qualification' là bằng cấp/chứng chỉ chính thức. D sai vì câu sau phải đổi thành kiểu 'They seem to have had lessons in how to pass on...'."
+    },
+    {
+      "q": 23,
+      "ans": "A",
+      "key": "A (discovered) đúng vì khi bạn discover something, bạn tìm ra hoặc biết về nó lần đầu tiên. B, C và D sai vì một thông tin/ý tưởng không thể được invented, designed hoặc located theo ngữ cảnh này."
+    },
+    {
+      "q": 24,
+      "ans": "B",
+      "key": "B (interested) đúng vì 'interested' phải đi với giới từ 'in'. A sai vì 'amazed by', C thường là 'curious about', D là 'excited about'."
+    },
+    {
+      "q": 25,
+      "ans": "A",
+      "key": "A (behaviour) đúng vì 'typical behaviour' là cách chúng ta mong đợi một người hay vật hành xử trong tình huống nhất định. B là tranh chân dung. C nếu dùng sẽ phải là 'not how they would typically act'. D là vai trò mà ai đó/thứ gì đó đảm nhiệm trong xã hội, vở kịch hoặc tình huống."
+    },
+    {
+      "q": 26,
+      "ans": "D",
+      "key": "D (freezing) đúng vì 'freezing cold' là cụm dùng để nói rằng trời rất lạnh. A chỉ phù hợp trong câu như 'when everything was frozen'. B cần dạng trạng từ 'an extremely cold day'. C phải là 'on a cold spring day', không phải 'on a spring cold day'."
+    }
+  ]
+}

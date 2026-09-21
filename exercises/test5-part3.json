@@ -1,0 +1,167 @@
+{
+  "id": "test5-part3",
+  "partType": "part3",
+  "exerciseName": "Test 5 - Part 3",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "11": "C",
+    "12": "B",
+    "13": "B",
+    "14": "A",
+    "15": "B"
+  },
+  "article": {
+    "title": "My summer volunteering",
+    "author": "by Tina Newbury",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500",
+    "paragraphs": [
+      "At the age of 14 I have already decided that I want to be a vet. So, last summer I convinced my parents to spend our summer holidays volunteering. I really wanted to deal with sea animals, so when a friend told me about Archelon, the sea turtle organisation in Greece, I was really excited because I would leave the UK for the first time and go to a perfect destination, but I had no idea how amazing it would really be or how many new friends I would make. Now, I would recommend volunteering to any student who wants to get job experience, or simply have fun and meet great people.",
+      "Turtles have been on our planet for millions of years but are dying in large numbers because of fishing and pollution. This was a shock to me when I spent a few days at the Rescue Centre in Athens before leaving for my first project. There, I found out that the majority of the centre's turtles had been injured on the head by humans. Some were by accident, from speedboats, but a lot were done on purpose, often by angry fishermen, as these creatures get caught in their fishing nets while trying to eat the fish which are part of their natural diet. For the fishermen, however, this has a cost, as fewer fish mean less money, so they view the turtle as their enemy, even though these turtles are a protected species. And as if this isn't enough for these unlucky creatures to deal with, they also face the problem of eating plastic bags, thinking they are jellyfish, which are a key part of their diet.",
+      "The following months were spent learning and having fun in five different locations, but the most memorable was the last project, where we camped in an old museum with no electricity or water. However, the main problem was the insects which shared the museum with us, especially those that bit. But even that could not stop me from enjoying the daily contact with the turtles, and relaxing around a campfire sharing stories after sunset. Volunteering is a life experience I really recommend for any student."
+    ]
+  },
+  "questions": [
+    {
+      "id": 11,
+      "question": "11. What do we learn about Tina in the first paragraph?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "She has a job with animals."
+        },
+        {
+          "letter": "B",
+          "text": "She only likes sea animals."
+        },
+        {
+          "letter": "C",
+          "text": "She is going to be an animal doctor."
+        },
+        {
+          "letter": "D",
+          "text": "She finished studying a year ago."
+        }
+      ],
+      "hint": "💡 Tina says: 'I have already decided that I want to be a vet.'"
+    },
+    {
+      "id": 12,
+      "question": "12. While Tina was in Greece,",
+      "options": [
+        {
+          "letter": "A",
+          "text": "she found out about an organisation called Archelon."
+        },
+        {
+          "letter": "B",
+          "text": "she enjoyed herself and formed new friendships."
+        },
+        {
+          "letter": "C",
+          "text": "she volunteered for several animal organisations."
+        },
+        {
+          "letter": "D",
+          "text": "she worked for Archelon as part of her training."
+        }
+      ],
+      "hint": "💡 She says she had no idea how amazing it would be or how many new friends she would make."
+    },
+    {
+      "id": 13,
+      "question": "13. What does Tina say about the fishermen?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Their actions make her angry."
+        },
+        {
+          "letter": "B",
+          "text": "She understands their actions."
+        },
+        {
+          "letter": "C",
+          "text": "They try to look after the turtles."
+        },
+        {
+          "letter": "D",
+          "text": "They try to catch the turtles."
+        }
+      ],
+      "hint": "💡 She explains the fishermen lose money when turtles eat fish from their nets."
+    },
+    {
+      "id": 14,
+      "question": "14. Tina suggests that",
+      "options": [
+        {
+          "letter": "A",
+          "text": "despite the difficulties she enjoyed herself."
+        },
+        {
+          "letter": "B",
+          "text": "insects spoilt her last project."
+        },
+        {
+          "letter": "C",
+          "text": "having no water was a big problem."
+        },
+        {
+          "letter": "D",
+          "text": "she enjoyed the nights most."
+        }
+      ],
+      "hint": "💡 Even with no water/electricity and biting insects, she still enjoyed the experience."
+    },
+    {
+      "id": 15,
+      "question": "15. Which of the following is the best description of Tina?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a professional woman who is paid to look after sea turtles"
+        },
+        {
+          "letter": "B",
+          "text": "a girl who hopes to help animals through her work in the future"
+        },
+        {
+          "letter": "C",
+          "text": "a girl who has been volunteering abroad in her summer holidays for years"
+        },
+        {
+          "letter": "D",
+          "text": "a girl who had wanted to help turtles all her life"
+        }
+      ],
+      "hint": "💡 Tina is 14, wants to be a vet, and her love of animals is clear throughout the text."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 11,
+      "ans": "C",
+      "key": "C đúng vì Tina nói ngay đoạn đầu: 'At the age of 14 I had already decided that I wanted to be a vet.' A sai vì cô chỉ tình nguyện làm việc với động vật trong một mùa hè, chưa có việc làm. B sai vì cô thích động vật nói chung, không chỉ động vật biển. D sai vì cô vẫn còn là học sinh."
+    },
+    {
+      "q": 12,
+      "ans": "B",
+      "key": "B đúng vì Tina nói ở đoạn đầu rằng cô không biết chuyến đi sẽ tuyệt vời đến mức nào hay cô sẽ kết bạn với bao nhiêu người. A sai vì cô biết về Archelon trước khi đến Greece. C sai vì cô chỉ làm tình nguyện cho một tổ chức là Archelon. D sai vì cô không trong quá trình đào tạo; cô chỉ tình nguyện để trải nghiệm làm việc với động vật."
+    },
+    {
+      "q": 13,
+      "ans": "B",
+      "key": "B đúng vì đoạn 2 giải thích rằng với ngư dân, ít cá hơn đồng nghĩa ít tiền hơn nên họ xem rùa như kẻ thù. Dù Tina buồn vì điều đó, cô hiểu vì sao họ cảm thấy như vậy. A sai vì cô không nói mình tức giận. C sai vì ngược lại, họ không thích rùa. D sai vì họ không cố bắt rùa; rùa thường vô tình mắc vào lưới."
+    },
+    {
+      "q": 14,
+      "ans": "A",
+      "key": "A đúng vì đoạn cuối nói họ phải sống không có nước và điện, có nhiều côn trùng, nhưng Tina vẫn yêu thích công việc, ngồi quanh lửa trại và tận hưởng thời gian. B sai vì côn trùng không phá hỏng trải nghiệm. C sai vì Tina không nói thiếu nước là vấn đề lớn. D sai vì cô nói thích buổi tối nhưng không nói đó là phần cô thích nhất."
+    },
+    {
+      "q": 15,
+      "ans": "B",
+      "key": "B đúng vì ngay từ đầu Tina nói muốn trở thành bác sĩ thú y và toàn bài cho thấy tình yêu động vật của cô. A sai vì cô chỉ là học sinh tình nguyện. C sai vì cô mới làm tình nguyện một mùa hè. D sai vì không phải cả đời cô chỉ muốn giúp rùa; từ 14 tuổi cô đã chắc chắn muốn giúp động vật bằng nghề bác sĩ thú y."
+    }
+  ]
+}

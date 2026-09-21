@@ -1,0 +1,142 @@
+{
+  "id": "test5-part1",
+  "partType": "part1",
+  "exerciseName": "Test 5 - Part 1",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "1": "B",
+    "2": "C",
+    "3": "A",
+    "4": "B",
+    "5": "C"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #777;padding:18px;border-radius:18px;background:#f5f5f5;max-width:300px;'><div>Sue,<br>Could you go down to the supermarket and get some extra vegetables for dinner as I'll be a bit late? Paul and Mary are coming tonight.<br>Thanks,<br>Mum</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sue will have to cook dinner for the guests this evening."
+        },
+        {
+          "letter": "B",
+          "text": "They need some extra ingredients in order to make dinner."
+        },
+        {
+          "letter": "C",
+          "text": "Mum won't be home in time for dinner tonight."
+        }
+      ],
+      "hint": "💡 Mum asks Sue to buy extra vegetables for dinner."
+    },
+    {
+      "id": 2,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #1aa7e8;padding:18px;border-radius:10px;background:#eef9ff;'><div style='font-weight:800;color:#169bd5;font-size:16px;margin-bottom:8px;text-align:center;'>CHANGING ROOMS NOTICE TO ALL STUDENTS</div><div>Please return all locker keys to the reception before leaving. Unreturned keys are charged at £1.00 a day.<br>The money to replace lost keys is taken from your £10.00 member locker users deposit.</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lost keys cost £1.00 to replace."
+        },
+        {
+          "letter": "B",
+          "text": "Students pay a total of £11.00 for keys."
+        },
+        {
+          "letter": "C",
+          "text": "Students have paid £10.00 in advance."
+        }
+      ],
+      "hint": "💡 'deposit' = tiền đặt cọc đã trả trước."
+    },
+    {
+      "id": 3,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:3px dotted #333;padding:18px;border-radius:8px;background:#fff;'><div style='font-weight:800;color:#169bd5;font-size:15px;margin-bottom:8px;text-align:center;'>Bicycle Parking not permitted<br>Monday to Friday from 9am to 6pm</div><div style='text-align:center;'>During the weekend all traffic is prohibited - pedestrians use only.</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Students can park their bicycles late on Friday night if they wish to."
+        },
+        {
+          "letter": "B",
+          "text": "On weekdays people are not allowed to walk on this road."
+        },
+        {
+          "letter": "C",
+          "text": "On Saturdays you can drive by but not park on this road."
+        }
+      ],
+      "hint": "💡 Bicycle parking is prohibited only from 9am to 6pm Monday–Friday."
+    },
+    {
+      "id": 4,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #4aa3df;padding:18px;border-radius:8px;background:#fff;'><div style='font-size:13px;color:#666;'><strong>To:</strong> June</div><div style='font-size:13px;color:#666;'><strong>From:</strong> Tony</div><div style='font-size:13px;color:#666;margin-bottom:8px;'><strong>Re:</strong> Weekend</div><div>Hi June!<br>How about a backpacking weekend? It will be challenging as the weather forecast predicts frequent showers. Hardly sunny camping weather, but we can get comfortable accommodation.<br>Chat later!<br>Tony</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The weather is supposed to be warm at the weekend."
+        },
+        {
+          "letter": "B",
+          "text": "The weather is likely to be wet during their trip."
+        },
+        {
+          "letter": "C",
+          "text": "The weather won't stop them going camping."
+        }
+      ],
+      "hint": "💡 'frequent showers' = mưa rào thường xuyên."
+    },
+    {
+      "id": 5,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #333;padding:18px;border-radius:12px;background:#fffef9;'><div style='font-weight:800;color:#169bd5;font-size:16px;margin-bottom:8px;text-align:center;'>AMAZING WINTER SALE</div><div>❖ all sports clothes half price<br>❖ buy two T-shirts, get one free<br>❖ end-of-season shoes, from an incredible £5 a pair!</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Everything is being sold at half price."
+        },
+        {
+          "letter": "B",
+          "text": "You get a T-shirt at no cost with every sale."
+        },
+        {
+          "letter": "C",
+          "text": "Shoes are sold at a starting price of 5 pounds."
+        }
+      ],
+      "hint": "💡 'shoes, from ... £5 a pair' = giá khởi điểm từ £5."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 1,
+      "ans": "B",
+      "key": "B đúng vì Mum hỏi Sue có thể mua thêm một ít rau từ siêu thị không. A sai vì Mum không nói Sue phải nấu bữa tối; Sue chỉ cần đi mua đồ. C sai vì Mum không nói rằng mình sẽ về quá muộn để ăn tối."
+    },
+    {
+      "q": 2,
+      "ans": "C",
+      "key": "C đúng vì thông báo nói 'The money to replace lost keys is taken from your £10.00 member locker users deposit.' Deposit là khoản tiền được trả trước. A sai vì £1 là khoản phạt mỗi ngày không trả chìa khóa, không phải giá thay chìa khóa. B sai vì học sinh không trả tổng cộng £11 để sử dụng chìa khóa."
+    },
+    {
+      "q": 3,
+      "ans": "A",
+      "key": "A đúng vì có thể đỗ xe sau 6pm từ Monday đến Friday. B sai vì không có thông tin nào nói người đi bộ bị hạn chế vào ngày thường. C sai vì vào Saturday, mọi phương tiện giao thông đều bị cấm, chỉ người đi bộ được phép."
+    },
+    {
+      "q": 4,
+      "ans": "B",
+      "key": "B đúng vì Tony nói 'the weather forecast predicts frequent showers'. A sai vì Tony nói 'Hardly sunny camping weather'. C sai vì thời tiết khiến họ không cắm trại và thay vào đó sẽ tìm chỗ ở thoải mái."
+    },
+    {
+      "q": 5,
+      "ans": "C",
+      "key": "C đúng vì biển quảng cáo nói 'End of season shoes from an incredible £5 a pair!'. A sai vì chỉ sports clothes được giảm một nửa. B sai vì chỉ được tặng một áo T-shirt nếu mua hai áo."
+    }
+  ]
+}
