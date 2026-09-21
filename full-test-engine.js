@@ -426,6 +426,9 @@
     allQuestions.forEach(q => {
       const val = q.getValue();
       const ok = q.isCorrect(val);
+      const isMissing = !val || val === "";
+      // Quy tắc tính điểm: đúng thì tính đúng, còn lại (sai HOẶC bỏ trống) đều tính là sai — không đổi gì ở đây,
+      // chỉ tách riêng "status" để hiển thị 3 màu khác nhau (đúng/sai/thiếu), không ảnh hưởng đến correctCount.
       if (ok) {
         correctCount++;
       } else if (q.subskill) {
@@ -437,7 +440,8 @@
         partLabel: q.partLabel,
         subskill: q.subskill,
         isCorrect: ok,
-        correctReason: ok ? q.correctReason : null, // CHỈ đưa lý do khi ĐÚNG — không lộ đáp án/lý do cho câu sai
+        status: ok ? "correct" : (isMissing ? "missing" : "wrong"),
+        correctReason: ok ? q.correctReason : null, // CHỈ đưa lý do khi ĐÚNG — không lộ đáp án/lý do cho câu sai hay thiếu
       });
     });
 
@@ -454,6 +458,16 @@
     const weakPartIds = exercises
       .filter(ex => ex.questions.some(q => !q.isCorrect(q.getValue())))
       .map(ex => ex.id);
+
+    // Tóm tắt hoàn thành theo từng Part: đã làm đủ chưa, còn thiếu bao nhiêu câu (KHÔNG tính đúng/sai, chỉ tính đã trả lời hay chưa)
+    const partsStatusSummary = exercises.map(ex => {
+      const partTotal = ex.questions.length;
+      const missingCount = ex.questions.filter(q => !q.getValue() || q.getValue() === "").length;
+      const label = PART_LABELS[ex.partType] || ex.partType;
+      return missingCount === 0
+        ? `${label}: Hoàn thành (${partTotal}/${partTotal})`
+        : `${label}: Thiếu ${missingCount} câu (đã làm ${partTotal - missingCount}/${partTotal})`;
+    }).join("; ");
 
     const now = new Date();
     const durationUsedMs = startTime ? (now - startTime) : 0;
@@ -493,6 +507,7 @@
       scoreBand: isFullReading ? `PET Score: ${petScore}/170` : "Không đủ 32 câu - chưa quy đổi",
       weakestSubskills: weakest.join("; ") || "-",
       weakPartIds: weakPartIds.join(","),
+      partsStatusSummary: partsStatusSummary,
       tabSwitchCount: tabSwitchCount,
       durationUsed: durationUsedText,
       autoSubmitted: isAuto,
@@ -552,15 +567,21 @@
       improveList.innerHTML = `<li>Bài này có ${total - correctCount} câu sai, nhưng chưa có đủ dữ liệu phân loại kỹ năng (subskill) để đưa ra gợi ý cụ thể. Xem lại đáp án đúng trực tiếp trong từng Part.</li>`;
     }
 
-    // Bảng chi tiết từng câu: ĐÚNG -> hiện lý do; SAI -> chỉ báo sai, KHÔNG hiện đáp án/lý do
+    // Bảng chi tiết từng câu: ĐÚNG -> hiện lý do; SAI/THIẾU -> chỉ báo trạng thái, KHÔNG hiện đáp án/lý do
     const detailBox = document.getElementById("ftDetailList");
     if (detailBox) {
       detailBox.innerHTML = perQuestionResult.map(r => {
-        if (r.isCorrect) {
+        if (r.status === "correct") {
           return `
             <li class="ft-detail-item ft-detail-correct">
               <div class="ft-detail-head">✅ Câu ${r.globalIndex} — ${r.partLabel}</div>
               ${r.correctReason ? `<div class="ft-detail-reason">${r.correctReason}</div>` : ""}
+            </li>`;
+        }
+        if (r.status === "missing") {
+          return `
+            <li class="ft-detail-item ft-detail-missing">
+              <div class="ft-detail-head">⚠️ Câu ${r.globalIndex} — ${r.partLabel} (chưa làm)</div>
             </li>`;
         }
         return `
@@ -596,15 +617,15 @@
       el.disabled = true;
     });
 
-    // Tô màu đúng/sai lên từng câu + cập nhật bảng số câu hỏi
+    // Tô màu đúng/sai/thiếu lên từng câu + cập nhật bảng số câu hỏi
     lastPerQuestionResult.forEach(r => {
       const el = document.getElementById(`ft-q-${r.globalIndex}`);
-      if (el) el.classList.add(r.isCorrect ? "ft-review-correct" : "ft-review-wrong");
+      if (el) el.classList.add(`ft-review-${r.status}`); // ft-review-correct / ft-review-wrong / ft-review-missing
 
       const box = document.querySelector(`.ft-pal-box[data-g="${r.globalIndex}"]`);
       if (box) {
         box.classList.remove("answered", "marked");
-        box.classList.add(r.isCorrect ? "review-correct" : "review-wrong");
+        box.classList.add(`review-${r.status}`);
       }
     });
 
