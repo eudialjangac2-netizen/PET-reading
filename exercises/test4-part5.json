@@ -1,0 +1,196 @@
+{
+  "id": "test4-part5",
+  "partType": "part5",
+  "exerciseName": "Test 4 - Part 5",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "21": "C",
+    "22": "D",
+    "23": "A",
+    "24": "B",
+    "25": "C",
+    "26": "D"
+  },
+  "article": {
+    "title": "The changing Internet",
+    "author": "Cambridge B1 Preliminary for Schools - Reading Part 5",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500",
+    "paragraphs": [
+      "The internet may have started in the 1960s, but it wasn't until the 1990s when it became <strong>(21) ....................</strong> to the public. In 1994, the Stanford Federal Credit Union was the first bank in the world to <strong>(22) ....................</strong> online internet banking.",
+      "By 1995, people around the world were starting to have internet in their homes. Internet in those days was very slow because they had to use a dial-up <strong>(23) ....................</strong>. The computer needed to use a telephone line and sent noisy <strong>(24) ....................</strong> like a fax machine does. One of the problems was that if you were using the internet, you couldn't make or <strong>(25) ....................</strong> phone calls.",
+      "Over the years, the internet became faster and faster as there was no need to use the telephone line for the internet. Today, the Internet is more complex than ever. It <strong>(26) ....................</strong> computers, satellites, mobile devices and other gadgets in a network millions of times bigger than the original one."
+    ]
+  },
+  "questions": [
+    {
+      "id": 21,
+      "question": "21. Choose the correct word for gap (21):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "effective"
+        },
+        {
+          "letter": "B",
+          "text": "accurate"
+        },
+        {
+          "letter": "C",
+          "text": "available"
+        },
+        {
+          "letter": "D",
+          "text": "realistic"
+        }
+      ],
+      "hint": "💡 'available to the public' = có sẵn/được cung cấp để công chúng có thể sử dụng."
+    },
+    {
+      "id": 22,
+      "question": "22. Choose the correct word for gap (22):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "allow"
+        },
+        {
+          "letter": "B",
+          "text": "afford"
+        },
+        {
+          "letter": "C",
+          "text": "deliver"
+        },
+        {
+          "letter": "D",
+          "text": "offer"
+        }
+      ],
+      "hint": "💡 Ngân hàng có thể 'offer' một dịch vụ cho khách hàng."
+    },
+    {
+      "id": 23,
+      "question": "23. Choose the correct word for gap (23):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "connection"
+        },
+        {
+          "letter": "B",
+          "text": "contact"
+        },
+        {
+          "letter": "C",
+          "text": "mobile"
+        },
+        {
+          "letter": "D",
+          "text": "link"
+        }
+      ],
+      "hint": "💡 Cụm tự nhiên là 'dial-up connection'."
+    },
+    {
+      "id": 24,
+      "question": "24. Choose the correct word for gap (24):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "signs"
+        },
+        {
+          "letter": "B",
+          "text": "signals"
+        },
+        {
+          "letter": "C",
+          "text": "alarms"
+        },
+        {
+          "letter": "D",
+          "text": "rings"
+        }
+      ],
+      "hint": "💡 Khi internet dial-up kết nối, máy gửi các 'signals' và có thể nghe thấy âm thanh."
+    },
+    {
+      "id": 25,
+      "question": "25. Choose the correct word for gap (25):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "finish"
+        },
+        {
+          "letter": "B",
+          "text": "welcome"
+        },
+        {
+          "letter": "C",
+          "text": "receive"
+        },
+        {
+          "letter": "D",
+          "text": "buy"
+        }
+      ],
+      "hint": "💡 Cụm đối xứng: 'make or receive phone calls'."
+    },
+    {
+      "id": 26,
+      "question": "26. Choose the correct word for gap (26):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "creates"
+        },
+        {
+          "letter": "B",
+          "text": "adds"
+        },
+        {
+          "letter": "C",
+          "text": "separates"
+        },
+        {
+          "letter": "D",
+          "text": "connects"
+        }
+      ],
+      "hint": "💡 Internet 'connects' computers, satellites và devices trong cùng một network."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 21,
+      "ans": "C",
+      "key": "C (available) đúng vì nếu một thứ 'is available', nó có sẵn để mọi người có hoặc sử dụng. A sai vì nếu dùng 'effective' thì cấu trúc phải là 'followed by as or for'. B sai vì 'accurate' nghĩa là chính xác, thường mô tả một người/sự kiện. D sai vì câu cần diễn đạt internet trở nên có sẵn cho công chúng, không phải một 'realistic opportunity'."
+    },
+    {
+      "q": 22,
+      "ans": "D",
+      "key": "D (offer) đúng vì ngân hàng 'offer a service to their customers'. A sai vì 'allow' cần cấu trúc như 'The banks allowed their customers to use online banking'. B sai vì 'afford' là có đủ tiền để trả cho thứ gì đó. C sai vì 'deliver' là chuyển/đưa vật gì đó đến một nơi."
+    },
+    {
+      "q": 23,
+      "ans": "A",
+      "key": "A (connection) đúng vì internet cần một 'connection' để hoạt động. B sai vì 'contact' nghĩa là liên lạc với ai đó. C sai vì thời đó điện thoại di động không được dùng cho internet. D sai vì 'link' thường chỉ mối liên hệ giữa hai thứ."
+    },
+    {
+      "q": 24,
+      "ans": "B",
+      "key": "B (signals) đúng vì 'signals' được tạo ra khi internet đang kết nối và đôi khi bạn có thể nghe thấy chúng. A sai vì bạn không thể 'hear a sign'. C sai vì 'alarm' là âm thanh lớn để cảnh báo nguy hiểm. D sai vì 'ring' là tiếng chuông điện thoại, không phải internet."
+    },
+    {
+      "q": 25,
+      "ans": "C",
+      "key": "C (receive) đúng vì nếu bạn nhận một cuộc gọi, bạn 'receive a phone call'. A sai vì 'finish a call' không hợp với cấu trúc 'make or ... phone calls'. B sai vì 'welcome' không dùng với phone calls. D sai vì bạn không 'buy phone calls'."
+    },
+    {
+      "q": 26,
+      "ans": "D",
+      "key": "D (connects) đúng vì khi các thứ được kết nối với nhau, chúng hoạt động hoặc liên kết với nhau. A sai vì internet không 'create' các thiết bị này. B sai vì 'add' thường cần 'add something to something else'. C sai vì nghĩa trái ngược: các thiết bị được kết nối bởi internet, không bị tách rời."
+    }
+  ]
+}

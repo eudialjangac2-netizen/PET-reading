@@ -1,0 +1,109 @@
+{
+  "id": "test4-part6",
+  "partType": "part6",
+  "exerciseName": "Test 4 - Part 6",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "27": [
+      "ones"
+    ],
+    "28": [
+      "have",
+      "need"
+    ],
+    "29": [
+      "hours"
+    ],
+    "30": [
+      "not"
+    ],
+    "31": [
+      "Each",
+      "Every",
+      "each",
+      "every"
+    ],
+    "32": [
+      "through"
+    ]
+  },
+  "article": {
+    "title": "Emergency Services",
+    "author": "",
+    "image": "https://images.unsplash.com/photo-1599700403969-f77b3aa74837?w=500",
+    "paragraphs": [
+      "There are many types of emergency services, but the three main <span class='gap-tag'>(27)</span>.................... are the police, fire and ambulance. If you need any of these services in the United Kingdom, you <span class='gap-tag'>(28)</span>.................... to dial 999 and tell the operator what service you want. The operator will then put you through to the control room for that service. All the emergency services operate 24 <span class='gap-tag'>(29)</span>.................... a day, 7 days a week.",
+      "Whatever service you request, their aim is to get to the scene of the emergency within 8 minutes. Sometimes this is <span class='gap-tag'>(30)</span>.................... possible especially if the situation is in the middle of the countryside, far from the city. <span class='gap-tag'>(31)</span>.................... emergency service has their own special vehicles with all the equipment they need. They are all trained to drive at very fast speeds very safely. This includes driving <span class='gap-tag'>(32)</span>.................... red lights."
+    ]
+  },
+  "questions": [
+    {
+      "id": 27,
+      "label": "Câu 27",
+      "placeholder": "Nhập từ cho ô (27)...",
+      "hint": "💡 Cần một đại từ thay thế cho danh từ số nhiều 'types/services' đã nhắc trước đó."
+    },
+    {
+      "id": 28,
+      "label": "Câu 28",
+      "placeholder": "Nhập từ cho ô (28)...",
+      "hint": "💡 Cần động từ hiện tại mang nghĩa 'phải/cần phải'; cả 'have to' và 'need to' đều phù hợp."
+    },
+    {
+      "id": 29,
+      "label": "Câu 29",
+      "placeholder": "Nhập từ cho ô (29)...",
+      "hint": "💡 Cụm cố định: '24 ___ a day'."
+    },
+    {
+      "id": 30,
+      "label": "Câu 30",
+      "placeholder": "Nhập từ cho ô (30)...",
+      "hint": "💡 Ngữ cảnh nói việc đến nơi trong 8 phút đôi khi là điều không thể."
+    },
+    {
+      "id": 31,
+      "label": "Câu 31",
+      "placeholder": "Nhập từ cho ô (31)...",
+      "hint": "💡 Cần determiner mang nghĩa 'mỗi' để nói về tất cả các thành viên trong một nhóm."
+    },
+    {
+      "id": 32,
+      "label": "Câu 32",
+      "placeholder": "Nhập từ cho ô (32)...",
+      "hint": "💡 Cụm 'drive through red lights' = lái xe vượt/đi qua đèn đỏ."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 27,
+      "ans": "ones",
+      "key": "<strong>ones</strong>: dùng như một đại từ để cung cấp thêm thông tin về thứ đã được nhắc trước đó; ở đây nó thay cho các 'emergency services'."
+    },
+    {
+      "q": 28,
+      "ans": "have / need",
+      "key": "<strong>have / need</strong>: cả hai đều đúng vì ở thì hiện tại, 'have to' hoặc 'need to' đều diễn đạt nghĩa 'phải/cần phải'."
+    },
+    {
+      "q": 29,
+      "ans": "hours",
+      "key": "<strong>hours</strong>: cần một danh từ ở đây vì nói về thời gian; cụm đúng là '24 hours a day'."
+    },
+    {
+      "q": 30,
+      "ans": "not",
+      "key": "<strong>not</strong>: nếu tình huống ở giữa vùng nông thôn, xa thành phố, dịch vụ khẩn cấp sẽ cần nhiều thời gian hơn để đến nơi; vì vậy mục tiêu trong 8 phút đôi khi là 'not possible'."
+    },
+    {
+      "q": 31,
+      "ans": "Each / Every",
+      "key": "<strong>Each / Every</strong>: đều đúng. Cần một determiner để chỉ tất cả các thành viên của một nhóm, từng dịch vụ khẩn cấp một."
+    },
+    {
+      "q": 32,
+      "ans": "through",
+      "key": "<strong>through</strong>: giới từ này diễn tả chuyển động từ một phía sang phía bên kia; ở đây là cụm 'drive through red lights'."
+    }
+  ]
+}

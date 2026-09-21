@@ -1,0 +1,142 @@
+{
+  "id": "test4-part1",
+  "partType": "part1",
+  "exerciseName": "Test 4 - Part 1",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "1": "C",
+    "2": "B",
+    "3": "A",
+    "4": "C",
+    "5": "B"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #1aa7e8;padding:18px;border-radius:6px;background:#fff;'><div style='font-weight:800;color:#169bd5;font-size:16px;margin-bottom:8px;text-align:center;'>WRITING COMPETITION</div><div>This is your chance to win £100.<br>You must be under 18 years old to enter.<br>To win the prize, write a short story about a magical place with magical people.<br><br><em>Please take your entry to Mr Smith's office before 4pm on Friday.</em></div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Stories must describe a true event the writer has experienced."
+        },
+        {
+          "letter": "B",
+          "text": "You must post your finished work to Mr Smith's office."
+        },
+        {
+          "letter": "C",
+          "text": "Adults are not allowed to take part in the competition."
+        }
+      ],
+      "hint": "💡 Chú ý câu 'You must be under 18 years old to enter' — ai được phép tham gia?"
+    },
+    {
+      "id": 2,
+      "promptQuestion": "Anyone interested in the job must",
+      "leftContentHTML": "<div style='border:2px solid #1aa7e8;padding:18px;border-radius:14px;background:#eaf8ff;'><div style='font-weight:800;color:#169bd5;font-size:16px;margin-bottom:8px;text-align:center;'>WANTED</div><div>We need someone to look after our garden during the summer. You will need to cut the grass and clear the leaves.<br>Your services will be needed twice a week, on Tuesdays and Fridays. Please call us for more information on 888-1115.</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "contact the family by email."
+        },
+        {
+          "letter": "B",
+          "text": "work twice weekly throughout the summer period."
+        },
+        {
+          "letter": "C",
+          "text": "have some gardening experience to be considered for the job."
+        }
+      ],
+      "hint": "💡 Tìm thông tin về tần suất làm việc: 'twice a week, on Tuesdays and Fridays'."
+    },
+    {
+      "id": 3,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #4aa3df;padding:18px;border-radius:8px;background:#fff;'><div style='font-size:13px;color:#666;'><strong>To:</strong> Andrew</div><div style='font-size:13px;color:#666;margin-bottom:8px;'><strong>From:</strong> Peter</div><div>Hi Andrew,<br>Do you still have the geography book I lent you last week? I need it back urgently. I have a test next week and my teacher said that information in that book will be used.<br>Please can you bring it to me?<br>Thanks.<br>Peter</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Andrew borrowed a book from Peter."
+        },
+        {
+          "letter": "B",
+          "text": "Peter is not in a hurry to get the book back."
+        },
+        {
+          "letter": "C",
+          "text": "Peter has to hand in a geography project next week."
+        }
+      ],
+      "hint": "💡 'the geography book I lent you' cho biết ai cho ai mượn sách."
+    },
+    {
+      "id": 4,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #333;padding:18px;border-radius:12px;background:#fffef9;'><div style='font-weight:800;color:#169bd5;font-size:15px;margin-bottom:8px;text-align:center;'>Non-Stop Trains</div><div>Trains will not be stopping at the next station today. This is because there is a flood at the entrance of the station.<br>Our staff are working on the problem now. We hope that trains will stop there tomorrow.</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nothing is being done at the moment to solve the issue."
+        },
+        {
+          "letter": "B",
+          "text": "Trains will not run until the station opens again tomorrow."
+        },
+        {
+          "letter": "C",
+          "text": "Passengers cannot exit at the next station."
+        }
+      ],
+      "hint": "💡 'Trains will not be stopping at the next station today' nghĩa là hành khách có xuống ở ga đó được không?"
+    },
+    {
+      "id": 5,
+      "promptQuestion": "John's mum",
+      "leftContentHTML": "<div style='border:2px solid #4aa3df;padding:18px;border-radius:18px;background:#eef8ff;max-width:300px;'><div>John,<br>When you go to town today can you get me a few things? I need a packet of flour, a bottle of blue top milk and a packet of sugar. If they don't have blue top, please get green top.<br>Thanks<br>Mum</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "would rather get green top milk rather than blue top."
+        },
+        {
+          "letter": "B",
+          "text": "is asking John to do her a favour when he is in town."
+        },
+        {
+          "letter": "C",
+          "text": "will be going to town later today but has no time for shopping."
+        }
+      ],
+      "hint": "💡 Mẹ đang nhờ John mua vài thứ khi cậu ấy đi vào thị trấn."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 1,
+      "ans": "C",
+      "key": "C đúng vì thông báo nói 'You must be under eighteen years old to enter'. A sai vì không có yêu cầu câu chuyện phải là sự kiện có thật; ngược lại, câu chuyện phải nói về một nơi kỳ diệu với những con người kỳ diệu nên phải mang tính tưởng tượng. B sai vì người dự thi phải mang bài đến văn phòng Mr Smith, không phải gửi qua bưu điện."
+    },
+    {
+      "q": 2,
+      "ans": "B",
+      "key": "B đúng vì công việc cần người làm 'twice a week' trong mùa hè. A sai vì thông báo yêu cầu gọi điện, không phải email. C sai vì người làm chỉ cần cắt cỏ và dọn lá; không có yêu cầu phải có kinh nghiệm làm vườn."
+    },
+    {
+      "q": 3,
+      "ans": "A",
+      "key": "A đúng vì Peter nói 'the geography book I lent you last week', nghĩa là Andrew đã mượn sách của Peter. B sai vì Peter nói cần sách lại 'urgently'. C sai vì Peter cần sách để học cho một bài kiểm tra, không phải làm dự án."
+    },
+    {
+      "q": 4,
+      "ans": "C",
+      "key": "C đúng vì biển báo nói các chuyến tàu sẽ không dừng ở ga tiếp theo hôm nay do lũ ở lối vào ga. A sai vì nhân viên đang xử lý vấn đề ngay lúc đó. B sai vì tàu vẫn chạy, chỉ không dừng ở ga tiếp theo."
+    },
+    {
+      "q": 5,
+      "ans": "B",
+      "key": "B đúng vì mẹ của John nhờ cậu mua giúp một số đồ khi đi vào thị trấn. A sai vì mẹ ưu tiên sữa nắp xanh dương; chỉ nếu không có thì mới lấy nắp xanh lá. C sai vì không có thông tin rằng mẹ sẽ tự đi vào thị trấn hôm nay."
+    }
+  ]
+}

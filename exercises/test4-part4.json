@@ -1,0 +1,99 @@
+{
+  "id": "test4-part4",
+  "partType": "part4",
+  "exerciseName": "Test 4 - Part 4",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "16": "C",
+    "17": "F",
+    "18": "A",
+    "19": "E",
+    "20": "H"
+  },
+  "gapIds": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "article": {
+    "title": "The Great Fire Of London",
+    "author": "",
+    "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=500",
+    "paragraphs": [
+      "This week we're doing a project at school about London. Over 350 years ago, London suffered a terrible event. On the 2nd September 1666, a baker was making bread and cakes for the next day. It was one o'clock in the morning when a very small piece of burning wood came out of the oven and set fire to the building. In those days, as all buildings were made of wood, the fire moved very quickly. There was a family living above the bakery who couldn't get out down the stairs. {{gap:16}} Besides being made of wood, the houses were also built very close together. They were almost touching each other. {{gap:17}} But this was not the only problem. It hadn't rained for two months, everywhere was dry and strong winds blew across London.",
+      "Two days after the fire started, half of London was on fire. {{gap:18}} Even the king came out to help the firemen. The fire destroyed important buildings, including the famous St Paul's Cathedral. It was very lucky that the Tower of London escaped the fire. In an attempt to stop the fire, the firemen destroyed many buildings to create a big gap across which the fire couldn't travel. {{gap:19}} By the 6th September the fire had been put out. London had burned for almost five days. Only 20 percent of London was not burnt but hundreds of thousands of people were left without homes. It was amazing that only six people died in this terrible event.",
+      "{{gap:20}} Just before the fire, there had been a horrible disease which was killing lots of people. The fire destroyed the disease. Architects helped to rebuild London and built wider streets so a new fire couldn't move quickly."
+    ]
+  },
+  "options": [
+    {
+      "letter": "A",
+      "title": "Everybody was trying to put out the fire.",
+      "body": ""
+    },
+    {
+      "letter": "B",
+      "title": "The baker was able to put out the fire with a bucket of water.",
+      "body": ""
+    },
+    {
+      "letter": "C",
+      "title": "They escaped by climbing out of the window and jumping to the ground.",
+      "body": ""
+    },
+    {
+      "letter": "D",
+      "title": "He made the firemen cups of tea and sandwiches.",
+      "body": ""
+    },
+    {
+      "letter": "E",
+      "title": "This didn't stop it, but it did slow it down a lot.",
+      "body": ""
+    },
+    {
+      "letter": "F",
+      "title": "The fire went from house to house very quickly and the firemen had trouble controlling it.",
+      "body": ""
+    },
+    {
+      "letter": "G",
+      "title": "The people caught buses to get out of London.",
+      "body": ""
+    },
+    {
+      "letter": "H",
+      "title": "People say that, in a way, the fire did London some good, too.",
+      "body": ""
+    }
+  ],
+  "explanation": [
+    {
+      "q": 16,
+      "ans": "C",
+      "key": "C đúng vì câu này giải thích gia đình đã thoát khỏi đám cháy bằng cách nào. B sai vì ngọn lửa đã lan rộng nên người thợ làm bánh không dập được nó."
+    },
+    {
+      "q": 17,
+      "ans": "F",
+      "key": "F đúng vì câu trước giải thích các căn nhà nằm rất gần nhau, còn F là kết quả của tình trạng đó: lửa lan rất nhanh từ nhà này sang nhà khác. Câu sau lại giới thiệu thêm một vấn đề khác của vụ cháy."
+    },
+    {
+      "q": 18,
+      "ans": "A",
+      "key": "A đúng vì bài cho biết mọi người đều tham gia giúp đỡ và câu sau nói rằng ngay cả nhà vua cũng ra giúp lính cứu hỏa."
+    },
+    {
+      "q": 19,
+      "ans": "E",
+      "key": "E đúng vì câu 'This didn't stop it...' dùng 'This' để chỉ khoảng trống lớn mà lính cứu hỏa tạo ra nhằm ngăn lửa lan qua thành phố."
+    },
+    {
+      "q": 20,
+      "ans": "H",
+      "key": "H đúng vì ngay sau đó bài giải thích điều tốt mà vụ cháy mang lại: nó đã góp phần tiêu diệt dịch bệnh."
+    }
+  ]
+}

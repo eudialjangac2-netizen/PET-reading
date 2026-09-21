@@ -1,0 +1,169 @@
+{
+  "id": "test4-part3",
+  "partType": "part3",
+  "exerciseName": "Test 4 - Part 3",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "11": "C",
+    "12": "A",
+    "13": "D",
+    "14": "C",
+    "15": "C"
+  },
+  "article": {
+    "title": "Getting A Weekend Job",
+    "author": "by Paula Mark, aged 16",
+    "image": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=500",
+    "paragraphs": [
+      "Last summer I wanted to start earning money so I could save to go on holiday with my friends. But if you are under eighteen, you are limited to what jobs you can do. I applied for jobs at a few shops in my neighbourhood but none of them had any jobs for teens. I thought I would never find a weekend job. Then, one day my mum gave me the local newspaper and showed me an advert for the local zoo. They were looking for teenagers to work at the weekend. So I immediately applied for that job online.",
+      "Within a few days, I got a phone call asking me to go for an interview. I put on my best clothes and went to the zoo's office the next day to meet the manager. The interview must have gone very well because when I got home, I got a phone call from him saying that I got the job. He asked me if I could start the following Saturday. And of course I said yes!",
+      "On Saturday morning I got up very early and went to the zoo. I was there too early and the gates were still locked. At nine o'clock the manager arrived to open the zoo. He took me to the staffroom and gave me a uniform which I had to put on over my normal clothes. He also gave me a pair of boots. He told me that the ground was wet and dirty everywhere, so I would need them.",
+      "My first job was to clean the elephant house. It was great fun because I was with another girl that had been working there for some months. She was really friendly and gave me lots of tips. And there were two baby elephants trying to play with us. They were very funny! My colleague told me that our next job was to clean the lion's cage. I was really scared but luckily the lion wasn't in the cage at that point.",
+      "It's been a couple of months since I started my weekend job and each week I am taken to work with other animals and people. I really love it!"
+    ]
+  },
+  "questions": [
+    {
+      "id": 11,
+      "question": "11. How did Paula hear about the job at the zoo?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "She was told about the job opening by a friend."
+        },
+        {
+          "letter": "B",
+          "text": "She went to the zoo to ask about the job."
+        },
+        {
+          "letter": "C",
+          "text": "One of her parents saw the ad first and informed her."
+        },
+        {
+          "letter": "D",
+          "text": "She saw the advert online."
+        }
+      ],
+      "hint": "💡 Đoạn 1: mẹ Paula đưa cô tờ báo địa phương và chỉ cho cô quảng cáo của sở thú."
+    },
+    {
+      "id": 12,
+      "question": "12. When did the zoo manager call Paula to say she was successful?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "on the same day she met with him"
+        },
+        {
+          "letter": "B",
+          "text": "on Saturday morning"
+        },
+        {
+          "letter": "C",
+          "text": "a few days after she applied for the job"
+        },
+        {
+          "letter": "D",
+          "text": "at the weekend"
+        }
+      ],
+      "hint": "💡 Sau buổi phỏng vấn, khi Paula về nhà thì quản lý gọi điện báo cô đã được nhận."
+    },
+    {
+      "id": 13,
+      "question": "13. What happened when Paula arrived at the zoo?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The manager was waiting for her."
+        },
+        {
+          "letter": "B",
+          "text": "She was given some boots."
+        },
+        {
+          "letter": "C",
+          "text": "She had to find the staffroom."
+        },
+        {
+          "letter": "D",
+          "text": "The zoo hadn't opened yet."
+        }
+      ],
+      "hint": "💡 Paula đến quá sớm và 'the gates were still locked'."
+    },
+    {
+      "id": 14,
+      "question": "14. What did Paula do after she met with the manager?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "She changed her clothes and put on a uniform."
+        },
+        {
+          "letter": "B",
+          "text": "She was introduced to a girl she would be working with."
+        },
+        {
+          "letter": "C",
+          "text": "She was given some work clothes and footwear."
+        },
+        {
+          "letter": "D",
+          "text": "She was taken immediately to clean the lion's cage."
+        }
+      ],
+      "hint": "💡 Quản lý đưa cho cô uniform và một đôi boots."
+    },
+    {
+      "id": 15,
+      "question": "15. What would Paula text a friend who is looking for a weekend job?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It's so disappointing that there aren't any jobs available for teens these days."
+        },
+        {
+          "letter": "B",
+          "text": "I'm not sure if you'll be able to have a part-time job while you are still at school. It's so hard."
+        },
+        {
+          "letter": "C",
+          "text": "I'm sure something you like will come up. I am looking forward to going to work every weekend."
+        },
+        {
+          "letter": "D",
+          "text": "Knowing the right people is the only thing that can get you into a nice job."
+        }
+      ],
+      "hint": "💡 Paula đã tìm được việc và nói 'I really love it!'. Chọn tin nhắn thể hiện thái độ tích cực đó."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 11,
+      "ans": "C",
+      "key": "C đúng vì Paula nói ở đoạn 1: 'Then, one day my mum gave me the local newspaper and showed me an advert for the local zoo. They were looking for teenagers to work at the weekend.' A sai vì mẹ cô mới là người nói cho cô biết. B sai vì cô nộp đơn online. D sai vì mẹ cô thấy quảng cáo trong báo."
+    },
+    {
+      "q": 12,
+      "ans": "A",
+      "key": "A đúng vì Paula nói ở đoạn 2: 'The interview must have gone very well because when I got home, I got a phone call from him saying that I got the job.' B sai vì quản lý gọi cô về việc bắt đầu vào thứ Bảy, chứ không gọi vào sáng thứ Bảy. C sai vì ông gọi cô ngay sau khi cô về nhà sau buổi phỏng vấn, tức là cùng ngày. D sai vì đó là cùng ngày phỏng vấn."
+    },
+    {
+      "q": 13,
+      "ans": "D",
+      "key": "D đúng vì Paula nói ở đoạn 3: 'I was there too early and the gates were still locked.' A sai vì quản lý chưa đến khi cô tới. B và C sai vì các việc đó xảy ra sau khi sở thú mở cửa."
+    },
+    {
+      "q": 14,
+      "ans": "C",
+      "key": "C đúng vì Paula nói quản lý 'gave me a uniform which I had to put on over my normal clothes. He also gave me a pair of boots'. A sai vì cô mặc uniform bên ngoài quần áo thường. B sai vì cô gặp cô gái kia sau đó. D sai vì cô đến elephant house trước."
+    },
+    {
+      "q": 15,
+      "ans": "C",
+      "key": "C đúng vì Paula đã tìm được việc và cô rất thích nó. A sai vì cô không thất vọng nữa. B sai vì cô đã tìm được một công việc bán thời gian dù vẫn đi học. D sai vì Paula không quen ai ở sở thú nhưng vẫn tìm được việc."
+    }
+  ]
+}

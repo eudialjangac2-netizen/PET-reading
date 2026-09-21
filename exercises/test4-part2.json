@@ -1,0 +1,129 @@
+{
+  "id": "test4-part2",
+  "partType": "part2",
+  "exerciseName": "Test 4 - Part 2",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "6": "D",
+    "7": "H",
+    "8": "A",
+    "9": "G",
+    "10": "E"
+  },
+  "people": [
+    {
+      "id": 6,
+      "name": "John",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "text": "John is travelling with his older brother and his girlfriend. They would like to see the sea from their cabin and have a place for their clothes. They want to be able to have something to drink or eat in the cabin and not have to pay extra. They don’t want to pay for a balcony either.",
+      "hint": "💡 Cần sea view + wardrobe + đồ uống/snack đã bao gồm trong giá + không cần balcony."
+    },
+    {
+      "id": 7,
+      "name": "Frank",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "text": "Frank’s dad won the lottery and wants to take their family of four on the best cruise. They want a cabin with more than one bedroom. Frank wants to celebrate every night in their cabin with hot meals and drinks. He also wants a large balcony.",
+      "hint": "💡 Cần cabin cao cấp, hơn 1 phòng ngủ, có hot meals/drinks và balcony lớn."
+    },
+    {
+      "id": 8,
+      "name": "Donna",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150",
+      "text": "Donna is travelling on her own for her sixteenth birthday. She wants to spend very little money. She doesn’t mind not seeing the sea from her cabin. She is planning to spend most of the time enjoying the entertainment on the ship, so will only use the cabin at night.",
+      "hint": "💡 Đi một mình, ưu tiên rẻ nhất, không cần sea view, chỉ dùng cabin để ngủ."
+    },
+    {
+      "id": 9,
+      "name": "Jane",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+      "text": "Jane’s grandma is celebrating her 60th birthday with her husband and granddaughter on a cruise. Jane would like a separate bedroom in the cabin. She also doesn’t want meals in her cabin but she would like a living room and a balcony.",
+      "hint": "💡 Cần 2 phòng ngủ, living room và balcony; không cần meals trong cabin."
+    },
+    {
+      "id": 10,
+      "name": "Andrew",
+      "avatar": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150",
+      "text": "Andrew is travelling with his dad and they want to be very comfortable. A double bed each, in different rooms, would be perfect. He would like to have a small balcony in his bedroom. They may need drinks and snacks from the fridge.",
+      "hint": "💡 Cần 2 phòng ngủ, mỗi người 1 double bed, balcony nhỏ và fridge có drinks/snacks."
+    }
+  ],
+  "options": [
+    {
+      "letter": "A",
+      "title": "Standard",
+      "body": "The Standard cabin is the cheapest cabin on the ship. It's an inside cabin which means it doesn't have any windows. There are two beds, one on top of another. The toilet includes a shower and a sink. There isn't a wardrobe or a chest of drawers. This is great for people who want to save money and only sleep in the cabin."
+    },
+    {
+      "letter": "B",
+      "title": "Standard Plus",
+      "body": "The Standard Plus cabin is also an inside cabin and doesn't have any windows. There are three beds, two on the right and one on the left. There is a small wardrobe with room for a few clothes. The shower room has a toilet and a sink. This is great for families with one child who want a cheaper cabin."
+    },
+    {
+      "letter": "C",
+      "title": "Super",
+      "body": "The Super cabin is bigger than the standard one. It has a double and a single bed. This cabin has a small window with a view of the sea. There is a large wardrobe with drawers for your clothes. There is a toilet with a shower and sink. The fridge in the corner has cold drinks and snacks which you have to pay for."
+    },
+    {
+      "letter": "D",
+      "title": "Super Extra",
+      "body": "The Super Extra is like the Super cabin, but with the difference that all the drinks and snacks in the fridge are included in the price. The fridge is full up every day. There is a double and a single bed with a large wardrobe. The shower room has a toilet and a sink. The cabin has a sea view through a small window."
+    },
+    {
+      "letter": "E",
+      "title": "Suite",
+      "body": "The Suite cabin has two separate bedrooms both with double beds. Each room has a large wardrobe. There is access to a small balcony from both bedrooms. Each room has a large smart television. The cabin has a large shower room with a toilet and a sink. The fridge has cold drinks and snacks, all included in the price. Free cold drinks and snacks available."
+    },
+    {
+      "letter": "F",
+      "title": "Suite Plus",
+      "body": "The Suite Plus is similar to the Suite cabin. The difference is that one of the bedrooms is bigger and has a sofa next to the door to the balcony. Each room has a double bed and a wardrobe. The toilet has a big shower and a sink. The drinks and snacks in the fridge aren't included in the price."
+    },
+    {
+      "letter": "G",
+      "title": "Deluxe",
+      "body": "The Deluxe cabin is one of the best cabins on the ship. It has four rooms, two bedrooms, a bathroom and a living room. The living room has a sofa and a large table. The balcony also has a large table with chairs. The snacks and drinks are free. The bathroom has a big bath and a shower unit."
+    },
+    {
+      "letter": "H",
+      "title": "Deluxe Super",
+      "body": "The Deluxe Super includes meals in your cabin. Our waiters bring the food straight to the table in your cabin. There are two bedrooms with a double bed and a living room. The bathroom has a big bath and a shower. There is a large balcony with a large table and chairs. The fridge in the living room is full of snacks and drinks and are included in the price."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 6,
+      "name": "John",
+      "demand": "Sea view, chỗ để quần áo, đồ uống/snack không trả thêm, không cần balcony.",
+      "ans": "D. Super Extra",
+      "key": "D đúng vì cabin này có sea view, large wardrobe và drinks/snacks trong fridge đã bao gồm trong giá. John không muốn trả cho balcony, và cabin này không có balcony."
+    },
+    {
+      "q": 7,
+      "name": "Frank",
+      "demand": "Cabin tốt nhất, hơn một phòng ngủ, hot meals/drinks và balcony lớn.",
+      "ans": "H. Deluxe Super",
+      "key": "H đúng vì cabin có hai phòng ngủ, living room, large balcony và meals được phục vụ ngay trong cabin; snacks và drinks cũng đã bao gồm trong giá."
+    },
+    {
+      "q": 8,
+      "name": "Donna",
+      "demand": "Đi một mình, muốn rẻ nhất, không cần nhìn ra biển, chủ yếu chỉ ngủ trong cabin.",
+      "ans": "A. Standard",
+      "key": "A đúng vì đây là cabin rẻ nhất, không có cửa sổ và được mô tả là phù hợp cho người muốn tiết kiệm tiền và chỉ ngủ trong cabin."
+    },
+    {
+      "q": 9,
+      "name": "Jane",
+      "demand": "Cần phòng ngủ riêng, living room và balcony; không cần meals trong cabin.",
+      "ans": "G. Deluxe",
+      "key": "G đúng vì có hai phòng ngủ, living room và balcony. Cabin này không nêu dịch vụ mang meals vào phòng."
+    },
+    {
+      "q": 10,
+      "name": "Andrew",
+      "demand": "Hai phòng ngủ riêng, mỗi phòng double bed, balcony nhỏ và drinks/snacks.",
+      "ans": "E. Suite",
+      "key": "E đúng vì Suite có hai phòng ngủ riêng, mỗi phòng một double bed, có lối ra small balcony và fridge với cold drinks/snacks đã bao gồm trong giá."
+    }
+  ]
+}
