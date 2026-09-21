@@ -243,7 +243,7 @@
 
     const content = document.getElementById("ftMainContent");
     content.innerHTML = exercises.map((ex, i) => `
-      <div class="ft-part-view layout-${ex.layout}" data-index="${i}" style="--primary:${ex.theme ? ex.theme.primary : "#6b3ba7"}; --primary-light:${ex.theme ? ex.theme.primaryLight : "#a076db"}; --border-color:${ex.theme ? ex.theme.borderColor : "#e2d3f3"};">
+      <div class="ft-part-view layout-${ex.layout}" data-index="${i}" style="--primary:${ex.theme ? ex.theme.primary : "#2D8FCB"}; --primary-light:${ex.theme ? ex.theme.primaryLight : "#8FCBF2"}; --border-color:${ex.theme ? ex.theme.borderColor : "#BEE3FA"};">
         ${ex.html}
       </div>
     `).join("");
@@ -261,8 +261,8 @@
     document.querySelectorAll(".ft-tab").forEach(tab => {
       const isActive = Number(tab.getAttribute("data-index")) === index;
       tab.classList.toggle("active", isActive);
-      tab.style.background = isActive ? (exercises[index].theme ? exercises[index].theme.primary : "#6b3ba7") : "";
-      tab.style.borderColor = isActive ? (exercises[index].theme ? exercises[index].theme.primary : "#6b3ba7") : "";
+      tab.style.background = isActive ? (exercises[index].theme ? exercises[index].theme.primary : "#2D8FCB") : "";
+      tab.style.borderColor = isActive ? (exercises[index].theme ? exercises[index].theme.primary : "#2D8FCB") : "";
     });
 
     if (scrollToGlobalIndex) {
