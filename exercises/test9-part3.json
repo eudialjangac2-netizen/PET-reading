@@ -1,0 +1,169 @@
+{
+  "id": "test9-part3",
+  "partType": "part3",
+  "exerciseName": "Ready for B1 - Test 9 - Part 3",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "11": "B",
+    "12": "C",
+    "13": "B",
+    "14": "B",
+    "15": "C"
+  },
+  "article": {
+    "title": "A Place in the Country",
+    "author": "Young writer Adam Spears tells us about his favourite place to write",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500",
+    "paragraphs": [
+      "I think everyone would like to have their own special place in the country, where no one can disturb them, and where they can do whatever they like, any time of day. I'm lucky, because I've found my own little private spot. Even though it's not mine – it's my grandmother's cottage – I'm sure I'll enjoy it for years.",
+      "It's probably because I live in London with my large, noisy family that I love being in the country so much. Being an author means having to find ideas and plan the books I'm going to write. For me, this requires space, time and calm. I'm not shy or unfriendly, but sometimes I need to have some time on my own so that I can think and do my most important work. Instead, in the hidden little cottage, I can sit at my desk and think for hours, without a single interruption, apart from my grandmother sometimes offering me some of her lovely homemade cake!",
+      "In the afternoons I go for long walks in the hills which are all around the cottage, enjoying the fresh air. The weather here can be as wet or cold as anywhere in Britain, but it doesn't bother me being out in the cold. I can be sure of being alone with my thoughts, and anyway all I need is a good, thick coat and a hot cup of tea as soon as I get inside again.",
+      "I do a lot of my best thinking outdoors. It must be the wind and the soft colours of the countryside. If I'm having difficulty thinking of a new story an afternoon spent in the woods and hills usually helps me to find a new idea.",
+      "Once I've planned a book, I go back to the city and finish it among my family and friends. Writing a book is easy to me – it's the original idea and the planning that takes an effort. I suppose you're wondering where my hidden cottage is? Well, you can be certain I'll never tell you: it's too important for me to share with anyone!"
+    ]
+  },
+  "questions": [
+    {
+      "id": 11,
+      "question": "11. What is the writer's main purpose in writing the text?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To explain why he is a writer."
+        },
+        {
+          "letter": "B",
+          "text": "To explain his ideas about writing."
+        },
+        {
+          "letter": "C",
+          "text": "To tell us where his cottage is."
+        },
+        {
+          "letter": "D",
+          "text": "To tell us why he likes to be in the country."
+        }
+      ],
+      "hint": "💡 Toàn bài tập trung vào nơi và điều kiện giúp Adam nghĩ ý tưởng và lập kế hoạch cho việc viết."
+    },
+    {
+      "id": 12,
+      "question": "12. From the text, the reader understands that the writer is",
+      "options": [
+        {
+          "letter": "A",
+          "text": "very private and not very sociable."
+        },
+        {
+          "letter": "B",
+          "text": "a strong believer in the environment."
+        },
+        {
+          "letter": "C",
+          "text": "a writer who tries to produce good work."
+        },
+        {
+          "letter": "D",
+          "text": "more interested in the country than writing."
+        }
+      ],
+      "hint": "💡 Adam nói việc tìm ý tưởng và lập kế hoạch cần nhiều nỗ lực và anh tìm môi trường tốt nhất để làm việc đó."
+    },
+    {
+      "id": 13,
+      "question": "13. The writer believes that",
+      "options": [
+        {
+          "letter": "A",
+          "text": "the cold weather is the same in all parts of Britain."
+        },
+        {
+          "letter": "B",
+          "text": "being outside can help him think."
+        },
+        {
+          "letter": "C",
+          "text": "people shouldn't be afraid of cold weather."
+        },
+        {
+          "letter": "D",
+          "text": "he can't work well indoors."
+        }
+      ],
+      "hint": "💡 'I do a lot of my best thinking outdoors' và đi bộ trong woods/hills thường giúp anh tìm ý tưởng mới."
+    },
+    {
+      "id": 14,
+      "question": "14. Why doesn't the writer tell us where his cottage is?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The owner doesn't want people to know."
+        },
+        {
+          "letter": "B",
+          "text": "The writer wants it to remain a secret."
+        },
+        {
+          "letter": "C",
+          "text": "The writer's family want to share it with him."
+        },
+        {
+          "letter": "D",
+          "text": "The writer is worried about noise and pollution."
+        }
+      ],
+      "hint": "💡 Câu cuối: 'I'll never tell you: it's too important for me to share with anyone!'"
+    },
+    {
+      "id": 15,
+      "question": "15. Which of the following best describes the writer?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A young writer who hates the city."
+        },
+        {
+          "letter": "B",
+          "text": "A lonely writer who wants to protect the countryside."
+        },
+        {
+          "letter": "C",
+          "text": "A writer who finds it easier to think among trees than people."
+        },
+        {
+          "letter": "D",
+          "text": "A hard-working writer who finds city life difficult."
+        }
+      ],
+      "hint": "💡 Anh vẫn quay lại thành phố để hoàn thành sách nhưng phần tìm ý tưởng hiệu quả nhất lại diễn ra ngoài thiên nhiên."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 11,
+      "ans": "B",
+      "key": "B đúng vì bài viết chủ yếu giải thích Adam tìm ý tưởng, lập kế hoạch và sử dụng không gian yên tĩnh ở miền quê như thế nào để hỗ trợ việc viết. D chỉ là một phần của bài, còn trọng tâm rộng hơn là quá trình viết và suy nghĩ của anh."
+    },
+    {
+      "q": 12,
+      "ans": "C",
+      "key": "C đúng vì Adam chủ động tìm không gian, thời gian và sự yên tĩnh để suy nghĩ và lập kế hoạch kỹ cho sách. A sai vì anh nói rõ mình không nhút nhát hay không thân thiện. B không được bài viết đề cập. D sai vì writing vẫn là công việc chính của anh."
+    },
+    {
+      "q": 13,
+      "ans": "B",
+      "key": "B đúng vì Adam nói 'I do a lot of my best thinking outdoors' và khi bí ý tưởng, thời gian ở rừng và đồi thường giúp anh nghĩ ra ý tưởng mới. A sai vì bài chỉ nói thời tiết ở đó có thể lạnh và ướt như bất cứ nơi nào khác ở Britain. C và D đều không được khẳng định."
+    },
+    {
+      "q": 14,
+      "ans": "B",
+      "key": "B đúng vì câu cuối nói anh sẽ không bao giờ tiết lộ vị trí cottage vì nơi đó quá quan trọng để chia sẻ. A sai vì chủ nhà là bà của anh nhưng bài không nói bà yêu cầu giữ bí mật. C và D không phù hợp với thông tin trong bài."
+    },
+    {
+      "q": 15,
+      "ans": "C",
+      "key": "C đúng vì Adam giải thích rằng ở ngoài thiên nhiên, đặc biệt trong woods and hills, anh suy nghĩ tốt hơn và dễ tìm ý tưởng mới hơn. A sai vì anh không nói ghét thành phố. B sai vì anh không cô độc hay nói về bảo vệ countryside. D sai vì anh vẫn hoàn thành sách ở thành phố cùng gia đình và bạn bè."
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": "test9-part1",
+  "partType": "part1",
+  "exerciseName": "Ready for B1 - Test 9 - Part 1",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "1": "B",
+    "2": "C",
+    "3": "A",
+    "4": "A",
+    "5": "B"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #333;padding:18px;border-radius:6px;background:#fff;'><div style='font-weight:800;font-size:18px;text-align:center;'>KEEP<br>IN REFRIGERATOR<br>AFTER OPENING</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "This food must always be kept in the fridge."
+        },
+        {
+          "letter": "B",
+          "text": "Keep this in the fridge when the packet is open."
+        },
+        {
+          "letter": "C",
+          "text": "Do not leave the refrigerator open."
+        }
+      ],
+      "hint": "💡 Chú ý cụm 'after opening' — yêu cầu chỉ áp dụng sau khi bao bì đã được mở."
+    },
+    {
+      "id": 2,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #6aaa42;padding:18px;border-radius:6px;background:#eff9e8;text-align:center;'><div style='font-weight:800;font-size:17px;'>THERE IS<br>A MINIMUM HEIGHT<br>OF ONE METRE<br>FOR THIS RIDE</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "You may ride if you are under one metre."
+        },
+        {
+          "letter": "B",
+          "text": "This ride is no more than one metre high."
+        },
+        {
+          "letter": "C",
+          "text": "You must be taller than one metre to ride."
+        }
+      ],
+      "hint": "💡 'minimum height' = chiều cao tối thiểu cần đạt để được tham gia."
+    },
+    {
+      "id": 3,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #e7d75c;padding:18px;border-radius:6px;background:#fff9bd;'><div>Mum, I'm almost out of shampoo.<br>If you go to the supermarket, could you get some for me?<br>Laura</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Laura's mother needs to go to the supermarket and buy Laura some shampoo."
+        },
+        {
+          "letter": "B",
+          "text": "Laura will need another bottle of shampoo soon and hopes her mother will buy some."
+        },
+        {
+          "letter": "C",
+          "text": "Laura tells her mother to buy her some shampoo because she has no more at home."
+        }
+      ],
+      "hint": "💡 'I'm almost out of shampoo' nghĩa là gần hết, chưa phải đã hết."
+    },
+    {
+      "id": 4,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #555;padding:18px;border-radius:8px;background:#f7f7f7;'><div style='font-weight:700;margin-bottom:8px;'>End-of-term school Party</div><div>Please check our website after 15th June, for updated information.</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "For correct information, do not look at the website before 15th June."
+        },
+        {
+          "letter": "B",
+          "text": "Please look at the website on 15th June."
+        },
+        {
+          "letter": "C",
+          "text": "The website is not available until 15th June."
+        }
+      ],
+      "hint": "💡 'after 15th June' cho biết thông tin cập nhật chỉ nên được kiểm tra sau ngày đó."
+    },
+    {
+      "id": 5,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #ef5b32;padding:18px;border-radius:4px;background:#ff5b32;color:#fff;text-align:center;'><div style='font-weight:900;font-size:20px;'>DO NOT ENTER!</div><div style='font-weight:800;'>EXAM IN PROGRESS</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "You don't have to enter the room."
+        },
+        {
+          "letter": "B",
+          "text": "No one is allowed to disturb the people in the room."
+        },
+        {
+          "letter": "C",
+          "text": "Do not enter the room until the exam starts."
+        }
+      ],
+      "hint": "💡 Kỳ thi đang diễn ra, vì vậy người bên ngoài không được vào làm gián đoạn."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 1,
+      "ans": "B",
+      "key": "B đúng vì 'KEEP IN REFRIGERATOR AFTER OPENING' nghĩa là sau khi mở bao bì, sản phẩm phải được bảo quản trong tủ lạnh. A sai vì thông báo không nói sản phẩm phải luôn ở trong tủ lạnh trước khi mở. C sai vì nội dung không liên quan đến việc đóng hay mở cửa tủ lạnh."
+    },
+    {
+      "q": 2,
+      "ans": "C",
+      "key": "C đúng vì 'a minimum height of one metre' nghĩa là người chơi phải đạt ít nhất chiều cao quy định để được tham gia. A sai vì người thấp hơn một mét không đạt yêu cầu. B sai vì một mét là chiều cao tối thiểu của người chơi, không phải chiều cao của trò chơi."
+    },
+    {
+      "q": 3,
+      "ans": "A",
+      "key": "A đúng vì Laura nói cô gần hết dầu gội và nhờ mẹ mua giúp nếu mẹ đi siêu thị. B sai vì câu này thêm ý 'hopes her mother will buy some' nhưng không thể hiện rõ lời nhờ trực tiếp như mẩu tin. C sai vì Laura nói 'almost out', tức là gần hết chứ chưa hết hoàn toàn."
+    },
+    {
+      "q": 4,
+      "ans": "A",
+      "key": "A đúng vì tin nhắn yêu cầu kiểm tra website 'after 15th June' để có thông tin cập nhật. B sai vì không phải đúng ngày 15/6 mà là sau ngày đó. C sai vì website vẫn có thể truy cập trước 15/6; chỉ thông tin cập nhật mới có sau ngày này."
+    },
+    {
+      "q": 5,
+      "ans": "B",
+      "key": "B đúng vì biển 'DO NOT ENTER! EXAM IN PROGRESS' yêu cầu không vào phòng khi kỳ thi đang diễn ra, nhằm tránh làm phiền người bên trong. A sai vì đây là lệnh cấm, không phải lựa chọn. C sai vì kỳ thi đã bắt đầu rồi."
+    }
+  ]
+}

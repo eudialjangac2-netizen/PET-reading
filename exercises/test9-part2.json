@@ -1,0 +1,129 @@
+{
+  "id": "test9-part2",
+  "partType": "part2",
+  "exerciseName": "Ready for B1 - Test 9 - Part 2",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "6": "C",
+    "7": "F",
+    "8": "G",
+    "9": "H",
+    "10": "D"
+  },
+  "people": [
+    {
+      "id": 6,
+      "name": "Joshua",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "text": "Joshua plays the violin and is very keen on modern music. He enjoys listening to new music mixed with classical works. He wants to try something typically English while he is staying in London, and he doesn’t mind if he has to pay a bit more for a ticket. The important thing for him is to have a new experience.",
+      "hint": "💡 Tìm chương trình âm nhạc kết hợp yếu tố truyền thống và hiện đại, mang màu sắc Anh và có thể đắt hơn một chút."
+    },
+    {
+      "id": 7,
+      "name": "Susimi",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150",
+      "text": "Susimi is interested in improving her language skills and her knowledge of English literature. She is often busy doing her homework during the evenings but is free at the weekends in the day. She likes most kinds of theatre, but she finds it difficult to follow shows that are very modern and different.",
+      "hint": "💡 Tìm một vở kịch cổ điển, giàu tính văn học Anh và có suất diễn ban ngày cuối tuần."
+    },
+    {
+      "id": 8,
+      "name": "Karl",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "text": "Karl wants to see something that will make him laugh. He doesn’t like traditional theatre because he can’t understand the jokes. He isn’t shy so he’d even quite like to be asked to get up on stage and get involved.",
+      "hint": "💡 Tìm một show hài hước, dễ xem và có yếu tố khán giả tham gia."
+    },
+    {
+      "id": 9,
+      "name": "Jean",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+      "text": "Jean is visiting London for a few days. She wants to find a show which will interest her and keep her attention. She isn’t really interested in musical shows, but the story and visual aspect of a show are very important in her opinion.",
+      "hint": "💡 Tìm một vở có cốt truyện cuốn hút và hiệu ứng hình ảnh/ánh sáng nổi bật, không thiên về musical."
+    },
+    {
+      "id": 10,
+      "name": "Tina",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+      "text": "Tina doesn’t really know very much about the theatre. She usually prefers to see films or go to concerts. She’s quite adventurous, though, so she would be happy to try anything which is exciting, but not too expensive.",
+      "hint": "💡 Tìm một vở dễ tiếp cận cho người mới đi theatre, khá thú vị và có nhiều mức giá vé."
+    }
+  ],
+  "options": [
+    {
+      "letter": "A",
+      "title": "The Classic Quartet",
+      "body": "An evening of classical music from the seventeenth century to the present day, with four of Britain’s most promising performers. Mozart and Beethoven are sure to be among the selections for tonight’s concert, as well as some more modern pieces. Tickets: £5–10 on the door."
+    },
+    {
+      "letter": "B",
+      "title": "The Snake",
+      "body": "A wonderful new comedy from the director Bob Manley, who never misses the chance to give us a good laugh. There isn’t much surprising about this play - the story is familiar, but the ridiculous characters are certain to make you laugh out loud. If you like a good, old-fashioned funny play, you won’t be disappointed."
+    },
+    {
+      "letter": "C",
+      "title": "Sounds Unfamiliar",
+      "body": "Come and listen to what England’s got to offer! In this show the past meets the present day, with works from England’s great composers played in today’s popular styles. This show is sure to be different to anything you’ve heard before! Be prepared to pay a little more as tickets are not cheap, but worth it for this unforgettable experience."
+    },
+    {
+      "letter": "D",
+      "title": "The Last Stand",
+      "body": "You will need to be wide awake to follow this modern drama, as the story takes many different turns. The music also adds to the excitement. We recommend this play to anyone from experienced theatre-goers to those people who have never seen a play before. There’s a good range of ticket prices on offer too."
+    },
+    {
+      "letter": "E",
+      "title": "Under The Stars",
+      "body": "This is the tenth year for this incredible show. The songs are well-known, the story is too, but that makes the whole night even more fun. Watch out for the spectacular light show in the final act! An American classic which has become a part of the London scene. Afternoon and evening performances."
+    },
+    {
+      "letter": "F",
+      "title": "A Country Lady",
+      "body": "Get to know a little bit of English theatre history with this classic play. It’s perhaps best known for its wonderful use of language. The traditional costumes and set are brilliant and take the audience back into the past. Performances every evening, and Wednesday and Saturday afternoons."
+    },
+    {
+      "letter": "G",
+      "title": "Graham Does It!",
+      "body": "Just when you thought life was dull and boring, here comes Graham Ache, possibly England’s funniest comic right now! He’ll make your body hurt with laughter. Be warned – there’s no hiding in this show! The audience is often asked to take part!"
+    },
+    {
+      "letter": "H",
+      "title": "The Human Touch",
+      "body": "This play might seem a little strange at first, but the story with its amazing lighting and special effects will keep you watching until the end. There are some very funny moments, but this serious play will stay in your mind for a long time after the show has ended. It’s on afternoons and evenings, and the theatre offers great souvenirs."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 6,
+      "name": "Joshua",
+      "demand": "Thích violin, modern music pha classical, muốn một trải nghiệm đậm chất English và không ngại vé đắt hơn.",
+      "ans": "C. Sounds Unfamiliar",
+      "key": "C đúng vì show này kết hợp quá khứ với hiện tại: 'works from England’s great composers played in today’s popular styles'. Nó cũng rất đậm chất English và đúng với việc Joshua không ngại trả nhiều hơn một chút vì vé 'are not cheap' nhưng đổi lại là một trải nghiệm mới mẻ."
+    },
+    {
+      "q": 7,
+      "name": "Susimi",
+      "demand": "Muốn cải thiện English/literature, thích theatre cổ điển hơn là quá hiện đại, rảnh ban ngày cuối tuần.",
+      "ans": "F. A Country Lady",
+      "key": "F đúng vì đây là 'a little bit of English theatre history', nổi tiếng vì cách dùng ngôn ngữ và có suất 'Saturday afternoons', rất phù hợp với thời gian rảnh của Susimi. Ngoài ra, đây là một vở classic nên sẽ dễ theo dõi hơn các vở quá hiện đại."
+    },
+    {
+      "q": 8,
+      "name": "Karl",
+      "demand": "Muốn cười thật nhiều, không thích traditional theatre, sẵn sàng tham gia trên sân khấu.",
+      "ans": "G. Graham Does It!",
+      "key": "G đúng vì đây là một comedy show cực kỳ hài hước và 'The audience is often asked to take part!'. Điều này khớp hoàn toàn với việc Karl muốn được involved và thích một chương trình vui nhộn, dễ hiểu."
+    },
+    {
+      "q": 9,
+      "name": "Jean",
+      "demand": "Muốn một show cuốn hút, không hứng thú musical, coi trọng story và visual aspect.",
+      "ans": "H. The Human Touch",
+      "key": "H đúng vì phần giới thiệu nhấn mạnh 'the story with its amazing lighting and special effects will keep you watching until the end'. Đây không phải musical, mà là một serious play có yếu tố hình ảnh nổi bật, rất phù hợp với yêu cầu của Jean."
+    },
+    {
+      "q": 10,
+      "name": "Tina",
+      "demand": "Không rành theatre, muốn thử cái gì exciting nhưng không quá đắt.",
+      "ans": "D. The Last Stand",
+      "key": "D đúng vì vở này 'recommend[ed] ... to those people who have never seen a play before' nên phù hợp với người mới như Tina. Nó cũng có yếu tố exciting nhờ cốt truyện nhiều bất ngờ và âm nhạc, đồng thời có 'a good range of ticket prices'."
+    }
+  ]
+}

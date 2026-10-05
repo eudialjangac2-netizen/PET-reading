@@ -1,0 +1,196 @@
+{
+  "id": "test9-part5",
+  "partType": "part5",
+  "exerciseName": "Ready for B1 - Test 9 - Part 5",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "21": "C",
+    "22": "D",
+    "23": "D",
+    "24": "B",
+    "25": "A",
+    "26": "A"
+  },
+  "article": {
+    "title": "The right clothes make you feel right",
+    "author": "Ready for B1 - Reading Part 5",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500",
+    "paragraphs": [
+      "There is little doubt that clothes can make a real difference to how we feel. We know if we look good we feel right. Dressing well gives us the <strong>(21) ....................</strong> to do the things we need to, at work and in <strong>(22) ....................</strong> social life. Even if styles and fashions change, there are some things we can be sure <strong>(23) ....................</strong>: high quality jackets and trousers are always respected and will look good on anyone.",
+      "But exactly how <strong>(24) ....................</strong> money should we spend on our business suits? A general <strong>(25) ....................</strong> is that we need to spend at least a quarter of our income on clothes if we want to look really stylish, but a little less may still be enough to be smart.",
+      "The secret is to <strong>(26) ....................</strong> your clothes clean and neat, always ready for the next meeting or evening out. You don't want to find yourself searching your wardrobes for clean clothes at the last minute."
+    ]
+  },
+  "questions": [
+    {
+      "id": 21,
+      "question": "21. Choose the correct word for gap (21):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "chance"
+        },
+        {
+          "letter": "B",
+          "text": "certainty"
+        },
+        {
+          "letter": "C",
+          "text": "confidence"
+        },
+        {
+          "letter": "D",
+          "text": "promise"
+        }
+      ],
+      "hint": "💡 'confidence to do something' = sự tự tin để làm việc gì."
+    },
+    {
+      "id": 22,
+      "question": "22. Choose the correct word for gap (22):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "the"
+        },
+        {
+          "letter": "B",
+          "text": "their"
+        },
+        {
+          "letter": "C",
+          "text": "a"
+        },
+        {
+          "letter": "D",
+          "text": "our"
+        }
+      ],
+      "hint": "💡 Chủ ngữ trước đó là 'we/us', nên tính từ sở hữu phải tương ứng."
+    },
+    {
+      "id": 23,
+      "question": "23. Choose the correct word for gap (23):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "on"
+        },
+        {
+          "letter": "B",
+          "text": "in"
+        },
+        {
+          "letter": "C",
+          "text": "off"
+        },
+        {
+          "letter": "D",
+          "text": "of"
+        }
+      ],
+      "hint": "💡 Cụm cố định: 'be sure of something'."
+    },
+    {
+      "id": 24,
+      "question": "24. Choose the correct word for gap (24):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "many"
+        },
+        {
+          "letter": "B",
+          "text": "much"
+        },
+        {
+          "letter": "C",
+          "text": "little"
+        },
+        {
+          "letter": "D",
+          "text": "few"
+        }
+      ],
+      "hint": "💡 'money' là danh từ không đếm được."
+    },
+    {
+      "id": 25,
+      "question": "25. Choose the correct word for gap (25):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "rule"
+        },
+        {
+          "letter": "B",
+          "text": "regulation"
+        },
+        {
+          "letter": "C",
+          "text": "law"
+        },
+        {
+          "letter": "D",
+          "text": "system"
+        }
+      ],
+      "hint": "💡 'a general rule' = một nguyên tắc chung."
+    },
+    {
+      "id": 26,
+      "question": "26. Choose the correct word for gap (26):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "keep"
+        },
+        {
+          "letter": "B",
+          "text": "let"
+        },
+        {
+          "letter": "C",
+          "text": "leave"
+        },
+        {
+          "letter": "D",
+          "text": "hold"
+        }
+      ],
+      "hint": "💡 Cấu trúc: 'keep + object + adjective' → keep your clothes clean and neat."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 21,
+      "ans": "C",
+      "key": "C (confidence) đúng vì 'confidence to do something' diễn tả sự tự tin giúp ta thực hiện việc cần làm. A 'chance' là cơ hội, B 'certainty' là sự chắc chắn và D 'promise' là lời hứa, đều không phù hợp với ý nghĩa câu."
+    },
+    {
+      "q": 22,
+      "ans": "D",
+      "key": "D (our) đúng vì câu đang dùng 'we' và 'us', nên cần tính từ sở hữu 'our': 'at work and in our social life'. Các lựa chọn khác không thống nhất về ngôi hoặc không phù hợp ngữ pháp."
+    },
+    {
+      "q": 23,
+      "ans": "D",
+      "key": "D (of) đúng vì cụm cố định là 'be sure of something'. Các giới từ on, in và off không đi với 'sure' trong cấu trúc này."
+    },
+    {
+      "q": 24,
+      "ans": "B",
+      "key": "B (much) đúng vì 'money' là danh từ không đếm được: 'how much money'. 'Many' và 'few' dùng với danh từ đếm được số nhiều; 'little' không dùng sau 'how' trong cấu trúc câu hỏi này."
+    },
+    {
+      "q": 25,
+      "ans": "A",
+      "key": "A (rule) đúng vì collocation tự nhiên là 'a general rule' = một nguyên tắc chung. 'Regulation' và 'law' mang tính quy định/pháp luật chính thức hơn, còn 'system' là một hệ thống."
+    },
+    {
+      "q": 26,
+      "ans": "A",
+      "key": "A (keep) đúng vì cấu trúc 'keep + object + adjective' có nghĩa duy trì một vật ở trạng thái nào đó: 'keep your clothes clean and neat'. Let, leave và hold không phù hợp với ý câu."
+    }
+  ]
+}

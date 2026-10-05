@@ -1,0 +1,101 @@
+{
+  "id": "test9-part4",
+  "partType": "part4",
+  "exerciseName": "Ready for B1 - Test 9 - Part 4",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "16": "G",
+    "17": "D",
+    "18": "A",
+    "19": "H",
+    "20": "B"
+  },
+  "gapIds": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "article": {
+    "title": "How the violin changed my life",
+    "author": "by Sam Reynolds, 26",
+    "image": "https://images.unsplash.com/photo-1465821185615-20b3c2fbf41b?w=500",
+    "paragraphs": [
+      "I was born into a family of doctors, so my parents were really surprised when I told them I wanted to be a violinist. At first, they thought it was just a temporary thing, since children often dream to do unusual jobs but they quickly change their mind when they grow up. {{gap:16}}",
+      "Learning the violin is not a piece of cake: it means practising for hours every day, pain in your fingertips and neck, and a lot of disappointment. Most of the time, especially at the beginning, it sounds bad. {{gap:17}}",
+      "Anyway, I kept taking classes and practising, until I joined an ensemble and that's when the fun started. {{gap:18}} When you eventually perform in front of an audience, the joy you give to others with your music will make the whole effort worthwhile.",
+      "When I teach my students I always tell them I remember what it feels like when you can't join in with your friends because you have to practise, so I often tell them about my childhood years. {{gap:19}}",
+      "I have never regretted being a musician. {{gap:20}} She often jokes that I would be a terrible doctor, but in the end my job is not so different to hers: she cures people's bodies, but I cure their souls."
+    ]
+  },
+  "options": [
+    {
+      "letter": "A",
+      "title": "I realised playing with other musicians is one of the most thrilling experiences you can have.",
+      "body": ""
+    },
+    {
+      "letter": "B",
+      "title": "My sister, who is a doctor, agrees that it was the best choice.",
+      "body": ""
+    },
+    {
+      "letter": "C",
+      "title": "So after a few years I stopped taking lessons and took up the guitar.",
+      "body": ""
+    },
+    {
+      "letter": "D",
+      "title": "This is why, during the first few years, I thought of giving up.",
+      "body": ""
+    },
+    {
+      "letter": "E",
+      "title": "She doesn't understand why I chose this job instead of being a doctor.",
+      "body": ""
+    },
+    {
+      "letter": "F",
+      "title": "The violin is not as difficult to learn as you may think, though.",
+      "body": ""
+    },
+    {
+      "letter": "G",
+      "title": "When I told them again three years later, however, they realised I was serious about my decision.",
+      "body": ""
+    },
+    {
+      "letter": "H",
+      "title": "I also tell them I know what it takes to fight against those 4 strings and make them sound pleasant.",
+      "body": ""
+    }
+  ],
+  "explanation": [
+    {
+      "q": 16,
+      "ans": "G",
+      "key": "G đúng vì đoạn trước nói bố mẹ Sam nghĩ mong muốn trở thành violinist chỉ là ý thích tạm thời của một đứa trẻ. Câu G nối trực tiếp bằng 'When I told them again three years later...' và cho thấy sau một thời gian họ nhận ra Sam thực sự nghiêm túc. Các đáp án khác không tiếp nối được ý về phản ứng của bố mẹ."
+    },
+    {
+      "q": 17,
+      "ans": "D",
+      "key": "D đúng vì câu trước liệt kê những khó khăn khi học violin: luyện tập nhiều giờ, đau tay và cổ, thất vọng, và lúc đầu âm thanh thường rất tệ. Vì vậy việc Sam từng nghĩ đến chuyện bỏ cuộc là kết quả hợp lý. F sai vì trái với toàn bộ ý đoạn này rằng học violin rất khó."
+    },
+    {
+      "q": 18,
+      "ans": "A",
+      "key": "A đúng vì Sam vừa nói niềm vui bắt đầu khi tham gia một ensemble. Câu A giải thích chính xác niềm vui đó là được chơi nhạc cùng những nhạc công khác. Câu sau tiếp tục nói về việc biểu diễn trước khán giả, nên mạch ý từ chơi cùng người khác đến biểu diễn rất tự nhiên."
+    },
+    {
+      "q": 19,
+      "ans": "H",
+      "key": "H đúng vì Sam đang nói về cách anh đồng cảm với học sinh của mình do từng phải luyện tập khi còn nhỏ. Câu H tiếp tục trực tiếp ý này: anh nói với học sinh rằng mình hiểu cảm giác phải 'fight against those 4 strings' để tạo ra âm thanh dễ nghe. Đây là lời động viên dựa trên trải nghiệm cá nhân."
+    },
+    {
+      "q": 20,
+      "ans": "B",
+      "key": "B đúng vì câu sau bắt đầu bằng đại từ 'She', nên trước đó phải xuất hiện một người nữ cụ thể. B giới thiệu 'My sister, who is a doctor...', và câu sau 'She often jokes...' rõ ràng tiếp tục nói về người chị/em gái này. E cũng có 'She' nhưng không hề giới thiệu danh tính người nữ đó nên không thể đứng độc lập ở vị trí này."
+    }
+  ]
+}

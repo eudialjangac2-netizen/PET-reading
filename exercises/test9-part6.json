@@ -1,0 +1,107 @@
+{
+  "id": "test9-part6",
+  "partType": "part6",
+  "exerciseName": "Ready for B1 - Test 9 - Part 6",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "27": [
+      "who",
+      "that"
+    ],
+    "28": [
+      "on"
+    ],
+    "29": [
+      "them"
+    ],
+    "30": [
+      "making"
+    ],
+    "31": [
+      "whole"
+    ],
+    "32": [
+      "by"
+    ]
+  },
+  "article": {
+    "title": "Teenagers and Money",
+    "author": "Ready for B1 - Reading Part 6",
+    "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500",
+    "paragraphs": [
+      "Most teenagers like me <span class='gap-tag'>(27)</span>.................... get pocket money from their parents understand the importance of money. <span class='gap-tag'>(28)</span>.................... the other hand, many teenagers whose parents pay for everything and give <span class='gap-tag'>(29)</span>.................... money whenever they want, do not appreciate its value.",
+      "Lots of parents expect their children to do a few household chores, like loading and unloading the dishwasher, <span class='gap-tag'>(30)</span>.................... the bed or cutting the grass in order to get their pocket money. It is important that the <span class='gap-tag'>(31)</span>.................... family understands that you have to work hard to earn money. This encourages us to spend it wisely and to save.",
+      "With pocket money we can learn to manage money <span class='gap-tag'>(32)</span>.................... ourselves, which is an extremely important and useful skill for our future."
+    ]
+  },
+  "questions": [
+    {
+      "id": 27,
+      "label": "Câu 27",
+      "placeholder": "Nhập từ cho ô (27)...",
+      "hint": "💡 Cần đại từ quan hệ nối 'teenagers' với mệnh đề 'get pocket money...'."
+    },
+    {
+      "id": 28,
+      "label": "Câu 28",
+      "placeholder": "Nhập từ cho ô (28)...",
+      "hint": "💡 Cụm cố định: 'on the other hand'."
+    },
+    {
+      "id": 29,
+      "label": "Câu 29",
+      "placeholder": "Nhập từ cho ô (29)...",
+      "hint": "💡 Đại từ tân ngữ thay cho 'teenagers': give ___ money."
+    },
+    {
+      "id": 30,
+      "label": "Câu 30",
+      "placeholder": "Nhập từ cho ô (30)...",
+      "hint": "💡 Cụm household chore cố định: 'make the bed'; sau 'like loading...' cần dạng -ing song song."
+    },
+    {
+      "id": 31,
+      "label": "Câu 31",
+      "placeholder": "Nhập từ cho ô (31)...",
+      "hint": "💡 Cụm 'the whole family' = cả gia đình."
+    },
+    {
+      "id": 32,
+      "label": "Câu 32",
+      "placeholder": "Nhập từ cho ô (32)...",
+      "hint": "💡 'by ourselves' = tự mình, không cần người khác làm giúp."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 27,
+      "ans": "who / that",
+      "key": "<strong>who / that</strong>: cần một đại từ quan hệ để nối danh từ chỉ người 'teenagers' với mệnh đề 'get pocket money from their parents'. Cả 'who' và 'that' đều có thể dùng trong mệnh đề quan hệ xác định này."
+    },
+    {
+      "q": 28,
+      "ans": "on",
+      "key": "<strong>on</strong>: cụm cố định 'on the other hand' dùng để đưa ra ý tương phản với câu trước."
+    },
+    {
+      "q": 29,
+      "ans": "them",
+      "key": "<strong>them</strong>: đây là đại từ tân ngữ thay cho 'many teenagers': their parents 'give them money'."
+    },
+    {
+      "q": 30,
+      "ans": "making",
+      "key": "<strong>making</strong>: cụm đúng là 'make the bed'. Vì câu liệt kê song song với 'loading and unloading' và 'cutting', động từ cần ở dạng -ing: 'making the bed'."
+    },
+    {
+      "q": 31,
+      "ans": "whole",
+      "key": "<strong>whole</strong>: cụm 'the whole family' nghĩa là toàn bộ/cả gia đình, phù hợp với ý rằng tất cả thành viên đều nên hiểu giá trị của việc làm việc để kiếm tiền."
+    },
+    {
+      "q": 32,
+      "ans": "by",
+      "key": "<strong>by</strong>: cụm 'by ourselves' nghĩa là tự mình, thể hiện việc thanh thiếu niên học cách tự quản lý tiền."
+    }
+  ]
+}
