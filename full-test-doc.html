@@ -238,6 +238,7 @@
     <h1 id="ftTestTitle">Full Test</h1>
     <div class="ft-topbar-right">
       <span id="ftReviewModeBadge" style="display:none; background:#4a3a2e; color:white; padding:6px 14px; border-radius:16px; font-size:12.5px; font-weight:700;">👁️ Chế độ xem lại — không thể sửa đáp án</span>
+      <button class="vocab-btn" id="ftVocabBtn" style="display:none;">📖 Từ vựng hay</button>
       <span id="ftTabBadge">Chuyển tab: 0 lần</span>
       <span id="ftTimer">45:00</span>
       <button class="ft-btn ft-btn-primary" id="ftSubmitBtn">Nộp Bài</button>
@@ -261,6 +262,15 @@
   <div class="ft-palette-grid" id="ftPaletteGrid"></div>
 </div>
 <div id="ftContextMenu"></div>
+
+<div id="ftVocabModalOverlay">
+  <div class="vocab-modal-card">
+    <button class="vocab-close-btn" id="ftVocabCloseBtn">✕</button>
+    <h3 id="ftVocabTitle">📖 Từ vựng hay trong bài</h3>
+    <p class="vocab-sub">Phrasal verbs, collocations & chunks đáng chú ý trong Part đang xem</p>
+    <div id="ftVocabTableContainer"></div>
+  </div>
+</div>
 
 <div id="ftConfirmSubmitModal">
   <div class="ft-confirm-box">
