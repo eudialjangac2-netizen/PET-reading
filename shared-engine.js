@@ -475,6 +475,63 @@
     if (modalOverlay) modalOverlay.style.display = "none";
   };
 
+  // -----------------------------------------------------------------------
+  // VOCABULARY PANEL (phrasal verbs / collocations / chunks)
+  // Renderer gọi PETEngine.setVocabulary(data.vocabulary) sau khi init().
+  // data.vocabulary (tùy chọn): [{ term, type, meaning, example }]
+  //   type: "phrasal verb" | "collocation" | "chunk" | (khác)
+  // -----------------------------------------------------------------------
+  function vocabTypeBadge(type) {
+    const t = (type || "").toLowerCase();
+    if (t.includes("phrasal")) return { cls: "vocab-type-phrasal", label: "Phrasal verb" };
+    if (t.includes("collocation")) return { cls: "vocab-type-collocation", label: "Collocation" };
+    if (t.includes("chunk")) return { cls: "vocab-type-chunk", label: "Chunk" };
+    return { cls: "vocab-type-other", label: type || "Từ vựng" };
+  }
+
+  PETEngine.setVocabulary = function (list) {
+    const btn = document.getElementById("vocabBtn");
+    const container = document.getElementById("vocabTableContainer");
+    const items = Array.isArray(list) ? list.filter(v => v && v.term) : [];
+
+    if (btn) btn.style.display = items.length > 0 ? "inline-block" : "none";
+    if (!container) return;
+
+    if (items.length === 0) {
+      container.innerHTML = `<p class="vocab-empty">Chưa có từ vựng nổi bật được ghi chú cho bài này.</p>`;
+      return;
+    }
+
+    container.innerHTML = `
+      <table class="vocab-table">
+        <thead><tr><th>Từ / cụm từ</th><th>Loại</th><th>Nghĩa</th><th>Ví dụ trong bài</th></tr></thead>
+        <tbody>
+          ${items.map(v => {
+            const badge = vocabTypeBadge(v.type);
+            return `
+              <tr>
+                <td><strong>${v.term}</strong></td>
+                <td><span class="vocab-type-badge ${badge.cls}">${badge.label}</span></td>
+                <td>${v.meaning || ""}</td>
+                <td class="vocab-example">${v.example || ""}</td>
+              </tr>
+            `;
+          }).join("")}
+        </tbody>
+      </table>
+    `;
+  };
+
+  PETEngine.openVocabModal = function () {
+    const overlay = document.getElementById("vocabModalOverlay");
+    if (overlay) overlay.classList.add("show");
+  };
+
+  PETEngine.closeVocabModal = function () {
+    const overlay = document.getElementById("vocabModalOverlay");
+    if (overlay) overlay.classList.remove("show");
+  };
+
   function formatDuration(ms) {
     const totalSeconds = Math.max(0, Math.round(ms / 1000));
     const minutes = Math.floor(totalSeconds / 60);
