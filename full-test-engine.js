@@ -207,7 +207,73 @@
       document.getElementById("ftPaletteToggle").style.display = "none";
       document.getElementById("ftResultScreen").style.display = "block";
     });
+    wireVocab();
     checkPendingRedo();
+  }
+
+  // ---------------------------------------------------------------------
+  // TỪ VỰNG HAY (phrasal verbs / collocations / chunks) — theo Part đang xem
+  // ---------------------------------------------------------------------
+  function vocabTypeBadgeFT(type) {
+    const t = (type || "").toLowerCase();
+    if (t.includes("phrasal")) return { cls: "vocab-type-phrasal", label: "Phrasal verb" };
+    if (t.includes("collocation")) return { cls: "vocab-type-collocation", label: "Collocation" };
+    if (t.includes("chunk")) return { cls: "vocab-type-chunk", label: "Chunk" };
+    return { cls: "vocab-type-other", label: type || "Từ vựng" };
+  }
+
+  function updateVocabButton() {
+    const btn = document.getElementById("ftVocabBtn");
+    if (!btn) return;
+    const ex = exercises[activeTabIndex];
+    const items = ex && Array.isArray(ex.data.vocabulary) ? ex.data.vocabulary.filter(v => v && v.term) : [];
+    btn.style.display = items.length > 0 ? "inline-block" : "none";
+  }
+
+  function renderVocabModalForActiveTab() {
+    const ex = exercises[activeTabIndex];
+    const titleEl = document.getElementById("ftVocabTitle");
+    if (titleEl) titleEl.textContent = `📖 Từ vựng hay — ${PART_LABELS[ex.partType] || ex.partType}`;
+
+    const items = ex && Array.isArray(ex.data.vocabulary) ? ex.data.vocabulary.filter(v => v && v.term) : [];
+    const container = document.getElementById("ftVocabTableContainer");
+    if (!container) return;
+
+    if (items.length === 0) {
+      container.innerHTML = `<p class="vocab-empty">Chưa có từ vựng nổi bật được ghi chú cho Part này.</p>`;
+      return;
+    }
+
+    container.innerHTML = `
+      <table class="vocab-table">
+        <thead><tr><th>Từ / cụm từ</th><th>Loại</th><th>Nghĩa</th><th>Ví dụ trong bài</th></tr></thead>
+        <tbody>
+          ${items.map(v => {
+            const badge = vocabTypeBadgeFT(v.type);
+            return `
+              <tr>
+                <td><strong>${v.term}</strong></td>
+                <td><span class="vocab-type-badge ${badge.cls}">${badge.label}</span></td>
+                <td>${v.meaning || ""}</td>
+                <td class="vocab-example">${v.example || ""}</td>
+              </tr>
+            `;
+          }).join("")}
+        </tbody>
+      </table>
+    `;
+  }
+
+  function wireVocab() {
+    const btn = document.getElementById("ftVocabBtn");
+    const closeBtn = document.getElementById("ftVocabCloseBtn");
+    const overlay = document.getElementById("ftVocabModalOverlay");
+    if (btn) btn.addEventListener("click", () => {
+      renderVocabModalForActiveTab();
+      if (overlay) overlay.classList.add("show");
+    });
+    if (closeBtn) closeBtn.addEventListener("click", () => { if (overlay) overlay.classList.remove("show"); });
+    if (overlay) overlay.addEventListener("click", (e) => { if (e.target === overlay) overlay.classList.remove("show"); });
   }
 
   async function checkPendingRedo() {
@@ -271,6 +337,8 @@
         if (el && typeof el.scrollIntoView === "function") el.scrollIntoView({ behavior: "smooth", block: "center" });
       }, 50);
     }
+
+    updateVocabButton();
   }
 
   function tabIndexForGlobalQuestion(g) {
