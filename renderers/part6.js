@@ -117,6 +117,8 @@ function renderPart6(data, theme) {
       });
     },
   });
+
+  PETEngine.setVocabulary(data.vocabulary || []);
 }
 
 registerRenderer("part6", renderPart6);
