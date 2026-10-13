@@ -116,6 +116,8 @@ function renderPart4(data, theme) {
       document.querySelectorAll(".inline-gap-select").forEach(sel => { sel.value = ""; });
     },
   });
+
+  PETEngine.setVocabulary(data.vocabulary || []);
 }
 
 registerRenderer("part4", renderPart4);
