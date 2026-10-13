@@ -143,6 +143,41 @@ body {
   border-radius: 8px; font-size: 13.5px; color: #c53030; display: none;
 }
 
+/* ---------- Vocabulary Panel (phrasal verbs / collocations / chunks) ---------- */
+.vocab-btn {
+  background: #fff8e7; color: #9a6a1c; border: 1px solid #f6ad55; font-size: 13px; font-weight: 700;
+  padding: 6px 14px; border-radius: 20px; cursor: pointer; white-space: nowrap;
+}
+.vocab-btn:hover { background: #fff3e1; }
+#vocabModalOverlay, #ftVocabModalOverlay {
+  display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6); z-index: 9500; overflow-y: auto; padding: 30px 16px;
+  align-items: flex-start; justify-content: center;
+}
+#vocabModalOverlay.show, #ftVocabModalOverlay.show { display: flex; }
+.vocab-modal-card {
+  background: white; border-radius: 22px; max-width: 760px; width: 100%; margin: 20px auto;
+  padding: 28px 24px; max-height: calc(100vh - 60px); overflow-y: auto;
+}
+.vocab-modal-card h3 { color: var(--primary, #4a3a2e); font-size: 19px; margin-bottom: 4px; }
+.vocab-modal-card .vocab-sub { font-size: 13px; color: #8a7b68; margin-bottom: 16px; }
+.vocab-close-btn {
+  float: right; background: none; border: none; font-size: 20px; color: #999; cursor: pointer; line-height: 1;
+}
+.vocab-close-btn:hover { color: #333; }
+.vocab-table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+.vocab-table th, .vocab-table td { border: 1px solid #ecdfc9; padding: 10px 12px; text-align: left; font-size: 13.5px; vertical-align: top; }
+.vocab-table th { background: #fffbe6; color: var(--primary, #4a3a2e); font-weight: 700; }
+.vocab-type-badge {
+  display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 9px; border-radius: 12px; white-space: nowrap;
+}
+.vocab-type-phrasal { background: #e6f0fd; color: #2a5db0; }
+.vocab-type-collocation { background: #eafaf0; color: #2e9b5f; }
+.vocab-type-chunk { background: #fdeefa; color: #a0439b; }
+.vocab-type-other { background: #f0f0f0; color: #666; }
+.vocab-example { color: #4a5568; font-style: italic; }
+.vocab-empty { font-size: 13.5px; color: #999; padding: 10px 0; }
+
 #resultModal {
   display: none; position: fixed; top:0; left:0; width:100%; height:100%;
   background: rgba(0,0,0,0.6); z-index: 8000; overflow-y: auto; padding: 30px 16px;
