@@ -98,6 +98,8 @@ function renderPart1(data, theme) {
       document.querySelectorAll('#partRenderTarget input[type="radio"]').forEach(r => { r.checked = false; });
     },
   });
+
+  PETEngine.setVocabulary(data.vocabulary || []);
 }
 
 // Đăng ký renderer này cho partType "part1"
