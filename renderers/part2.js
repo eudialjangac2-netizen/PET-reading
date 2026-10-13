@@ -109,6 +109,8 @@ function renderPart2(data, theme) {
       document.querySelectorAll(".ans-select").forEach(sel => { sel.value = ""; });
     },
   });
+
+  PETEngine.setVocabulary(data.vocabulary || []);
 }
 
 registerRenderer("part2", renderPart2);
