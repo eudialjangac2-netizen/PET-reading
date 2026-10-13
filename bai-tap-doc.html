@@ -53,6 +53,16 @@
     <div class="hl-btn hl-remove" title="Xóa" onclick="PETEngine.applyHighlight('remove')"></div>
   </div>
 
+  <!-- Vocabulary Modal -->
+  <div id="vocabModalOverlay">
+    <div class="vocab-modal-card">
+      <button class="vocab-close-btn" onclick="PETEngine.closeVocabModal()">✕</button>
+      <h3>📖 Từ vựng hay trong bài</h3>
+      <p class="vocab-sub">Phrasal verbs, collocations & chunks đáng chú ý trong bài đọc này</p>
+      <div id="vocabTableContainer"></div>
+    </div>
+  </div>
+
   <!-- Retry Modal -->
   <div id="modalOverlay">
     <div class="modal-box">
@@ -68,6 +78,7 @@
     <div class="app-header">
       <h1 id="appTitle">PET Reading</h1>
       <div class="header-right-group">
+        <button class="vocab-btn" id="vocabBtn" style="display:none;" onclick="PETEngine.openVocabModal()">📖 Từ vựng hay</button>
         <div class="stats-badge" id="tabBadge">Chuyển tab: 0 lần</div>
         <div class="highlight-toolbar">
           <span class="hl-title">Highlight bài đọc:</span>
