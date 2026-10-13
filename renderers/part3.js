@@ -111,6 +111,8 @@ function renderPart3(data, theme) {
       document.querySelectorAll('#partRenderTarget input[type="radio"]').forEach(r => { r.checked = false; });
     },
   });
+
+  PETEngine.setVocabulary(data.vocabulary || []);
 }
 
 registerRenderer("part3", renderPart3);
