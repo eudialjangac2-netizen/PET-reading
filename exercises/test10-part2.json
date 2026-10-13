@@ -1,0 +1,201 @@
+{
+  "id": "test10-part2",
+  "partType": "part2",
+  "exerciseName": "Test 10 - Part 2",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "6": "G",
+    "7": "A",
+    "8": "H",
+    "9": "D",
+    "10": "C"
+  },
+  "people": [
+    {
+      "id": 6,
+      "name": "Paul",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "text": "Paul is really into rock music and plays the bass guitar, but he would like to improve. He'd really like the chance to play in a band, too. He finishes school at 5 p.m. so he's looking for an evening class.",
+      "hint": "💡 Tìm khoá học guitar/nhạc rock, học buổi tối, có cơ hội chơi trong ban nhạc."
+    },
+    {
+      "id": 7,
+      "name": "Adam",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "text": "Adam enjoys building things. He would like to learn how to make a wooden doll house to give his little sister. He can only attend morning courses from Friday to Sunday.",
+      "hint": "💡 Tìm khoá học làm đồ mini/mô hình gỗ, học buổi sáng cuối tuần."
+    },
+    {
+      "id": 8,
+      "name": "Sabrina",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150",
+      "text": "Sabrina used to play the piano as a child and would like to get back to playing. She would also like to learn more about the history of classical music. She's only free on Saturday from 2 to 6 p.m.",
+      "hint": "💡 Tìm khoá học piano, có dạy thêm về lịch sử âm nhạc, học linh hoạt."
+    },
+    {
+      "id": 9,
+      "name": "Patricia",
+      "avatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150",
+      "text": "Patricia is very good at creating things with her hands and often helps her grandfather make furniture. She would like to learn how to work wood and build a chest of drawers. She is only free after 5 p.m. or at weekends.",
+      "hint": "💡 Tìm khoá học mộc/DIY, học buổi chiều tối hoặc cuối tuần."
+    },
+    {
+      "id": 10,
+      "name": "Craig",
+      "avatar": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150",
+      "text": "Craig's dream is to become a vet. He has always been interested in animal behaviour. He wants to learn how to understand his dog and cat and to train them well. He's looking for a Saturday course and would like to get a certificate at the end.",
+      "hint": "💡 Tìm khoá học huấn luyện thú cưng, học thứ Bảy, có chứng chỉ cuối khoá."
+    }
+  ],
+  "options": [
+    {
+      "letter": "A",
+      "title": "Miniatures",
+      "body": "This course will teach you how to make tiny toy furniture sets, cardboard houses or railway models using simple hand tools and cheap material like cardboard boxes, tins, old clothes or pencils. Classes are from 10 a.m. to midday every Saturday."
+    },
+    {
+      "letter": "B",
+      "title": "Rock me up!",
+      "body": "If you are interested in the history of rock, this is the right course for you. Our team of musicians will teach you how to recognise the various styles and the main bands from the past. Every weekend there will be a concert where tribute bands will perform live, playing the greatest rock hits of all time. Lessons three times a week from 7 to 9 p.m."
+    },
+    {
+      "letter": "C",
+      "title": "Know your pet",
+      "body": "This course will teach you how to communicate with your furry friend and stop any unwanted behaviour such as barking, biting, scratching or being frightened. Our experts will show you how to play games to make your cat or dog learn to sit or fetch things. An optional end-of-course certificate is available for £10.00."
+    },
+    {
+      "letter": "D",
+      "title": "DIY The Builder Training Centre",
+      "body": "Are you the kind of person that spends the weekend building and fixing things around the house? Our centre offers practical hands-on Do-It-Yourself training courses for students with little or no experience. Bring your own project and we'll help you build it in no time. Courses are offered as both weekday afternoon classes and full-day workshops on Saturdays."
+    },
+    {
+      "letter": "E",
+      "title": "The Good Boy Dog Training Academy",
+      "body": "Quickly discover everything you need to know to turn your puppy into the perfect 4-legged companion. Our intensive weekend courses will train you to work with a dog's natural instincts in order to improve your pet's behaviour and help them get on with cats or other pets around the house."
+    },
+    {
+      "letter": "F",
+      "title": "The Music Factory",
+      "body": "These lessons provide hands-on instruction for beginners on the piano. Learn how to play with both hands, how to read music, play popular songs. You'll be a successful pianist on your way to great things! Lessons from 9 a.m. to 6 p.m. on Mondays, Wednesdays and Fridays."
+    },
+    {
+      "letter": "G",
+      "title": "World of Guitar",
+      "body": "Play all styles on any type of guitar from classical to jazz and rock music. All our music instructors have been professional musicians and music instructors for over 10 years. We are also looking for new talents for newly-formed bands across Britain. Courses available every day from 5 to 9 p.m. every weekday."
+    },
+    {
+      "letter": "H",
+      "title": "Music Land",
+      "body": "We provide guitar and piano lessons for any level of students when it is convenient for you. The Academy is owned by a professional pianist with over 30 years of teaching and performing experience. You will be able to interact with others through their concerts and events. Students will also learn about music history and theory on an online course they can access from home."
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "be into (something)",
+      "type": "collocation",
+      "meaning": "rất thích, đam mê điều gì",
+      "example": "Paul is really into rock music and plays the bass guitar."
+    },
+    {
+      "term": "get back to (something)",
+      "type": "phrasal verb",
+      "meaning": "quay trở lại làm điều gì (đã từng làm trước đây)",
+      "example": "Sabrina used to play the piano as a child and would like to get back to playing."
+    },
+    {
+      "term": "get on with (someone/something)",
+      "type": "phrasal verb",
+      "meaning": "hoà hợp, sống hoà thuận với ai/con gì",
+      "example": "...help them get on with cats or other pets around the house."
+    },
+    {
+      "term": "good at + V-ing",
+      "type": "collocation",
+      "meaning": "giỏi về việc làm gì",
+      "example": "Patricia is very good at creating things with her hands."
+    },
+    {
+      "term": "hands-on",
+      "type": "collocation",
+      "meaning": "mang tính thực hành trực tiếp (không chỉ lý thuyết)",
+      "example": "...offers practical hands-on Do-It-Yourself training courses."
+    },
+    {
+      "term": "in no time",
+      "type": "chunk",
+      "meaning": "rất nhanh, trong chớp mắt",
+      "example": "Bring your own project and we'll help you build it in no time."
+    },
+    {
+      "term": "bring your own (something)",
+      "type": "chunk",
+      "meaning": "tự mang theo (đồ vật) của mình",
+      "example": "Bring your own project and we'll help you build it in no time."
+    },
+    {
+      "term": "on your way to (something)",
+      "type": "chunk",
+      "meaning": "đang trên đà đạt được điều gì",
+      "example": "You'll be a successful pianist on your way to great things!"
+    },
+    {
+      "term": "interact with",
+      "type": "collocation",
+      "meaning": "tương tác với (ai đó)",
+      "example": "You will be able to interact with others through their concerts and events."
+    },
+    {
+      "term": "whenever it is convenient for you",
+      "type": "chunk",
+      "meaning": "bất cứ khi nào thuận tiện cho bạn",
+      "example": "We provide guitar and piano lessons for any level of students when it is convenient for you."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 6,
+      "name": "Paul",
+      "demand": "Thích nhạc rock, chơi bass, muốn được chơi trong ban nhạc, chỉ rảnh buổi tối.",
+      "ans": "G. World of Guitar",
+      "key": "G đúng vì khoá học này nhận thêm thành viên mới cho các ban nhạc mới thành lập ('looking for new talents for newly-formed bands'), khớp với mong muốn chơi trong ban nhạc của Paul, và học mọi ngày trong tuần từ 5-9h tối, khớp với lịch rảnh buổi tối của cậu.",
+      "subskill": "Đọc hiểu & ghép nối theo nhu cầu người đọc",
+      "grammarVocabPoint": "be into (sth), play in a band"
+    },
+    {
+      "q": 7,
+      "name": "Adam",
+      "demand": "Thích làm đồ thủ công, muốn làm nhà búp bê gỗ, chỉ học được buổi sáng từ thứ Sáu đến Chủ Nhật.",
+      "ans": "A. Miniatures",
+      "key": "A đúng vì khoá học dạy làm mô hình/đồ vật thu nhỏ bằng tay ('make tiny toy furniture sets, cardboard houses') gần với việc làm nhà búp bê, và học vào buổi sáng thứ Bảy, nằm trong khung thời gian cậu có thể học.",
+      "subskill": "Đọc hiểu & ghép nối theo nhu cầu người đọc",
+      "grammarVocabPoint": "enjoy + V-ing, simple hand tools"
+    },
+    {
+      "q": 8,
+      "name": "Sabrina",
+      "demand": "Từng chơi piano, muốn quay lại chơi và tìm hiểu lịch sử nhạc cổ điển, chỉ rảnh thứ Bảy 2-6h chiều.",
+      "ans": "H. Music Land",
+      "key": "H đúng vì có dạy piano, lịch học linh hoạt 'for any level of students when it is convenient for you' (phù hợp với lịch rảnh hẹp của Sabrina), và có dạy thêm lịch sử âm nhạc ('learn about music history and theory').",
+      "subskill": "Đọc hiểu & ghép nối theo nhu cầu người đọc",
+      "grammarVocabPoint": "get back to + V-ing, the history of (sth)"
+    },
+    {
+      "q": 9,
+      "name": "Patricia",
+      "demand": "Khéo tay, hay giúp ông làm đồ gỗ, muốn học làm tủ ngăn kéo, chỉ rảnh sau 5h chiều hoặc cuối tuần.",
+      "ans": "D. DIY The Builder Training Centre",
+      "key": "D đúng vì đây là khoá học thực hành làm đồ gỗ/DIY ('practical hands-on Do-It-Yourself training courses'), và có lớp buổi chiều các ngày trong tuần lẫn cả ngày thứ Bảy, khớp với lịch rảnh của Patricia.",
+      "subskill": "Đọc hiểu & ghép nối theo nhu cầu người đọc",
+      "grammarVocabPoint": "good at + V-ing, hands-on"
+    },
+    {
+      "q": 10,
+      "name": "Craig",
+      "demand": "Muốn làm bác sĩ thú y, muốn hiểu hành vi và huấn luyện chó mèo, học thứ Bảy, muốn có chứng chỉ.",
+      "ans": "C. Know your pet",
+      "key": "C đúng vì khoá học dạy giao tiếp và huấn luyện thú cưng ('how to communicate with your furry friend...learn to sit or fetch things'), và có chứng chỉ cuối khoá tùy chọn ('an optional end-of-course certificate'), khớp đúng mong muốn của Craig.",
+      "subskill": "Đọc hiểu & ghép nối theo nhu cầu người đọc",
+      "grammarVocabPoint": "get on with, train (sb/sth) well"
+    }
+  ]
+}
