@@ -1,0 +1,195 @@
+{
+  "id": "test6-part5",
+  "partType": "part5",
+  "exerciseName": "Ready for B1 - Test 6 - Part 5",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "21": "C",
+    "22": "A",
+    "23": "D",
+    "24": "A",
+    "25": "B",
+    "26": "B"
+  },
+  "article": {
+    "title": "Choosing your first job",
+    "author": "Ready for B1 - Reading Part 5",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500",
+    "paragraphs": [
+      "In general we will all spend about two thirds of our life at work. This means that we will probably have many different jobs over the years. However, our first <strong>(21) ....................</strong> of work is a very important one. If our first job is <strong>(22) ....................</strong>, we won’t be worried about working. But if we have a job that makes us feel anxious or miserable, we may think that work is something to dislike forever.",
+      "For this reason a person should think carefully before they <strong>(23) ....................</strong> for their first job. For example, if you are the type of person that enjoys working outside and being very active, it would be silly to choose a(n) <strong>(24) ....................</strong>, such as a receptionist. And let’s face it, many people who start their first job are still teenagers with lots of energy. It’s also important to have a job where you like your <strong>(25) ....................</strong>. There is nothing worse than having a boss that you don’t like. But of course, you need to work hard and show that you are <strong>(26) ....................</strong> in order for them to trust you and know that you will do your job well."
+    ]
+  },
+  "questions": [
+    {
+      "id": 21,
+      "question": "21. Choose the correct word for gap (21):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "arrangement"
+        },
+        {
+          "letter": "B",
+          "text": "booking"
+        },
+        {
+          "letter": "C",
+          "text": "experience"
+        },
+        {
+          "letter": "D",
+          "text": "conference"
+        }
+      ],
+      "hint": "💡 'first experience of work' = lần đầu trải nghiệm công việc."
+    },
+    {
+      "id": 22,
+      "question": "22. Choose the correct word for gap (22):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "pleasant"
+        },
+        {
+          "letter": "B",
+          "text": "confusing"
+        },
+        {
+          "letter": "C",
+          "text": "satisfied"
+        },
+        {
+          "letter": "D",
+          "text": "rough"
+        }
+      ],
+      "hint": "💡 The sentence needs an adjective meaning nice and enjoyable."
+    },
+    {
+      "id": 23,
+      "question": "23. Choose the correct word for gap (23):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "earn"
+        },
+        {
+          "letter": "B",
+          "text": "quit"
+        },
+        {
+          "letter": "C",
+          "text": "retire"
+        },
+        {
+          "letter": "D",
+          "text": "apply"
+        }
+      ],
+      "hint": "💡 Collocation: 'apply for a job'."
+    },
+    {
+      "id": 24,
+      "question": "24. Choose the correct word for gap (24):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "occupation"
+        },
+        {
+          "letter": "B",
+          "text": "application"
+        },
+        {
+          "letter": "C",
+          "text": "contract"
+        },
+        {
+          "letter": "D",
+          "text": "qualification"
+        }
+      ],
+      "hint": "💡 A receptionist is an example of a job/occupation."
+    },
+    {
+      "id": 25,
+      "question": "25. Choose the correct word for gap (25):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "assistant"
+        },
+        {
+          "letter": "B",
+          "text": "employer"
+        },
+        {
+          "letter": "C",
+          "text": "servant"
+        },
+        {
+          "letter": "D",
+          "text": "employee"
+        }
+      ],
+      "hint": "💡 The next sentence talks about 'having a boss that you don’t like'."
+    },
+    {
+      "id": 26,
+      "question": "26. Choose the correct word for gap (26):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "bossy"
+        },
+        {
+          "letter": "B",
+          "text": "reliable"
+        },
+        {
+          "letter": "C",
+          "text": "typical"
+        },
+        {
+          "letter": "D",
+          "text": "gentle"
+        }
+      ],
+      "hint": "💡 A boss trusts someone who can be depended on to do the job properly."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 21,
+      "ans": "C",
+      "key": "C (experience) đúng vì 'our first experience of work' là cách nói tự nhiên về lần đầu chúng ta trải qua môi trường công việc. Arrangement là sự sắp xếp, booking là đặt chỗ, conference là hội nghị."
+    },
+    {
+      "q": 22,
+      "ans": "A",
+      "key": "A (pleasant) đúng vì một công việc pleasant là dễ chịu và thú vị, nên sẽ khiến ta không lo lắng về việc đi làm. Confusing và rough mang nghĩa tiêu cực; satisfied không phù hợp với cấu trúc câu này."
+    },
+    {
+      "q": 23,
+      "ans": "D",
+      "key": "D (apply) đúng vì collocation là 'apply for a job'. Earn không đi với 'for' ở đây; quit và retire đều mang nghĩa rời bỏ công việc."
+    },
+    {
+      "q": 24,
+      "ans": "A",
+      "key": "A (occupation) đúng vì occupation là một từ khác chỉ nghề nghiệp/công việc. Receptionist là một occupation. Application là đơn xin việc, contract là hợp đồng, qualification là bằng cấp/chứng chỉ."
+    },
+    {
+      "q": 25,
+      "ans": "B",
+      "key": "B (employer) đúng vì employer là người/chủ sử dụng lao động; câu sau trực tiếp nói về 'your boss'. Assistant và servant là người làm việc cho bạn, còn employee là người lao động."
+    },
+    {
+      "q": 26,
+      "ans": "B",
+      "key": "B (reliable) đúng vì người đáng tin cậy sẽ khiến employer tin rằng bạn làm tốt công việc. Bossy là hay ra lệnh, typical là điển hình, gentle là nhẹ nhàng; các từ này không diễn tả phẩm chất cần để được tin tưởng."
+    }
+  ]
+}
