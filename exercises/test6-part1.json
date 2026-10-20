@@ -1,7 +1,7 @@
 {
   "id": "test6-part1",
   "partType": "part1",
-  "exerciseName": "Ready for B1 - Test 6 - Part 1",
+  "exerciseName": "Test 6 - Part 1",
   "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
   "correctAnswers": {
     "1": "B",
