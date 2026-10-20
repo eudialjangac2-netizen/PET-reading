@@ -1,0 +1,101 @@
+{
+  "id": "test6-part4",
+  "partType": "part4",
+  "exerciseName": "Ready for B1 - Test 6 - Part 4",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "16": "H",
+    "17": "C",
+    "18": "E",
+    "19": "A",
+    "20": "G"
+  },
+  "gapIds": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "article": {
+    "title": "Learning a language",
+    "author": "",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=500",
+    "paragraphs": [
+      "Whatever your reason for learning a new language, you can probably agree it’d be ideal to learn it fast. {{gap:16}} You’ll have to learn a new grammar, memorise vocabulary words, practise speaking, etc. But learning a new language does not need to be a slow or boring process if you follow the right strategy.",
+      "The first step to learning a new language fast is to set goals. When you think about it, this makes a lot of sense. {{gap:17}} When faced with the idea of learning a new language, most of us feel nervous. Setting goals helps you to focus.",
+      "Languages are made up of a shocking number of words. English, for example, has between 600,000 and 1 million words. {{gap:18}} Consider this: the top 100 words make up about 50 percent of English language texts, and the top 1,000 words make up about 90 percent! By focusing on learning these words first, you can increase the amount of information you understand very quickly.",
+      "One of the best ways to learn vocabulary words is to use flashcards. Flashcards allow you to test yourself, which helps you memorise new information. Try out electronic flash cards. {{gap:19}} You can easily carry large amounts of words on your smartphone or tablet, and you can take advantage of flash cards that other people have created and made public.",
+      "When you’re learning a new language, it can be hard to practise words in context because you haven’t mastered yet enough vocabulary to make complex sentences. {{gap:20}} For example, if you’re learning the Spanish word casa (house), you could say, 'I’m going to go to my casa now.' You can also make up a sentence with the new word you’re learning, the meaning of the word and a word in your own language that sounds similar."
+    ]
+  },
+  "options": [
+    {
+      "letter": "A",
+      "title": "Paper flashcards work just as well but electronic flash card programmes provide some great benefits.",
+      "body": ""
+    },
+    {
+      "letter": "B",
+      "title": "But in reality, having goals doesn’t help you achieve much.",
+      "body": ""
+    },
+    {
+      "letter": "C",
+      "title": "If you don’t set goals, how can you know what you want to achieve?",
+      "body": ""
+    },
+    {
+      "letter": "D",
+      "title": "At this time, there is no point even trying to remember the word.",
+      "body": ""
+    },
+    {
+      "letter": "E",
+      "title": "Luckily, you don’t need to learn anywhere near that many words to be good at a language.",
+      "body": ""
+    },
+    {
+      "letter": "F",
+      "title": "You should aim to learn about 5,000 words in a couple of weeks.",
+      "body": ""
+    },
+    {
+      "letter": "G",
+      "title": "To get around this, simply use the word in a sentence in your native language.",
+      "body": ""
+    },
+    {
+      "letter": "H",
+      "title": "Yet the idea of learning a language seems anything but fast.",
+      "body": ""
+    }
+  ],
+  "explanation": [
+    {
+      "q": 16,
+      "ans": "H",
+      "key": "H đúng vì câu trước nói mọi người muốn học ngôn ngữ thật nhanh, còn H tạo sự tương phản: ý tưởng học một ngôn ngữ thực tế lại có vẻ 'anything but fast'. Câu sau tiếp tục liệt kê rất nhiều việc phải học."
+    },
+    {
+      "q": 17,
+      "ans": "C",
+      "key": "C đúng vì đoạn đang nói về việc đặt mục tiêu, và câu hỏi 'If you don’t set goals, how can you know what you want to achieve?' dẫn tự nhiên tới câu sau rằng goals giúp chúng ta tập trung."
+    },
+    {
+      "q": 18,
+      "ans": "E",
+      "key": "E đúng vì ngay sau khi nói English có tới 600,000–1 million words, bài giải thích rằng người học không cần biết gần từng ấy từ; chỉ một lượng từ phổ biến đã bao phủ phần lớn văn bản."
+    },
+    {
+      "q": 19,
+      "ans": "A",
+      "key": "A đúng vì đoạn đang so sánh flashcards giấy và electronic flashcards. Câu sau liệt kê lợi ích cụ thể của electronic cards như mang theo nhiều từ trên smartphone/tablet."
+    },
+    {
+      "q": 20,
+      "ans": "G",
+      "key": "G đúng vì câu trước nêu vấn đề chưa đủ vốn từ để tạo câu phức tạp. G đưa ra cách giải quyết: dùng từ mới trong câu bằng ngôn ngữ mẹ đẻ; ví dụ ngay sau đó minh họa với từ Spanish 'casa'."
+    }
+  ]
+}
