@@ -1,0 +1,106 @@
+{
+  "id": "test6-part6",
+  "partType": "part6",
+  "exerciseName": "Ready for B1 - Test 6 - Part 6",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "27": [
+      "up"
+    ],
+    "28": [
+      "There",
+      "there"
+    ],
+    "29": [
+      "little"
+    ],
+    "30": [
+      "looking"
+    ],
+    "31": [
+      "more"
+    ],
+    "32": [
+      "past"
+    ]
+  },
+  "article": {
+    "title": "How shopping has changed",
+    "author": "",
+    "image": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=500",
+    "paragraphs": [
+      "I guess most teenagers have completely given <span class='gap-tag'>(27)</span>.................... going to the shops to buy things and instead we are using the internet to shop online. <span class='gap-tag'>(28)</span>.................... are many reasons for this. Firstly, we have so much to do that there is very <span class='gap-tag'>(29)</span>.................... time to walk around the shops <span class='gap-tag'>(30)</span>.................... for what we want. Also when the shops are open, we are usually at school so we can’t get to them except during our school holidays.",
+      "These days we also use credit cards <span class='gap-tag'>(31)</span>.................... than we use cash, so it is very easy to pay for whatever we want to buy over the internet. But my mum says that these changes in our shopping habits have caused many shops on our high streets to close down. These days you can see empty shops everywhere, while in the <span class='gap-tag'>(32)</span>.................... most shops were busy and successful."
+    ]
+  },
+  "questions": [
+    {
+      "id": 27,
+      "label": "Câu 27",
+      "placeholder": "Nhập từ cho ô (27)...",
+      "hint": "💡 Phrasal verb 'give up' = stop doing something."
+    },
+    {
+      "id": 28,
+      "label": "Câu 28",
+      "placeholder": "Nhập từ cho ô (28)...",
+      "hint": "💡 Use 'there is/are' to say something exists; 'reasons' is plural."
+    },
+    {
+      "id": 29,
+      "label": "Câu 29",
+      "placeholder": "Nhập từ cho ô (29)...",
+      "hint": "💡 'time' is uncountable; very ___ time = not much time."
+    },
+    {
+      "id": 30,
+      "label": "Câu 30",
+      "placeholder": "Nhập từ cho ô (30)...",
+      "hint": "💡 Present participle: walk around the shops ___ for what we want."
+    },
+    {
+      "id": 31,
+      "label": "Câu 31",
+      "placeholder": "Nhập từ cho ô (31)...",
+      "hint": "💡 The word is followed by 'than', so a comparative is needed."
+    },
+    {
+      "id": 32,
+      "label": "Câu 32",
+      "placeholder": "Nhập từ cho ô (32)...",
+      "hint": "💡 Contrast now with how things used to be 'in the ___'."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 27,
+      "ans": "up",
+      "key": "<strong>up</strong>: 'give up' là phrasal verb nghĩa là ngừng làm hoặc từ bỏ một việc; ở đây là ngừng đi cửa hàng để mua sắm."
+    },
+    {
+      "q": 28,
+      "ans": "There",
+      "key": "<strong>There</strong>: cấu trúc 'there is/are' dùng để nói rằng một điều gì đó tồn tại. Vì 'reasons' là số nhiều nên dùng 'There are'."
+    },
+    {
+      "q": 29,
+      "ans": "little",
+      "key": "<strong>little</strong>: 'time' là danh từ không đếm được, và 'very little time' nghĩa là có rất ít thời gian, không đủ để đi mua sắm."
+    },
+    {
+      "q": 30,
+      "ans": "looking",
+      "key": "<strong>looking</strong>: cần dạng V-ing để diễn tả việc đi quanh cửa hàng trong khi tìm món đồ mình muốn: 'walk around the shops looking for...'."
+    },
+    {
+      "q": 31,
+      "ans": "more",
+      "key": "<strong>more</strong>: theo sau có 'than', nên cần dạng so sánh hơn: 'use credit cards more than we use cash'."
+    },
+    {
+      "q": 32,
+      "ans": "past",
+      "key": "<strong>past</strong>: cụm 'in the past' dùng để nói về cách mọi thứ từng diễn ra trước đây, đối lập với hiện tại."
+    }
+  ]
+}
