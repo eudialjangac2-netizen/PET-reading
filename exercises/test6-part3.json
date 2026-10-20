@@ -1,0 +1,168 @@
+{
+  "id": "test6-part3",
+  "partType": "part3",
+  "exerciseName": "Ready for B1 - Test 6 - Part 3",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "11": "B",
+    "12": "D",
+    "13": "A",
+    "14": "D",
+    "15": "B"
+  },
+  "article": {
+    "title": "‘Freshly’ Restaurant",
+    "author": "by Peter Newman",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500",
+    "paragraphs": [
+      "Last week my parents and I visited Freshly, a modern British restaurant, in the centre of Brighton, Sussex. So it was the perfect opportunity to write a review for the school paper. All of the ingredients used in Freshly come from Sussex and the surrounding area. It was also the first restaurant in the world to be serving only English wine. Since opening in 2018 Freshly has won many awards. The owner and head chef at the restaurant is only 24 years old and she has been cooking three-course meals for her family since she was nine and still at junior school.",
+      "Jane did an apprenticeship at the famous Grand Hotel, in Brighton, and later also went to catering school in London. She says this was one of the hardest courses she has ever done and sometimes she was so tired that she could hardly speak. Despite this, she never felt like giving up because she knew she was following her dream.",
+      "Freshly is a small restaurant with a view over the back streets of Brighton where you can watch the world walk by. The staff are always welcoming. The head waiter is very informative about the food and how it is cooked and also from where all the ingredients have come from. The chefs are not scared to experiment, so the menu changes regularly. The chefs are lucky enough to be a team of good friends, and they try to eat out at different restaurants as often as they can. They take a lot of inspiration from their favourite chefs to make the Freshly experience as perfect as possible.",
+      "One thing to remember, however, is that you are limited to what they have that day on the menu. Freshly, however, will always cater for people with special food needs and vegetarians. The food is beautifully prepared and comes in small tasty portions. Wonderful homemade bread, too. Very nice - but expensive. Four set menus with an extra cheeseboard, two bottles of water and 2 coffees will cost around £150 without a tip. So yes, fine dining; but at a price."
+    ]
+  },
+  "questions": [
+    {
+      "id": 11,
+      "question": "11. The food at Freshly",
+      "options": [
+        {
+          "letter": "A",
+          "text": "is grown by the staff."
+        },
+        {
+          "letter": "B",
+          "text": "comes from places in or close to Brighton."
+        },
+        {
+          "letter": "C",
+          "text": "comes from all over the world."
+        },
+        {
+          "letter": "D",
+          "text": "comes all over Britain."
+        }
+      ],
+      "hint": "💡 The first paragraph says all ingredients come from Sussex and the surrounding area."
+    },
+    {
+      "id": 12,
+      "question": "12. Where did the owner start to train as a chef?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "at junior school"
+        },
+        {
+          "letter": "B",
+          "text": "at university"
+        },
+        {
+          "letter": "C",
+          "text": "at home with the help of her family"
+        },
+        {
+          "letter": "D",
+          "text": "in a hotel"
+        }
+      ],
+      "hint": "💡 Jane first did an apprenticeship at the Grand Hotel before catering school."
+    },
+    {
+      "id": 13,
+      "question": "13. How did Jane feel while she was training to be a chef?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "She was really tired but felt positive about the experience."
+        },
+        {
+          "letter": "B",
+          "text": "She wanted to give up because of the pressure."
+        },
+        {
+          "letter": "C",
+          "text": "She wasn’t sure if she would be successful."
+        },
+        {
+          "letter": "D",
+          "text": "She found it quite easy to finish the training."
+        }
+      ],
+      "hint": "💡 She was sometimes so tired she could hardly speak, but she never felt like giving up."
+    },
+    {
+      "id": 14,
+      "question": "14. What is said about Freshly restaurant?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The head waiter is in charge of the menu."
+        },
+        {
+          "letter": "B",
+          "text": "The staff often change jobs because they like to do different things."
+        },
+        {
+          "letter": "C",
+          "text": "It is a big and fancy restaurant with a great view."
+        },
+        {
+          "letter": "D",
+          "text": "The staff have a very good relationship with each other."
+        }
+      ],
+      "hint": "💡 The chefs are described as a team of good friends."
+    },
+    {
+      "id": 15,
+      "question": "15. What would Peter say about Freshly restaurant?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Freshly restaurant may serve tasty food but it is extremely pricey - not worth it."
+        },
+        {
+          "letter": "B",
+          "text": "A great effort from a successful young chef who supports local products."
+        },
+        {
+          "letter": "C",
+          "text": "A famous chef that tried rather unsuccessfully to set up a different kind of restaurant."
+        },
+        {
+          "letter": "D",
+          "text": "The cheerful staff and nice location are the only things that are worth mentioning."
+        }
+      ],
+      "hint": "💡 Peter praises the young chef and the use of local products, even though the restaurant is expensive."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 11,
+      "ans": "B",
+      "key": "B đúng vì đoạn 1 nói 'All of the ingredients used in Freshly come from Sussex and the surrounding area.' A sai vì không có thông tin nhân viên tự trồng thực phẩm. C và D sai vì nguyên liệu đều đến từ khu vực địa phương."
+    },
+    {
+      "q": 12,
+      "ans": "D",
+      "key": "D đúng vì Jane bắt đầu bằng một apprenticeship tại Grand Hotel ở Brighton rồi sau đó mới học catering school ở London. A sai vì khi còn junior school cô chỉ nấu ăn ở nhà. B không được nhắc tới. C sai vì gia đình không trực tiếp đào tạo cô thành đầu bếp."
+    },
+    {
+      "q": 13,
+      "ans": "A",
+      "key": "A đúng vì Jane nói khóa học rất khó, có lúc mệt đến mức gần như không nói được, nhưng cô chưa bao giờ muốn bỏ cuộc vì biết mình đang theo đuổi ước mơ. B, C và D đều trái với nội dung này."
+    },
+    {
+      "q": 14,
+      "ans": "D",
+      "key": "D đúng vì bài nói các đầu bếp 'are lucky enough to be a team of good friends'. A sai vì head waiter chỉ am hiểu menu chứ không quyết định menu. B sai vì menu thay đổi thường xuyên, không phải staff. C sai vì đây là một nhà hàng nhỏ."
+    },
+    {
+      "q": 15,
+      "ans": "B",
+      "key": "B đúng vì điều đặc biệt là Jane đạt được nhiều thành công khi còn rất trẻ và Freshly sử dụng nguyên liệu địa phương. A sai vì dù đắt nhưng Peter vẫn đánh giá đồ ăn tốt. C sai vì nhà hàng thành công. D sai vì chất lượng món ăn cũng được nhấn mạnh."
+    }
+  ]
+}
