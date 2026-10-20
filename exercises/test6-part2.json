@@ -1,0 +1,129 @@
+{
+  "id": "test6-part2",
+  "partType": "part2",
+  "exerciseName": "Ready for B1 - Test 6 - Part 2",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "6": "D",
+    "7": "F",
+    "8": "H",
+    "9": "C",
+    "10": "B"
+  },
+  "people": [
+    {
+      "id": 6,
+      "name": "Kostas",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "text": "Kostas likes films that have nothing to do with real life. He loves fantasy and special effects. He has a really good imagination and so he likes very creative stories.",
+      "hint": "💡 Look for complete fantasy, magical creatures and special effects."
+    },
+    {
+      "id": 7,
+      "name": "Pierre",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "text": "Pierre loves anything to do with things going very fast. He doesn’t mind if it’s motorbikes, cars, speedboats or planes. He really loves fast action. He would also like a character that he can relate to.",
+      "hint": "💡 Look for speed, racing and a young main character."
+    },
+    {
+      "id": 8,
+      "name": "Robert",
+      "avatar": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150",
+      "text": "Robert enjoys eating more than anything else and he spends most of his money going to restaurants or watching cookery programmes on TV. He particularly likes Eastern and Asian food.",
+      "hint": "💡 Look for a film strongly connected with Asian food and cooking."
+    },
+    {
+      "id": 9,
+      "name": "Julia",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+      "text": "Julia loves anything to do with the past. She is especially interested in famous people in history. She would like to watch a biography or a drama.",
+      "hint": "💡 Look for a true historical story about famous people."
+    },
+    {
+      "id": 10,
+      "name": "Tina and Cathy",
+      "avatar": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=150",
+      "text": "Tina and Cathy like nothing more than to sing and dance to their favourite pop singers and bands. They like funny films that are easy to watch and prefer them to have some romance.",
+      "hint": "💡 Look for a funny romantic musical with lots of singing and dancing."
+    }
+  ],
+  "options": [
+    {
+      "letter": "A",
+      "title": "Skyfall",
+      "body": "Daniel Craig plays 007 James Bond in this action-packed film. With the usual mix of good guys and bad guys that you would expect from any James Bond film, this will not disappoint you. Bond's boss 'M' is in trouble and he is the only person who can save her."
+    },
+    {
+      "letter": "B",
+      "title": "Mamma Mia - The Movie",
+      "body": "A fun musical featuring all the hits from the Swedish pop group Abba. This film is filmed on a beautiful Greek island and tells a story of summer love. You will want to join in the dancing and singing. As if that weren't enough, the actors are some of the most famous in the world."
+    },
+    {
+      "letter": "C",
+      "title": "Victoria and Abdul",
+      "body": "This is the true story of the unexpected relationship between the British Queen Victoria and a young Indian man. This film is a wonderful story about friendship and also the history of Great Britain in the 1800s."
+    },
+    {
+      "letter": "D",
+      "title": "Fantastic Beasts and Where to Find Them",
+      "body": "This is a fantasy story from the famous writer J.K. Rowling who wrote the Harry Potter books. As you would expect, the film is exciting and unexpected. It is based in New York in 1926 and Eddie Redmayne plays a scientist who fights the dark powers with the help of his strange and magical creatures."
+    },
+    {
+      "letter": "E",
+      "title": "The Theory of Everything",
+      "body": "This is the true story of the famous scientist Stephen Hawking and how he fights a terrible disease that attacks his body when he is still a young university student. It is also a love story and it will make anyone who watches it feel positive and sure that they can achieve big things in their life."
+    },
+    {
+      "letter": "F",
+      "title": "One for The Road",
+      "body": "This is the story of a young car mechanic who works for a famous racing driver. On the day of a big race the driver gets sick and the young mechanic gets the chance to drive a million-pound racing car in an international race. You can probably guess what happens next."
+    },
+    {
+      "letter": "G",
+      "title": "Lion",
+      "body": "This is the true story of a boy who gets lost in India at the age of five and ends up living in Australia with a new family. He can never forget that he has an Indian family far away and when he grows up he tries to find them. The film gives us a good idea of what life is like in the poor areas of India in contrast to a rich life in Australia."
+    },
+    {
+      "letter": "H",
+      "title": "The Ramen Girl",
+      "body": "This is the story of a girl who moves to Japan with her boyfriend but then he leaves her and she has to find a way to live there on her own. She gets a job in a Japanese restaurant and becomes an excellent chef. This film will teach you a lot about Japanese culture and cooking."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 6,
+      "name": "Kostas",
+      "demand": "Fantasy, special effects and creative stories far from real life.",
+      "ans": "D. Fantastic Beasts and Where to Find Them",
+      "key": "D đúng vì đây là một fantasy story với magical creatures và dark powers, hoàn toàn phù hợp với trí tưởng tượng và sở thích special effects của Kostas."
+    },
+    {
+      "q": 7,
+      "name": "Pierre",
+      "demand": "Speed, fast action and a relatable young character.",
+      "ans": "F. One for The Road",
+      "key": "F đúng vì phim xoay quanh một young car mechanic và một cuộc đua xe quốc tế, nên vừa có tốc độ vừa có nhân vật trẻ mà Pierre có thể dễ liên hệ."
+    },
+    {
+      "q": 8,
+      "name": "Robert",
+      "demand": "Food, restaurants, cookery and especially Asian cuisine.",
+      "ans": "H. The Ramen Girl",
+      "key": "H đúng vì phim nói về một cô gái làm việc trong nhà hàng Nhật và trở thành chef; nội dung tập trung rõ vào Japanese culture and cooking."
+    },
+    {
+      "q": 9,
+      "name": "Julia",
+      "demand": "History, famous people, biography or drama.",
+      "ans": "C. Victoria and Abdul",
+      "key": "C đúng vì đây là true story về Queen Victoria và một young Indian man, đồng thời liên quan trực tiếp đến lịch sử nước Anh thế kỷ 19."
+    },
+    {
+      "q": 10,
+      "name": "Tina and Cathy",
+      "demand": "Singing, dancing, funny easy-to-watch films and romance.",
+      "ans": "B. Mamma Mia - The Movie",
+      "key": "B đúng vì đây là musical có các bài hát ABBA, nhiều dancing and singing, bối cảnh lãng mạn và câu chuyện summer love."
+    }
+  ]
+}
