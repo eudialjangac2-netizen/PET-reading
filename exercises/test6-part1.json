@@ -1,0 +1,142 @@
+{
+  "id": "test6-part1",
+  "partType": "part1",
+  "exerciseName": "Ready for B1 - Test 6 - Part 1",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "1": "B",
+    "2": "A",
+    "3": "A",
+    "4": "C",
+    "5": "C"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "promptQuestion": "In order to enter the competition,",
+      "leftContentHTML": "<div style='border:2px solid #333;padding:18px;border-radius:6px;background:#fff;'><div style='font-weight:800;color:#169bd5;font-size:16px;text-align:center;'>WIN A CAMERA COMPETITION</div><div style='text-align:center;margin-top:8px;'>Tell us in 250 words why photographs are important.<br><br>Last entry for competition,<br>Friday 1st May.<br><br>Professional writers are prohibited from entering.</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "you must send in a photograph of a professional writer."
+        },
+        {
+          "letter": "B",
+          "text": "you have to write an article explaining what something means to you."
+        },
+        {
+          "letter": "C",
+          "text": "you need to be a good photographer using a professional camera."
+        }
+      ],
+      "hint": "💡 The notice asks for 250 words about why photographs are important — not a photograph."
+    },
+    {
+      "id": 2,
+      "promptQuestion": "Why is Susan writing to Peter?",
+      "leftContentHTML": "<div style='border:2px solid #4aa3df;padding:18px;border-radius:8px;background:#fff;'><div><strong>To:</strong> Peter</div><div><strong>From:</strong> Susan</div><br><div>Hi Peter,<br>Summer camp is great and I really like the wooden cabins that we are staying in. The meals could be a lot better but at least I will lose weight with all this exercise and not eating much.<br>Susan</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "to tell him what the summer camp is like"
+        },
+        {
+          "letter": "B",
+          "text": "to explain why she keeps eating so much food"
+        },
+        {
+          "letter": "C",
+          "text": "to tell him what he can do when he stays at this camp"
+        }
+      ],
+      "hint": "💡 Susan describes the cabins, food and activities at the camp."
+    },
+    {
+      "id": 3,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #169bd5;padding:18px;border-radius:10px;background:#eaf8ff;text-align:center;'><div style='font-weight:800;color:#169bd5;font-size:16px;'>SPECIAL OFFER!</div><div>BUY THREE CDs,<br>GET CHEAPEST ONE FREE.<br>Offer available for the next 5 days only.<br>DVDs are 50% off, just for today.</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "You don't pay for one CD if you buy two others today."
+        },
+        {
+          "letter": "B",
+          "text": "You should buy at least 3 DVDs to get them for half their normal price this week."
+        },
+        {
+          "letter": "C",
+          "text": "You will get a discount today if you buy any CD."
+        }
+      ],
+      "hint": "💡 'Buy three CDs, get cheapest one free' means one of the three CDs costs nothing."
+    },
+    {
+      "id": 4,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #333;padding:18px;border-radius:12px;background:#fffef9;'><div>Please turn off the air conditioner, lights and all other electrical appliances when you leave the apartment.<br>Also make sure all doors and windows are shut before exiting the building.</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Opening apartment windows is strictly prohibited."
+        },
+        {
+          "letter": "B",
+          "text": "Appliances will shut down immediately after you have exited your apartment."
+        },
+        {
+          "letter": "C",
+          "text": "Do not leave any doors open when you leave the apartment building."
+        }
+      ],
+      "hint": "💡 The notice says all doors and windows must be shut before leaving."
+    },
+    {
+      "id": 5,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style='border:2px solid #555;padding:18px;border-radius:18px;background:#f5f5f5;max-width:300px;'><div>Jane,<br>Phone message from Tim.<br>He's going cycling tonight and asks whether you would like to go with him.<br>Phone him before 6pm, please.<br>Mum</div></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mum wants Jane to phone her to let her know what she has decided."
+        },
+        {
+          "letter": "B",
+          "text": "Tim wants to meet Jane at 6pm to go cycling."
+        },
+        {
+          "letter": "C",
+          "text": "Jane was not available to talk when Tim called to invite her out."
+        }
+      ],
+      "hint": "💡 Mum is passing on Tim's message because Jane was not there when he phoned."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 1,
+      "ans": "B",
+      "key": "B đúng vì thông báo yêu cầu 'Tell us in 250 words why photographs are important'. A sai vì người dự thi phải gửi bài viết, không phải ảnh. C sai vì không cần phải chụp ảnh hay dùng máy ảnh chuyên nghiệp."
+    },
+    {
+      "q": 2,
+      "ans": "A",
+      "key": "A đúng vì Susan đang kể cho Peter về summer camp: cabin, đồ ăn và hoạt động. B sai vì cô chỉ bình luận về thức ăn chứ không viết để giải thích chuyện ăn nhiều. C sai vì không có ý mời hay hướng dẫn Peter tới trại."
+    },
+    {
+      "q": 3,
+      "ans": "A",
+      "key": "A đúng vì 'Buy three CDs, get cheapest one free' nghĩa là mua ba CD thì chiếc rẻ nhất được miễn phí. B sai vì DVD giảm 50% chỉ trong hôm nay và không cần mua ba chiếc. C sai vì phải mua ít nhất ba CD mới được ưu đãi."
+    },
+    {
+      "q": 4,
+      "ans": "C",
+      "key": "C đúng vì thông báo yêu cầu 'make sure all doors and windows are shut before exiting the building'. A sai vì cửa sổ vẫn có thể mở khi ở trong căn hộ. B sai vì thiết bị không tự tắt; người ở phải chủ động tắt trước khi rời đi."
+    },
+    {
+      "q": 5,
+      "ans": "C",
+      "key": "C đúng vì Mum để lại lời nhắn của Tim cho Jane, cho thấy Jane không có mặt khi Tim gọi. A sai vì Jane cần gọi cho Tim, không phải Mum. B sai vì Jane cần gọi trước 6pm chứ không phải gặp Tim lúc 6pm."
+    }
+  ]
+}
