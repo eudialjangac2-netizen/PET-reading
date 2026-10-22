@@ -84,9 +84,17 @@ const PET_THEMES = {
   },
 };
 
-// Helper: lấy theme theo partType, fallback về part1 nếu không tìm thấy
+// Theme trung tính (không mascot) dùng khi partType không có trong PET_THEMES
+const NEUTRAL_THEME = {
+  mascot: "", titleEmoji: "",
+  primary: "#4a5568", primaryLight: "#a0aec0", accent: "#718096",
+  bgMain: "#f7f7f8", borderColor: "#e2e8f0", textDark: "#2d3748", textMuted: "#718096",
+  avatarImg: "",
+};
+
+// Helper: lấy theme theo partType, fallback về theme trung tính nếu không tìm thấy
 function getThemeByPartType(partType) {
-  return PET_THEMES[partType] || PET_THEMES.part1;
+  return PET_THEMES[partType] || NEUTRAL_THEME;
 }
 
 if (typeof window !== 'undefined') {
