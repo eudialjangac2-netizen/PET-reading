@@ -79,6 +79,7 @@ function renderPart5(data, theme) {
   PETEngine.init({
     exerciseName: data.exerciseName,
     exerciseId: data.id,
+    explanation: data.explanation,
     webhookUrl: data.webhookUrl,
     theme: theme,
     highlightScope: "left",       // Part 5 chỉ highlight bài đọc bên trái
