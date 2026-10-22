@@ -185,6 +185,7 @@
     endTimestamp = Date.now() + durationMinutes * 60 * 1000;
     buildWatermark();
     buildTabs();
+    if (typeof window.initSplitResizers === "function") window.initSplitResizers();
     buildPaletteGrid();
     showTab(0);
     startTimer();
