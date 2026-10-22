@@ -88,6 +88,8 @@
   let firstSubmissionDataSent = false;
   let antiCheatBypassed = false;
   let currentSelectionRange = null;
+  let isLocked = false;      // true từ lúc nộp bài cho tới khi bấm Làm lại
+  let lastResult = null;     // {correct,total,results:{qId:bool},dateText,durationText}
 
   // ---------------------------------------------------------------------
   // INIT
@@ -417,7 +419,7 @@
   // VALIDATE STATE (nút Submit + thông báo trạng thái + cảnh báo trùng)
   // ---------------------------------------------------------------------
   function validateAnswersState() {
-    if (!cfg) return;
+    if (!cfg || isLocked) return;
     const btnSubmit = document.getElementById("btnSubmit");
     const statusText = document.getElementById("statusText");
     const dupTooltip = document.getElementById("dupTooltip");
@@ -459,18 +461,22 @@
   // ---------------------------------------------------------------------
   // CHECK ANSWERS
   // ---------------------------------------------------------------------
+  function isAnswerCorrect(qId, val) {
+    return typeof cfg.isCorrectMatch === "function"
+      ? cfg.isCorrectMatch(qId, val)
+      : (val === cfg.getCorrectAnswer(qId));
+  }
+
   PETEngine.checkAnswers = function () {
+    if (isLocked) return;
     attemptCount++;
-    const userAnswers = {};
+    const results = {};
     let correctCount = 0;
 
     cfg.questionIds.forEach(qId => {
-      const val = cfg.getSelectedAnswer(qId);
-      userAnswers[qId] = val;
-      const isCorrect = typeof cfg.isCorrectMatch === "function"
-        ? cfg.isCorrectMatch(qId, val)
-        : (val === cfg.getCorrectAnswer(qId));
-      if (isCorrect) correctCount++;
+      const ok = isAnswerCorrect(qId, cfg.getSelectedAnswer(qId));
+      results[qId] = ok;
+      if (ok) correctCount++;
     });
 
     if (!firstSubmissionDataSent) {
@@ -479,32 +485,196 @@
     }
 
     const total = cfg.questionIds.length;
+    if (correctCount === total) sendRedoCompleteSignal(); // gửi MỌI lần đạt 100%
 
-    if (correctCount === total) {
-      renderResultSummary();
-      sendRedoCompleteSignal(); // tín hiệu riêng, gửi MỌI lần đạt 100% (không giới hạn 1 lần như log điểm)
-      const resultModal = document.getElementById("resultModal");
-      if (resultModal) resultModal.style.display = "block";
-    } else {
-      const modalDesc = document.getElementById("modalDesc");
-      if (modalDesc) {
-        modalDesc.textContent = `Bạn làm đúng ${correctCount}/${total} câu. Bạn cần làm đúng 100% để hoàn thành.`;
+    // Từ lần nộp thứ 2: hiện gợi ý ở các câu sai (giữ nguyên quy tắc cũ)
+    if (attemptCount >= 2 && correctCount < total) {
+      cfg.questionIds.forEach(qId => {
+        if (!results[qId]) {
+          const hintElem = document.getElementById("hint-" + qId);
+          if (hintElem) hintElem.style.display = "block";
+        }
+      });
+    }
+
+    const now = new Date();
+    lastResult = {
+      correct: correctCount,
+      total: total,
+      results: results,
+      dateText: now.toLocaleDateString("vi-VN"),
+      durationText: startTime ? formatDuration(now - startTime) : "-",
+    };
+
+    setLocked(true);
+    showResult();
+  };
+
+  // Khoá toàn bộ ô trả lời sau khi nộp (kể cả khi xem lại) cho tới khi bấm Làm lại
+  function setLocked(locked) {
+    isLocked = locked;
+    document.body.classList.toggle("exercise-locked", locked);
+    document.querySelectorAll("#partRenderTarget input, #partRenderTarget select, #partRenderTarget textarea")
+      .forEach(el => { el.disabled = locked; });
+  }
+
+  // ---------------------------------------------------------------------
+  // BẢNG KẾT QUẢ
+  // ---------------------------------------------------------------------
+  function showResult() {
+    if (!lastResult) return;
+    renderResultSummary();
+    const all = lastResult.correct === lastResult.total;
+    const emoji = document.getElementById("resultEmoji");
+    const heading = document.getElementById("resultHeading");
+    const big = document.getElementById("resultScoreBig");
+    const note = document.getElementById("resultScoreNote");
+    if (emoji) emoji.textContent = all ? "🎉" : "💪";
+    if (heading) heading.textContent = all ? "HOÀN THÀNH XUẤT SẮC!" : "ĐÃ NỘP BÀI";
+    if (big) big.textContent = `${lastResult.correct}/${lastResult.total}`;
+    if (note) note.textContent = all
+      ? "câu đúng — bạn đã đạt 100%!"
+      : "câu đúng — cần đúng 100% để hoàn thành, hãy xem lại bài rồi làm lại nhé.";
+    const modal = document.getElementById("resultModal");
+    if (modal) modal.style.display = "block";
+  }
+  PETEngine.showResult = showResult;
+
+  // ---------------------------------------------------------------------
+  // XEM LẠI BÀI LÀM: câu đúng -> xanh + giải thích; câu sai -> đỏ, KHÔNG đáp án/giải thích
+  // ---------------------------------------------------------------------
+  function findQuestionElement(qId) {
+    const selectors = [
+      `input[name="q_${qId}"]`,
+      `.ans-select[data-q="${qId}"]`,
+      `.inline-gap-select[data-q="${qId}"]`,
+      `#input_q_${qId}`,
+    ];
+    for (const sel of selectors) {
+      const el = document.querySelector(sel);
+      if (!el) continue;
+      if (el.classList.contains("inline-gap-select")) return { el: el, inline: true };
+      const card = el.closest(".mcq-card, .part1-item-card, .person-card, .gap-card");
+      return { el: card || el, inline: false };
+    }
+    return null;
+  }
+
+  function explanationFor(qId) {
+    const list = Array.isArray(cfg.explanation) ? cfg.explanation : [];
+    return list.find(e => String(e.q) === String(qId)) || null;
+  }
+
+  function clearReviewDecorations() {
+    document.querySelectorAll(".review-correct, .review-wrong").forEach(el => {
+      el.classList.remove("review-correct", "review-wrong");
+    });
+    document.querySelectorAll(".review-explain, #reviewExplainList").forEach(el => el.remove());
+  }
+
+  PETEngine.enterReviewMode = function () {
+    if (!lastResult) return;
+    clearReviewDecorations();
+    const resultModal = document.getElementById("resultModal");
+    if (resultModal) resultModal.style.display = "none";
+
+    const inlineItems = []; // Part 4: ô trống nằm giữa câu văn, giải thích gom vào cột phải
+
+    cfg.questionIds.forEach(qId => {
+      const found = findQuestionElement(qId);
+      const ok = !!lastResult.results[qId];
+      const exp = ok ? explanationFor(qId) : null;
+      const html = ok
+        ? `<div class="review-explain review-explain-correct">✅ <strong>Câu ${qId}: Đúng</strong>${exp ? ` — Đáp án: <strong>${exp.ans}</strong><br>${exp.key}` : ""}</div>`
+        : `<div class="review-explain review-explain-wrong">❌ Câu ${qId}: chưa đúng</div>`;
+
+      if (!found) return;
+      found.el.classList.add(ok ? "review-correct" : "review-wrong");
+      if (found.inline) {
+        inlineItems.push(html);
+      } else {
+        found.el.insertAdjacentHTML("beforeend", html);
       }
-      const modalOverlay = document.getElementById("modalOverlay");
-      if (modalOverlay) modalOverlay.style.display = "flex";
+    });
 
-      if (attemptCount >= 2) {
-        cfg.questionIds.forEach(qId => {
-          const isCorrect = typeof cfg.isCorrectMatch === "function"
-            ? cfg.isCorrectMatch(qId, userAnswers[qId])
-            : (userAnswers[qId] === cfg.getCorrectAnswer(qId));
-          if (!isCorrect) {
-            const hintElem = document.getElementById("hint-" + qId);
-            if (hintElem) hintElem.style.display = "block";
-          }
-        });
+    if (inlineItems.length > 0) {
+      const host = document.getElementById("rightPane") || document.getElementById("partRenderTarget");
+      if (host) {
+        host.insertAdjacentHTML("beforeend",
+          `<div class="review-explain-list" id="reviewExplainList"><h3>Kết quả từng câu</h3>${inlineItems.join("")}</div>`);
       }
     }
+
+    const btnSubmit = document.getElementById("btnSubmit");
+    const btnShow = document.getElementById("btnShowResult");
+    const btnRetry = document.getElementById("btnRetryFooter");
+    const statusText = document.getElementById("statusText");
+    if (btnSubmit) btnSubmit.style.display = "none";
+    if (btnShow) btnShow.style.display = "";
+    if (btnRetry) btnRetry.style.display = "";
+    if (statusText) {
+      statusText.textContent = "👁️ Đang xem lại bài làm — bài đã nộp nên không thể sửa đáp án.";
+      statusText.style.color = "var(--primary)";
+    }
+    const dup = document.getElementById("dupTooltip");
+    if (dup) dup.style.display = "none";
+
+    document.querySelectorAll(".left-pane, .right-pane").forEach(p => { p.scrollTop = 0; });
+    window.scrollTo(0, 0);
+  };
+
+  // ---------------------------------------------------------------------
+  // LÀM LẠI (ngay tại trang, có bảng xác nhận)
+  // ---------------------------------------------------------------------
+  PETEngine.confirmRetry = function () {
+    const overlay = document.getElementById("retryConfirmOverlay");
+    if (overlay) overlay.style.display = "flex";
+  };
+
+  PETEngine.cancelRetry = function () {
+    const overlay = document.getElementById("retryConfirmOverlay");
+    if (overlay) overlay.style.display = "none";
+  };
+
+  // Xoá toàn bộ highlight (gỡ thẻ <mark>, giữ nguyên nội dung bên trong)
+  function clearAllHighlights() {
+    document.querySelectorAll("#partRenderTarget mark").forEach(mark => {
+      const parent = mark.parentNode;
+      if (!parent) return;
+      while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
+      parent.removeChild(mark);
+      parent.normalize();
+    });
+    const hlPopup = document.getElementById("hlPopup");
+    if (hlPopup) hlPopup.style.display = "none";
+    currentSelectionRange = null;
+  }
+
+  PETEngine.doRetry = function () {
+    PETEngine.cancelRetry();
+    const resultModal = document.getElementById("resultModal");
+    if (resultModal) resultModal.style.display = "none";
+
+    clearReviewDecorations();
+    clearAllHighlights();
+    setLocked(false);
+    if (typeof cfg.clearAllAnswers === "function") cfg.clearAllAnswers();
+
+    startTime = new Date();          // tính lại thời lượng cho lượt làm mới
+    lastChangedQuestion = null;      // tránh bị tính nhầm "thao tác quá nhanh"
+    lastChangeTimestamp = 0;
+    lastResult = null;
+
+    const btnSubmit = document.getElementById("btnSubmit");
+    const btnShow = document.getElementById("btnShowResult");
+    const btnRetry = document.getElementById("btnRetryFooter");
+    if (btnSubmit) btnSubmit.style.display = "";
+    if (btnShow) btnShow.style.display = "none";
+    if (btnRetry) btnRetry.style.display = "none";
+
+    document.querySelectorAll(".left-pane, .right-pane").forEach(p => { p.scrollTop = 0; });
+    window.scrollTo(0, 0);
+    validateAnswersState();
   };
 
   PETEngine.closeModal = function () {
@@ -579,9 +749,7 @@
 
   function renderResultSummary() {
     const box = document.getElementById("resultSummaryBox");
-    if (!box) return;
-    const now = new Date();
-    const durationText = startTime ? formatDuration(now - startTime) : "-";
+    if (!box || !lastResult) return;
     box.innerHTML = `
       <div class="result-summary-item">
         <span class="label">📘 Bài tập</span>
@@ -593,11 +761,11 @@
       </div>
       <div class="result-summary-item">
         <span class="label">📅 Ngày làm bài</span>
-        <span class="value">${now.toLocaleDateString("vi-VN")}</span>
+        <span class="value">${lastResult.dateText}</span>
       </div>
       <div class="result-summary-item">
-        <span class="label">⏱️ Thời gian hoàn thành</span>
-        <span class="value">${durationText}</span>
+        <span class="label">⏱️ Thời gian làm bài</span>
+        <span class="value">${lastResult.durationText}</span>
       </div>
     `;
   }
@@ -710,6 +878,7 @@
   //  - isCorrect = true  -> điền đúng hết
   //  - isCorrect = false -> cố tình điền SAI 2 câu đầu tiên, còn lại điền đúng
   PETEngine.teacherAutoFill = function (isCorrect) {
+    if (isLocked) { alert("Bài đã nộp và đang khoá. Bấm Làm lại bài trước khi Auto-Fill."); return; }
     const tempBypass = antiCheatBypassed;
     antiCheatBypassed = true;
 
