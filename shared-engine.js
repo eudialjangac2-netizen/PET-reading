@@ -298,6 +298,29 @@
     });
   }
 
+  // Bọc từng text node (không rỗng) bên trong 1 node vào thẻ <mark> riêng, đi sâu vào
+  // các thẻ khối lồng bên trong (vd <p>) thay vì bọc cả thẻ khối vào trong 1 <mark>.
+  // Giúp tránh tạo <mark> chứa <p>/<div>... (HTML không hợp lệ, dễ gãy cấu trúc).
+  function wrapTextNodesInMark(node, color) {
+    if (!node) return;
+    if (node.nodeType === 3) { // text node
+      if (!node.textContent || node.textContent.trim().length === 0) return;
+      if (!node.parentNode) return;
+      const mark = document.createElement("mark");
+      mark.className = "hl-" + color;
+      node.parentNode.insertBefore(mark, node);
+      mark.appendChild(node);
+    } else if (node.nodeType === 1) { // element node
+      if (node.tagName === "MARK") {
+        // Đã có highlight sẵn (lồng do bôi chồng lên vùng cũ) -> đổi màu tại chỗ,
+        // không lồng thêm <mark> nữa.
+        node.className = "hl-" + color;
+        return;
+      }
+      Array.from(node.childNodes).forEach(child => wrapTextNodesInMark(child, color));
+    }
+  }
+
   PETEngine.applyHighlight = function (color) {
     let range = currentSelectionRange;
     const selection = window.getSelection();
@@ -311,15 +334,29 @@
         markElem = markElem.parentElement;
       }
       if (markElem && markElem.tagName === "MARK") {
-        const textNode = document.createTextNode(markElem.textContent);
-        markElem.parentNode.replaceChild(textNode, markElem);
+        // "Gỡ" thẻ <mark> nhưng GIỮ NGUYÊN toàn bộ nội dung bên trong (text, thẻ <p>,
+        // ảnh...). Trước đây code dùng markElem.textContent rồi tạo 1 text node duy
+        // nhất để thay thế -> làm MẤT hết cấu trúc HTML lồng bên trong (các đoạn văn
+        // bị dồn thành 1 dòng liền, mất xuống dòng) nếu <mark> đó lỡ bọc qua nhiều
+        // đoạn văn. Cách đúng là "unwrap": đưa từng node con ra ngoài rồi xoá <mark>.
+        const parent = markElem.parentNode;
+        while (markElem.firstChild) {
+          parent.insertBefore(markElem.firstChild, markElem);
+        }
+        parent.removeChild(markElem);
+        parent.normalize();
       }
     } else {
-      const mark = document.createElement("mark");
-      mark.className = "hl-" + color;
       try {
-        mark.appendChild(range.extractContents());
-        range.insertNode(mark);
+        // Nếu học sinh bôi đen 1 vùng chạy qua nhiều đoạn văn (<p>, <div>...), KHÔNG
+        // bọc 1 thẻ <mark> duy nhất quanh toàn bộ (sẽ tạo ra <mark> chứa <p> bên trong
+        // -> HTML không hợp lệ, và lúc xoá highlight sẽ làm hỏng cấu trúc). Thay vào
+        // đó bọc <mark> riêng cho từng đoạn text nằm trong vùng chọn, giữ nguyên các
+        // thẻ khối (<p>, ảnh...) ở nguyên vị trí.
+        const fragment = range.extractContents();
+        const topNodes = Array.from(fragment.childNodes);
+        range.insertNode(fragment); // chèn lại nội dung gốc (chưa highlight) đúng vị trí cũ
+        topNodes.forEach(node => wrapTextNodesInMark(node, color));
       } catch (e) { /* ignore */ }
     }
     if (selection) selection.removeAllRanges();
