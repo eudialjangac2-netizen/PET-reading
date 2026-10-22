@@ -78,6 +78,7 @@ function renderPart2(data, theme) {
   PETEngine.init({
     exerciseName: data.exerciseName,
     exerciseId: data.id,
+    explanation: data.explanation,
     webhookUrl: data.webhookUrl,
     theme: theme,
     highlightScope: "full",       // Part 2 cho highlight cả 2 bên
