@@ -248,8 +248,20 @@ mark.hl-blue { background-color: #a0c4ff; color: inherit; border-radius: 4px; pa
   flex: 1; min-height: 0; min-width: 0; overflow-y: auto; overflow-x: hidden; padding: 24px;
   scrollbar-width: thin; scrollbar-color: var(--primary-light) transparent;
 }
-.left-pane { border-right: 2px dashed var(--border-color); background: rgba(0,0,0,0.015); }
+.left-pane { background: rgba(0,0,0,0.015); }
 .right-pane { background: #ffffff; }
+
+/* ---------- Thanh kéo tăng/giảm độ rộng 2 bên (giữa left-pane và right-pane) ---------- */
+.split-resizer {
+  flex: 0 0 9px; width: 9px; cursor: col-resize; background: var(--border-color);
+  position: relative; z-index: 5; touch-action: none;
+}
+.split-resizer::after {
+  content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 4px; height: 40px; border-radius: 3px; background: var(--primary-light);
+}
+.split-resizer:hover, .split-resizer.dragging { background: var(--primary-light); }
+.split-resizer:hover::after, .split-resizer.dragging::after { background: var(--primary); }
 
 .left-pane::-webkit-scrollbar, .right-pane::-webkit-scrollbar { width: 10px; }
 .left-pane::-webkit-scrollbar-track, .right-pane::-webkit-scrollbar-track { background: rgba(0,0,0,0.04); border-radius: 10px; }
@@ -261,8 +273,10 @@ mark.hl-blue { background-color: #a0c4ff; color: inherit; border-radius: 4px; pa
 @media (max-width: 800px) {
   .split-container { flex-direction: column; overflow: visible; }
   #mainApp.split-mode { height: auto; min-height: 100vh; }
-  .left-pane, .right-pane { overflow-y: visible; }
-  .left-pane { border-right: none; border-bottom: 2px dashed var(--border-color); }
+  .left-pane, .right-pane { overflow-y: visible; flex: 1 1 auto !important; }
+  .left-pane { border-bottom: 2px dashed var(--border-color); }
+  /* Màn hình hẹp xếp dọc 2 khối -> không kéo ngang được, ẩn thanh kéo */
+  .split-resizer { display: none; }
 }
 
 /* ---------- Article (Part 3, 4, 5, 6) ---------- */
