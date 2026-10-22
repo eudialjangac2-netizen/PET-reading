@@ -128,6 +128,7 @@
   <!-- Load engine + theme trước -->
   <script src="shared-engine.js"></script>
   <script src="theme-config.js"></script>
+  <script src="split-resizer.js"></script>
 
   <!-- Dispatcher core PHẢI nạp trước các renderer, vì renderer gọi registerRenderer() ngay khi parse -->
   <script>
@@ -149,6 +150,23 @@
   // ==========================================================================
   // DISPATCHER: đọc ?id= trên URL -> tải JSON bài -> gọi đúng renderer partType
   // ==========================================================================
+  // Áp theme NGAY (đồng bộ, trước khi fetch JSON) để tránh "nháy" theme Part 1
+  // (màu mặc định trong :root của shared-styles.css) trước khi theme thật load xong.
+  // Đoán partType từ chính tên id (quy ước luôn là "...-partN"), không cần đợi JSON.
+  function applyThemeNow(partType) {
+    if (typeof getThemeByPartType !== "function") return null;
+    const theme = getThemeByPartType(partType);
+    const root = document.documentElement.style;
+    if (theme.primary) root.setProperty("--primary", theme.primary);
+    if (theme.primaryLight) root.setProperty("--primary-light", theme.primaryLight);
+    if (theme.accent) root.setProperty("--accent", theme.accent);
+    if (theme.bgMain) root.setProperty("--bg-main", theme.bgMain);
+    if (theme.borderColor) root.setProperty("--border-color", theme.borderColor);
+    const avatarEl = document.getElementById("loginAvatarImg");
+    if (avatarEl && theme.avatarImg) avatarEl.src = theme.avatarImg;
+    return theme;
+  }
+
   async function bootExercise() {
     const params = new URLSearchParams(window.location.search);
     const exerciseId = params.get("id");
@@ -157,6 +175,11 @@
       document.body.innerHTML = "<p style='padding:40px;font-family:sans-serif;'>⚠️ Thiếu tham số <code>?id=</code> trên URL. Ví dụ: <code>bai-tap-doc.html?id=test1-part1</code></p>";
       return;
     }
+
+    // Đoán partType từ id (vd "test6-part2" -> "part2") để áp theme ngay lập tức,
+    // không phải đợi fetch JSON xong mới có màu đúng.
+    const guessedMatch = exerciseId.match(/part(\d+)/);
+    if (guessedMatch) applyThemeNow("part" + guessedMatch[1]);
 
     let data;
     try {
@@ -174,15 +197,13 @@
       return;
     }
 
-    const theme = (typeof getThemeByPartType === "function") ? getThemeByPartType(data.partType) : null;
-    if (theme) {
-      const avatarEl = document.getElementById("loginAvatarImg");
-      if (avatarEl) avatarEl.src = theme.avatarImg;
-    }
+    // Áp lại theo partType THẬT lấy từ JSON (phòng trường hợp tên id không khớp partType).
+    const theme = applyThemeNow(data.partType);
 
     // Renderer tự build DOM + tự gọi PETEngine.init(...) với cfg phù hợp partType đó
     try {
       renderFn(data, theme);
+      if (typeof window.initSplitResizers === "function") window.initSplitResizers();
     } catch (err) {
       console.error("Render error:", err);
       document.body.innerHTML += `<pre style="color:red;padding:20px;">RENDER ERROR: ${err.message}\n${err.stack}</pre>`;
