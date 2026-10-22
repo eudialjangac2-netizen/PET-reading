@@ -1,7 +1,8 @@
 /* =====================================================================
    PET READING - SHARED STYLES
    =====================================================================
-   Biến CSS mặc định = bảng màu Part 1 (Lemon Rabbit). PETEngine.applyTheme()
+   Biến CSS mặc định = bảng màu TRUNG TÍNH (xám), không thuộc Part nào. Theme thật
+   của từng Part được áp ngay trong <head> của bai-tap-doc.html và PETEngine.applyTheme()
    sẽ override --primary/--primary-light/--accent/--bg-main/--border-color
    theo theme của từng Part lúc runtime (đọc từ theme-config.js).
 
@@ -11,14 +12,14 @@
    ===================================================================== */
 
 :root {
-  --bg-main: #fcf9e8;
+  --bg-main: #f7f7f8;
   --bg-card: #ffffff;
-  --primary: #d4a017;
-  --primary-light: #fbe380;
-  --accent: #fbc02d;
-  --text-dark: #3a3321;
-  --text-muted: #82785c;
-  --border-color: #f3e6a1;
+  --primary: #4a5568;
+  --primary-light: #a0aec0;
+  --accent: #718096;
+  --text-dark: #2d3748;
+  --text-muted: #718096;
+  --border-color: #e2e8f0;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -53,6 +54,7 @@ body {
   max-width: 440px; width: 100%; box-shadow: 0 12px 32px rgba(0,0,0,0.12);
   border: 3px solid var(--border-color); text-align: center;
 }
+#loginAvatarImg:not([src]) { display: none; }
 #loginAvatarImg {
   width: 170px; height: 170px; object-fit: cover; border-radius: 24px;
   margin: 0 auto 16px; display: block; border: 3px solid var(--border-color);
@@ -128,7 +130,7 @@ body {
 }
 
 /* ---------- Modals & Overlays ---------- */
-#lockOverlay, #modalOverlay {
+#lockOverlay, #modalOverlay, #retryConfirmOverlay {
   display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
   background: rgba(0,0,0,0.75); z-index: 9999; flex-direction: column;
   align-items: center; justify-content: center; color: white; text-align: center; padding: 20px;
@@ -349,3 +351,42 @@ mark.hl-blue { background-color: #a0c4ff; color: inherit; border-radius: 4px; pa
   font-size: 17px; outline: none; font-weight: 700; color: var(--primary); background: #ffffff; font-family: inherit;
 }
 .gap-text-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,0,0,0.06); }
+
+
+/* =====================================================================
+   NỘP BÀI / XEM LẠI / LÀM LẠI (bài lẻ)
+   ===================================================================== */
+.footer-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+.btn-secondary-outline {
+  background: white; color: var(--primary); border: 2px solid var(--primary-light);
+  padding: 10px 22px; border-radius: 30px; font-weight: 700; font-size: 15px; cursor: pointer; font-family: inherit;
+}
+.btn-secondary-outline:hover { background: #fffbe6; }
+
+.result-score-big { font-size: 44px; font-weight: 800; color: var(--primary); margin: 6px 0 2px; }
+.result-actions { display: flex; gap: 12px; margin-top: 8px; flex-wrap: wrap; }
+.result-actions button { flex: 1; min-width: 180px; margin-top: 10px; }
+.result-actions .btn-retry {
+  background: white; color: var(--primary); border: 2px solid var(--primary-light); box-shadow: none;
+}
+.retry-confirm-actions { display: flex; gap: 10px; margin-top: 18px; }
+.retry-confirm-actions button { flex: 1; margin-top: 0; }
+
+/* Khoá bài sau khi nộp */
+body.exercise-locked .option-label { cursor: default; }
+body.exercise-locked .option-label:hover { border-color: var(--border-color); background: #fffef9; }
+body.exercise-locked select:disabled,
+body.exercise-locked input[type="text"]:disabled {
+  opacity: 1; color: var(--text-dark); -webkit-text-fill-color: var(--text-dark); cursor: default;
+}
+
+/* Chế độ xem lại */
+.review-correct { outline: 3px solid #4f8f5b; outline-offset: 2px; border-radius: 16px; }
+.review-wrong { outline: 3px solid #d96b6b; outline-offset: 2px; border-radius: 16px; }
+select.inline-gap-select.review-correct { background: #eefaf0; border-radius: 8px; }
+select.inline-gap-select.review-wrong { background: #fdeeee; border-radius: 8px; }
+.review-explain { margin-top: 12px; padding: 10px 14px; border-radius: 10px; font-size: 13.5px; line-height: 1.55; }
+.review-explain-correct { background: #eefaf0; border-left: 4px solid #4f8f5b; color: #2f5f3a; }
+.review-explain-wrong { background: #fdeeee; border-left: 4px solid #d96b6b; color: #a33; font-weight: 700; }
+.review-explain-list h3 { color: var(--primary); font-size: 16px; margin: 8px 0 12px; }
+.review-explain-list .review-explain { margin-top: 0; margin-bottom: 10px; }
