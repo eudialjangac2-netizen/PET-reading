@@ -6,6 +6,24 @@
 <title>PET Reading</title>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared-styles.css">
+<script>
+  // Áp màu theme ngay trong <head> (trước khi trang vẽ lần đầu) theo ?id=testN-partM,
+  // để không bị "nháy" màu mặc định. Ảnh mascot nạp sau bởi theme-config.js.
+  (function () {
+    var COLORS = {
+      part1: ["#d4a017", "#fbe380", "#fbc02d", "#fcf9e8", "#f3e6a1", "#3a3321", "#82785c"],
+      part2: ["#4a7c59", "#76b041", "#ff8c42", "#edf7e7", "#cce3c1", "#2d3748", "#718096"],
+      part3: ["#6b3ba7", "#a076db", "#ff8c42", "#f5effa", "#e2d3f3", "#2d263b", "#71628d"],
+      part4: ["#a9713f", "#d9a066", "#f6c453", "#fdf3e7", "#f0dcc0", "#4a3524", "#8a715a"],
+      part5: ["#e66000", "#ff9843", "#ffd166", "#fff8ee", "#f7dabb", "#3a2818", "#8c715b"],
+      part6: ["#ff4d6d", "#ff758f", "#c9184a", "#fff0f3", "#ffb3c1", "#3d2c33", "#8d6e75"]
+    };
+    var VARS = ["--primary", "--primary-light", "--accent", "--bg-main", "--border-color", "--text-dark", "--text-muted"];
+    var m = (new URLSearchParams(location.search).get("id") || "").match(/part(\d+)/);
+    var c = m && COLORS["part" + m[1]];
+    if (c) for (var i = 0; i < VARS.length; i++) document.documentElement.style.setProperty(VARS[i], c[i]);
+  })();
+</script>
 </head>
 <body>
 
@@ -25,7 +43,7 @@
   <!-- Login Screen -->
   <div id="loginScreen">
     <div class="login-card">
-      <img id="loginAvatarImg" src="" alt="Mascot">
+      <img id="loginAvatarImg" alt="Mascot">
       <h2>Đăng Nhập Làm Bài</h2>
       <p id="loginSubtitle">Vui lòng nhập đầy đủ thông tin để bắt đầu bài tập</p>
 
@@ -63,13 +81,16 @@
     </div>
   </div>
 
-  <!-- Retry Modal -->
-  <div id="modalOverlay">
+  <!-- Xác nhận làm lại -->
+  <div id="retryConfirmOverlay">
     <div class="modal-box">
-      <div style="font-size: 48px; margin-bottom: 8px;">🔄</div>
-      <h3 style="color: var(--primary); font-size: 22px; margin-bottom: 8px;">CẦN LÀM LẠI BÀI TẬP</h3>
-      <p style="font-size: 15px; color: #4a5568; line-height: 1.5;" id="modalDesc">Bạn chưa đạt 100%. Hãy thử lại nhé!</p>
-      <button class="btn-start" style="margin-top: 20px;" onclick="PETEngine.closeModal()">Thử Làm Lại 🔄</button>
+      <div style="font-size: 44px; margin-bottom: 8px;">🔄</div>
+      <h3 style="color: var(--primary); font-size: 21px; margin-bottom: 8px;">Làm lại bài này?</h3>
+      <p style="font-size: 14.5px; color: #4a5568; line-height: 1.55;">Toàn bộ đáp án hiện tại sẽ bị <b>xoá hết</b> và thời gian làm bài được tính lại từ đầu. Bạn chắc chắn muốn làm lại chứ?</p>
+      <div class="retry-confirm-actions">
+        <button class="btn-secondary-outline" onclick="PETEngine.cancelRetry()">Huỷ</button>
+        <button class="btn-start" onclick="PETEngine.doRetry()">Xác nhận làm lại</button>
+      </div>
     </div>
   </div>
 
@@ -96,7 +117,11 @@
     <div class="submit-footer">
       <div style="font-size:14px; color:var(--text-muted);" id="statusText">Hoàn thành các câu hỏi để nộp bài</div>
       <div class="duplicate-tooltip" id="dupTooltip">⚠️ Không được chọn trùng đáp án giữa các câu!</div>
-      <button class="btn-submit" id="btnSubmit" onclick="PETEngine.checkAnswers()" disabled>Kiểm Tra Đáp Án 🚀</button>
+      <div class="footer-actions">
+        <button class="btn-submit" id="btnSubmit" onclick="PETEngine.checkAnswers()" disabled>Kiểm Tra Đáp Án 🚀</button>
+        <button class="btn-submit" id="btnShowResult" style="display:none;" onclick="PETEngine.showResult()">📊 Bảng kết quả</button>
+        <button class="btn-secondary-outline" id="btnRetryFooter" style="display:none;" onclick="PETEngine.confirmRetry()">🔄 Làm lại bài</button>
+      </div>
     </div>
   </div>
 
@@ -110,20 +135,25 @@
     </div>
   </div>
 
-  <!-- Result Modal -->
+  <!-- Result Modal (bảng kết quả: chỉ số câu đúng + thông tin bài làm) -->
   <div id="resultModal">
-    <div class="result-card">
-      <div style="text-align:center; margin-bottom:24px;">
-        <div style="font-size:60px;">🎉</div>
-        <h2 style="color:var(--primary); font-size:28px;">HOÀN THÀNH XUẤT SẮC!</h2>
-        <p style="color:var(--text-muted); font-size:15px; margin-top:6px;">Kết quả bài tập đã được ghi nhận thành công.</p>
+    <div class="result-card" style="max-width:560px;">
+      <div style="text-align:center; margin-bottom:6px;">
+        <div style="font-size:56px;" id="resultEmoji">🎉</div>
+        <h2 style="color:var(--primary); font-size:24px;" id="resultHeading">HOÀN THÀNH XUẤT SẮC!</h2>
+        <div class="result-score-big" id="resultScoreBig">0/0</div>
+        <p style="color:var(--text-muted); font-size:14.5px;" id="resultScoreNote">câu đúng</p>
       </div>
       <div class="result-summary-grid" id="resultSummaryBox"></div>
-      <h3 style="color:var(--primary); font-size:18px; margin-bottom:12px;">Giải Thích Đáp Án Chi Tiết:</h3>
-      <div id="explanationContainer"></div>
-      <button class="btn-start" style="margin-top:24px;" onclick="location.reload()">Làm Bài Mới 🔄</button>
+      <div class="result-actions">
+        <button class="btn-start" onclick="PETEngine.enterReviewMode()">👁️ Xem lại bài làm</button>
+        <button class="btn-start btn-retry" onclick="PETEngine.confirmRetry()">🔄 Làm lại bài</button>
+      </div>
     </div>
   </div>
+
+  <!-- Giữ lại để renderer cũ không lỗi; giải thích giờ hiển thị trong chế độ xem lại -->
+  <div id="explanationContainer" style="display:none;"></div>
 
   <!-- Load engine + theme trước -->
   <script src="shared-engine.js"></script>
