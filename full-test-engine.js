@@ -9,7 +9,7 @@
   const STUDENT_CODE = "72PETRB";
   const TEACHER_NAME = "GVPET72";
   const TEACHER_CODE = "72GRADEBPET";
-  const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec";
+  const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwmlRkCIWfxBoEHL2QsJiRW1tbK8U5zfjprpUcDOKieNkPkgjTXlTYgh-ES7KqitOQI/exec";
 
   // Bảng quy đổi CHÍNH THỨC Cambridge PET Reading (0-32 câu đúng -> PET Score /170)
   // Chỉ áp dụng khi Full Test có ĐỦ 32 câu (tức đủ cả 6 Part) — nếu chọn ít hơn,
