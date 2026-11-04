@@ -1,0 +1,142 @@
+{
+  "id": "test7-part1",
+  "partType": "part1",
+  "exerciseName": "Ready for B1 - Test 7 - Part 1",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "1": "B",
+    "2": "C",
+    "3": "B",
+    "4": "B",
+    "5": "A"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "promptQuestion": "Why is Pete sending this email?",
+      "leftContentHTML": "<div><strong>To:</strong> Ned<br><strong>From:</strong> Pete<br><strong>Re:</strong> Football match<br><br>Hi Ned!<br>I’ll meet you at the football match at 8.00. My mum needs to work late so she won’t be able to give us a lift as we said. But I’ll be there on time, don’t worry. I’ll take the bus.<br>Pete</div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "to let Ned know he's going to be late for tonight's match."
+        },
+        {
+          "letter": "B",
+          "text": "to inform Ned that Pete will get to the match alone."
+        },
+        {
+          "letter": "C",
+          "text": "to confirm that he will meet Ned before the match."
+        }
+      ],
+      "hint": "💡 Pete will still meet Ned at the match, but he must travel there by himself."
+    },
+    {
+      "id": 2,
+      "promptQuestion": "The notice informs passengers that",
+      "leftContentHTML": "<div><strong>NOTICE TO PASSENGERS</strong><br>We apologise for delays on afternoon trains going south between 3 pm and 5 pm.<br>Urgent work being performed on the track, due to a crash.<br><em>Coaches will be provided for some destinations.</em></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "all trains are delayed because of an accident."
+        },
+        {
+          "letter": "B",
+          "text": "all passengers may travel by coach instead of train if they wish."
+        },
+        {
+          "letter": "C",
+          "text": "some trains are going to run late as repairs will be in progress."
+        }
+      ],
+      "hint": "💡 Only southbound trains are mentioned, and coaches are provided only for some destinations."
+    },
+    {
+      "id": 3,
+      "promptQuestion": "",
+      "leftContentHTML": "<div><strong>NOTICE</strong><br>Only dogs accompanied by owners are allowed in the green flag zone.<br>Dog owners not following park rules will have to pay a fine.</div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only dogs can enter the green flag zone."
+        },
+        {
+          "letter": "B",
+          "text": "Dogs must not be left alone in the green flag zone."
+        },
+        {
+          "letter": "C",
+          "text": "People are not permitted in the green flag zone."
+        }
+      ],
+      "hint": "💡 A dog can enter only if its owner is with it."
+    },
+    {
+      "id": 4,
+      "promptQuestion": "",
+      "leftContentHTML": "<div><em>This product has been prepared with nothing but the finest ingredients.<br>Store in a cool, dry place.<br>Once opened, enjoy within 7 days.</em></div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "This product should be eaten a week after being bought at the latest."
+        },
+        {
+          "letter": "B",
+          "text": "Natural ingredients have been used in order to make this product."
+        },
+        {
+          "letter": "C",
+          "text": "This product should be stored in the freezer as soon as it is opened."
+        }
+      ],
+      "hint": "💡 Focus on 'the finest ingredients' and 'once opened'."
+    },
+    {
+      "id": 5,
+      "promptQuestion": "",
+      "leftContentHTML": "<div>Hi Anne,<br>Can you pick up some apples on the way back as I didn’t get enough when I did my weekly online supermarket order?<br>Don’t forget.<br>Thanks,<br>Jess</div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Anne needs to buy some apples from the local market."
+        },
+        {
+          "letter": "B",
+          "text": "Anne has to do the weekly shopping at the supermarket."
+        },
+        {
+          "letter": "C",
+          "text": "Jess forgot to place an order at the online supermarket."
+        }
+      ],
+      "hint": "💡 Jess already did the online order; she only needs extra apples."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 1,
+      "ans": "B",
+      "key": "B đúng vì Pete nói cậu sẽ gặp Ned tại trận đấu và sẽ tự đi bằng xe buýt vì mẹ phải làm muộn. A sai vì Pete nói cậu vẫn sẽ đến đúng giờ. C sai vì họ sẽ gặp nhau tại trận đấu, không phải trước trận đấu."
+    },
+    {
+      "q": 2,
+      "ans": "C",
+      "key": "C đúng vì thông báo nói có công việc khẩn cấp trên đường ray và chỉ các chuyến tàu đi về phía nam trong khung giờ nhất định bị chậm. A sai vì không phải tất cả các chuyến tàu đều bị ảnh hưởng. B sai vì coaches chỉ được cung cấp cho một số điểm đến."
+    },
+    {
+      "q": 3,
+      "ans": "B",
+      "key": "B đúng vì biển báo nói chỉ chó đi cùng chủ mới được vào green flag zone, nghĩa là chó không được để một mình. A và C sai vì con người vẫn được phép vào khu vực này."
+    },
+    {
+      "q": 4,
+      "ans": "B",
+      "key": "B đúng vì 'prepared with nothing but the finest ingredients' cho thấy sản phẩm được làm từ nguyên liệu chất lượng tốt. A sai vì cần dùng trong vòng 7 ngày sau khi mở, không phải sau khi mua. C sai vì không có yêu cầu bảo quản trong ngăn đá."
+    },
+    {
+      "q": 5,
+      "ans": "A",
+      "key": "A đúng vì Jess nhờ Anne mua thêm táo. B sai vì Jess đã làm đơn mua sắm hàng tuần rồi. C sai vì Jess không quên đặt đơn, chỉ mua chưa đủ táo."
+    }
+  ]
+}
