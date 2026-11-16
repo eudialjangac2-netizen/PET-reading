@@ -14,35 +14,35 @@
     {
       "id": 6,
       "name": "Pamela",
-      "avatar": "",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200",
       "text": "Pamela’s family is quite wealthy and lives in the city centre. She misses the countryside and loves reading and long country walks. She hates hot weather and holidays by the sea.",
       "hint": "💡 Countryside, reading and walking; avoid a seaside holiday."
     },
     {
       "id": 7,
       "name": "Rob",
-      "avatar": "",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200",
       "text": "Rob is interested in music. He loves places where there is a good art scene. He likes meeting people, being in a town or city and prefers walking or cycling to using public transport.",
       "hint": "💡 City, art, music, people, and places within walking distance."
     },
     {
       "id": 8,
       "name": "Sue",
-      "avatar": "",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200",
       "text": "Sue’s trying to get into art school. She wants a peaceful environment and maybe some company while she paints. She wants a chance to practise her French or Spanish.",
       "hint": "💡 Creative, peaceful, sociable, with a chance to use Spanish."
     },
     {
       "id": 9,
       "name": "Tim and Ben",
-      "avatar": "",
+      "avatar": "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=200",
       "text": "Tim and Ben are really sporty so they are looking for an activity holiday doing water sports. They’re not really interested in city life but want to be near enough to be able to go out in the evenings.",
       "hint": "💡 Water sports outside the city, but with easy access to town at night."
     },
     {
       "id": 10,
       "name": "May",
-      "avatar": "",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=200",
       "text": "May enjoys going abroad for beaches, sunshine and a good place to eat as she loves foreign food. But May’s family hasn’t got a lot of money so travel and accommodation need to be cheap.",
       "hint": "💡 Cheap foreign beach holiday with local food and easy travel."
     }
