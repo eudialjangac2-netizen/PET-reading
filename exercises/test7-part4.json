@@ -1,0 +1,99 @@
+{
+  "id": "test7-part4",
+  "partType": "part4",
+  "exerciseName": "Ready for B1 - Test 7 - Part 4",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "16": "E",
+    "17": "B",
+    "18": "H",
+    "19": "D",
+    "20": "A"
+  },
+  "gapIds": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "article": {
+    "title": "Running a Marathon",
+    "author": "by Sam Johnson",
+    "image": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=500",
+    "paragraphs": [
+      "I have recently decided that I want to train in order to run a full marathon when I finish school. I think what made me want this so much is the fact that it is not just a test of the body but a test of the mind too. That’s why, I think most people can get a lot out of running marathons, even if it’s not the full 42.195 kilometres. I truly believe we are all natural athletes. {{gap:16}} There are no more races and games to be won and no more prizes to feel that it is worth making the effort. So I guess that some people would lose their interest in competing, which is so sad, as they are missing out on a wonderful experience. Anyway, that won’t be the case for me.",
+      "Actually, it has not always been my ambition to run, believe it or not. {{gap:17}} It all started with wanting to run faster and longer than two fifty-year-old ladies. Last year, my mum called me on a Monday afternoon to tell me that she and her running friend were going to run a half-marathon. {{gap:18}} Yes, you guessed it! I immediately volunteered myself for the run without even knowing what the length of a half-marathon was! But I thought that if my mum thought she could do it, then for me it would be easy! I was fourteen at the time, so how hard could it be? As you understand, I had no idea how much effort I would have to put into it.",
+      "{{gap:19}} However, it was not as I imagined. I was exhausted! By the time I got to the finish line, I promised myself that it was my first and last marathon. I hated every kilometre of it! {{gap:20}} And now I don’t think I could live without the focus, the challenge and that awesome feeling of finally crossing the finish line. What changed my mind? I still don’t know but I am now more ambitious than ever."
+    ]
+  },
+  "options": [
+    {
+      "letter": "A",
+      "title": "How was I to know that it was the beginning of a way of life?",
+      "body": ""
+    },
+    {
+      "letter": "B",
+      "title": "I didn’t grow up dreaming of the challenge of long distance running.",
+      "body": ""
+    },
+    {
+      "letter": "C",
+      "title": "A marathon is a race which started in Ancient Greece.",
+      "body": ""
+    },
+    {
+      "letter": "D",
+      "title": "Luckily, I did manage it.",
+      "body": ""
+    },
+    {
+      "letter": "E",
+      "title": "However, after school we are no longer made to do sport.",
+      "body": ""
+    },
+    {
+      "letter": "F",
+      "title": "When I was a kid, I would run everywhere, at top speed!",
+      "body": ""
+    },
+    {
+      "letter": "G",
+      "title": "I was too tired to finish, and my legs and feet hurt so much!",
+      "body": ""
+    },
+    {
+      "letter": "H",
+      "title": "At that point, I must have had a moment of madness.",
+      "body": ""
+    }
+  ],
+  "explanation": [
+    {
+      "q": 16,
+      "ans": "E",
+      "key": "E đúng vì câu sau nói 'There are no more races and games to be won...', nên câu trước phải giới thiệu sự thay đổi sau khi rời trường và không còn bị bắt buộc chơi thể thao. Từ 'However' cũng tạo sự tương phản với ý trước rằng mọi người đều là natural athletes."
+    },
+    {
+      "q": 17,
+      "ans": "B",
+      "key": "B đúng vì câu sau bắt đầu giải thích việc hứng thú với chạy bộ bắt đầu như thế nào. B nói rõ Sam không lớn lên với ước mơ chạy đường dài, phù hợp với câu trước 'it has not always been my ambition to run'."
+    },
+    {
+      "q": 18,
+      "ans": "H",
+      "key": "H đúng vì ngay sau đó Sam nói mình lập tức tình nguyện chạy half-marathon dù còn không biết quãng đường là bao xa. 'A moment of madness' chính là khoảnh khắc quyết định bốc đồng đó."
+    },
+    {
+      "q": 19,
+      "ans": "D",
+      "key": "D đúng vì đoạn sau nói 'However, it was not as I imagined' rồi mô tả việc chạy rất mệt nhưng vẫn đến được finish line. Vì vậy trước đó hợp lý nhất là 'Luckily, I did manage it.' G sai vì Sam thực tế đã hoàn thành cuộc chạy."
+    },
+    {
+      "q": 20,
+      "ans": "A",
+      "key": "A đúng vì sau khi nói đây là first and last marathon, Sam lại cho biết hiện giờ không thể sống thiếu running. A nối hai ý này bằng cách cho thấy cậu không biết lúc đó mình đang bắt đầu một lối sống mới."
+    }
+  ]
+}
