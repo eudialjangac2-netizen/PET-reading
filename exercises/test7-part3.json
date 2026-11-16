@@ -1,0 +1,169 @@
+{
+  "id": "test7-part3",
+  "partType": "part3",
+  "exerciseName": "Ready for B1 - Test 7 - Part 3",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "11": "C",
+    "12": "D",
+    "13": "D",
+    "14": "B",
+    "15": "B"
+  },
+  "article": {
+    "title": "The Real Junk Food Project",
+    "author": "by Sandra Manville",
+    "image": "",
+    "paragraphs": [
+      "As I was looking for environmentally-friendly projects for the school paper, I found out about The Real Junk Food Project whose aim is to reduce the UK’s huge amount of food waste, which is the highest in Europe. The UK, despite not having the largest population of a European country, throws away almost two million tonnes worth of food every year, more than even Germany, which comes in second despite having a larger population. Every year, 1.3 billion tonnes of food are thrown away while some 800 million people across the planet are dying from lack of food. This is terrible.",
+      "The Real Junk Food Project is against the waste of food that has gone past its sell-by date. Just because food has reached the end of life on the supermarket shelf, it does not mean that it cannot be eaten, as supermarkets put dates that run out days before the food becomes dangerous to eat. But supermarkets are only interested in making money and keeping fresh food coming to their shelves, not unnecessary waste.",
+      "The organisation, which collects the food from supermarkets, serves it as tasty meals to people in their cafes. Customers, in return, can pay as much as they want for it, or even nothing at all. Diners can then even volunteer in return for a meal. In this way, the organisation can provide for those who are poor or live on the street; a great social service.",
+      "There are now many more cafes than the original one which started in Leeds: one hundred and twenty seven to be exact, and growing fast, in seven countries all over the world. The Leeds one alone, provides 35,000 people with meals every week. Along with the cafes, supermarket-style shops have opened, where you also pay or not, according to your ability.",
+      "For the main supermarkets this has nothing but advantages. They have to pay anyway to get rid of food waste, so the Junk Food Project is in fact doing them a favour, while at the same time, promoting them as more environmentally friendly by giving their waste food away."
+    ]
+  },
+  "questions": [
+    {
+      "id": 11,
+      "question": "11. What is The Real Junk Food hoping to achieve?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "make the UK produce less pollution than Germany"
+        },
+        {
+          "letter": "B",
+          "text": "make Europe produce less food than the UK"
+        },
+        {
+          "letter": "C",
+          "text": "stop the UK from throwing away so much food"
+        },
+        {
+          "letter": "D",
+          "text": "reduce the amount of food the UK produces"
+        }
+      ],
+      "hint": "💡 The project aims to reduce the UK's huge amount of food waste."
+    },
+    {
+      "id": 12,
+      "question": "12. What does Sandra get most upset about?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "the fact that The Real Junk Food Project is not well-known"
+        },
+        {
+          "letter": "B",
+          "text": "the amount of waste in Germany"
+        },
+        {
+          "letter": "C",
+          "text": "the amount of food wasted in Europe"
+        },
+        {
+          "letter": "D",
+          "text": "the fact that some people don’t have food"
+        }
+      ],
+      "hint": "💡 Sandra says it is 'terrible' that many people lack food while so much is wasted."
+    },
+    {
+      "id": 13,
+      "question": "13. What does Sandra say about supermarkets?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They don’t care about poor people."
+        },
+        {
+          "letter": "B",
+          "text": "They don’t like wasting food."
+        },
+        {
+          "letter": "C",
+          "text": "They sometimes sell out-of-date food."
+        },
+        {
+          "letter": "D",
+          "text": "They do not avoid food waste."
+        }
+      ],
+      "hint": "💡 She says supermarkets focus on money and fresh stock, not unnecessary waste."
+    },
+    {
+      "id": 14,
+      "question": "14. What does Sandra say about the cafes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They are run by volunteers wanting to help the poor."
+        },
+        {
+          "letter": "B",
+          "text": "They are doing something valuable."
+        },
+        {
+          "letter": "C",
+          "text": "They should only feed those who can’t pay."
+        },
+        {
+          "letter": "D",
+          "text": "The food does not taste as good as fresh products."
+        }
+      ],
+      "hint": "💡 Sandra calls the service 'a great social service'."
+    },
+    {
+      "id": 15,
+      "question": "15. What would Sandra text a friend about The Real Junk Food Project?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "I found out about a really cool way to eat for free when we go out."
+        },
+        {
+          "letter": "B",
+          "text": "We could arrange to volunteer in a cafe whenever we have some free time to help."
+        },
+        {
+          "letter": "C",
+          "text": "I tried eating at one of the The Real Junk Food project's cafes but I wouldn’t recommend it."
+        },
+        {
+          "letter": "D",
+          "text": "It’s a great idea but, unfortunately, it is not supported by many people."
+        }
+      ],
+      "hint": "💡 Sandra supports the project and mentions volunteering in the cafes."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 11,
+      "ans": "C",
+      "key": "C đúng vì mục tiêu của dự án là giảm lượng food waste khổng lồ của UK. A sai vì không tập trung vào pollution. B sai vì không nói về việc Europe sản xuất ít food hơn. D sai vì mục tiêu là giảm food bị vứt bỏ, không phải food được sản xuất."
+    },
+    {
+      "q": 12,
+      "ans": "D",
+      "key": "D đúng vì Sandra nhấn mạnh việc hàng trăm triệu người thiếu thức ăn và gọi đó là 'terrible'. A không được đề cập; B và C không phải mối lo chính của cô."
+    },
+    {
+      "q": 13,
+      "ans": "D",
+      "key": "D đúng vì supermarkets vẫn để xảy ra food waste dù food còn có thể ăn được. A không được nói tới. B trái với nội dung bài. C sai vì sell-by dates có thể hết trước khi food thực sự nguy hiểm."
+    },
+    {
+      "q": 14,
+      "ans": "B",
+      "key": "B đúng vì Sandra nói cafes cung cấp một 'great social service'. A sai vì không phải cafe nào cũng do volunteers điều hành. C sai vì ai cũng có thể ăn và trả theo khả năng. D sai vì food được mô tả là tasty."
+    },
+    {
+      "q": 15,
+      "ans": "B",
+      "key": "B đúng vì Sandra đánh giá dự án tích cực và bài cho biết diners có thể volunteer. A sai vì cô không tập trung vào việc ăn miễn phí. C sai vì cô không chê dự án. D sai vì dự án đang phát triển nhanh ở nhiều quốc gia."
+    }
+  ]
+}
