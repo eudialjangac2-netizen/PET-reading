@@ -1,0 +1,105 @@
+{
+  "id": "test7-part6",
+  "partType": "part6",
+  "exerciseName": "Ready for B1 - Test 7 - Part 6",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "27": [
+      "for"
+    ],
+    "28": [
+      "by"
+    ],
+    "29": [
+      "it"
+    ],
+    "30": [
+      "such"
+    ],
+    "31": [
+      "have"
+    ],
+    "32": [
+      "then"
+    ]
+  },
+  "article": {
+    "title": "Sir David Attenborough - Blue Planet",
+    "author": "",
+    "image": "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=500",
+    "paragraphs": [
+      "Probably most famous nowadays <span class='gap-tag'>(27)</span>.................... the series Blue Planet, Attenborough has made viewers wake up not only to the beauty of our planet, but to the danger we have put it in. After being delighted <span class='gap-tag'>(28)</span>.................... the wonderful photography and Attenborough’s well-known way of keeping us fixed to our TV screens, the final episode showed us the reality. We saw the pollution of our seas and the damage that <span class='gap-tag'>(29)</span>.................... is doing to the sea creatures affected by the rubbish, which is now everywhere. It caused <span class='gap-tag'>(30)</span>.................... a shock that promises of change were quickly made by the government.",
+      "Attenborough has an amazing ability to influence public opinion. He argues that with fifty percent of the total population living in cities, people <span class='gap-tag'>(31)</span>.................... to be shown nature, even on TV, as they are not connected to it anymore. Only <span class='gap-tag'>(32)</span>...................., in his opinion, can we persuade people to take care of it."
+    ]
+  },
+  "questions": [
+    {
+      "id": 27,
+      "label": "Câu 27",
+      "placeholder": "Nhập từ cho ô (27)...",
+      "hint": "💡 Collocation: be famous ___ something."
+    },
+    {
+      "id": 28,
+      "label": "Câu 28",
+      "placeholder": "Nhập từ cho ô (28)...",
+      "hint": "💡 Passive structure: be delighted ___ something."
+    },
+    {
+      "id": 29,
+      "label": "Câu 29",
+      "placeholder": "Nhập từ cho ô (29)...",
+      "hint": "💡 The pronoun refers back to 'the pollution'."
+    },
+    {
+      "id": 30,
+      "label": "Câu 30",
+      "placeholder": "Nhập từ cho ô (30)...",
+      "hint": "💡 Structure: such + a/an + adjective + noun + that-clause."
+    },
+    {
+      "id": 31,
+      "label": "Câu 31",
+      "placeholder": "Nhập từ cho ô (31)...",
+      "hint": "💡 Necessity: people ___ to be shown nature."
+    },
+    {
+      "id": 32,
+      "label": "Câu 32",
+      "placeholder": "Nhập từ cho ô (32)...",
+      "hint": "💡 Fixed phrase: 'Only ___ can we...' meaning only after that."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 27,
+      "ans": "for",
+      "key": "<strong>for</strong>: đúng vì collocation là 'be famous for something'."
+    },
+    {
+      "q": 28,
+      "ans": "by",
+      "key": "<strong>by</strong>: đúng vì 'be delighted by something' diễn tả bị/được làm cho rất hài lòng; câu đang dùng passive voice và tác nhân được giới thiệu bằng 'by'."
+    },
+    {
+      "q": 29,
+      "ans": "it",
+      "key": "<strong>it</strong>: đại từ này thay cho 'the pollution' đã được nhắc ngay trước đó: 'the damage that it is doing...'."
+    },
+    {
+      "q": 30,
+      "ans": "such",
+      "key": "<strong>such</strong>: cấu trúc đúng là 'such + a/an + adjective + noun + that-clause': 'such a shock that...'."
+    },
+    {
+      "q": 31,
+      "ans": "have",
+      "key": "<strong>have</strong>: 'have to' diễn tả sự cần thiết. Sau đó là passive infinitive 'to be shown'."
+    },
+    {
+      "q": 32,
+      "ans": "then",
+      "key": "<strong>then</strong>: cụm 'only then' nghĩa là chỉ sau khi điều vừa nói xảy ra thì việc tiếp theo mới có thể xảy ra."
+    }
+  ]
+}
