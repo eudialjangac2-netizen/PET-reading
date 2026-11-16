@@ -1,0 +1,196 @@
+{
+  "id": "test7-part5",
+  "partType": "part5",
+  "exerciseName": "Ready for B1 - Test 7 - Part 5",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "21": "B",
+    "22": "B",
+    "23": "C",
+    "24": "D",
+    "25": "B",
+    "26": "A"
+  },
+  "article": {
+    "title": "The History of Fireworks",
+    "author": "Ready for B1 - Reading Part 5",
+    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500",
+    "paragraphs": [
+      "Fireworks were discovered by chance around 2000 years ago, in China. They were made from three <strong>(21) ....................</strong> kitchen ingredients, which were heated over a fire to make a black powder. When lit, the powder created a bright light and made a very loud noise. Today, we <strong>(22) ....................</strong> this ‘gunpowder’.",
+      "But it was many years later that the Italians <strong>(23) ....................</strong> the first real fireworks. Made from the same ingredients as gunpowder, these fireworks were <strong>(24) ....................</strong> for public displays. However, they were very basic, as the only colours available to make fireworks were yellow and orange.",
+      "Nowadays, firework displays are really spectacular. The UK is especially famous for its firework displays held all over the <strong>(25) ....................</strong> on November 5th. This day celebrates an important historical <strong>(26) ....................</strong> in the English calendar. It is known as Bonfire Night, or, Guy Fawkes Night. Other than setting off fireworks, the English light bonfires, and sometimes burn a doll that looks like a man who once wanted to kill their king but failed."
+    ]
+  },
+  "questions": [
+    {
+      "id": 21,
+      "question": "21. Choose the correct word for gap (21):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "unique"
+        },
+        {
+          "letter": "B",
+          "text": "common"
+        },
+        {
+          "letter": "C",
+          "text": "unnecessary"
+        },
+        {
+          "letter": "D",
+          "text": "original"
+        }
+      ],
+      "hint": "💡 The ingredients were ordinary kitchen ingredients, not rare or special."
+    },
+    {
+      "id": 22,
+      "question": "22. Choose the correct word for gap (22):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "name"
+        },
+        {
+          "letter": "B",
+          "text": "call"
+        },
+        {
+          "letter": "C",
+          "text": "say"
+        },
+        {
+          "letter": "D",
+          "text": "tell"
+        }
+      ],
+      "hint": "💡 'We call this ...' = this is the name we give it."
+    },
+    {
+      "id": 23,
+      "question": "23. Choose the correct word for gap (23):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "cooked"
+        },
+        {
+          "letter": "B",
+          "text": "improved"
+        },
+        {
+          "letter": "C",
+          "text": "created"
+        },
+        {
+          "letter": "D",
+          "text": "found"
+        }
+      ],
+      "hint": "💡 They made the first real fireworks for the first time."
+    },
+    {
+      "id": 24,
+      "question": "24. Choose the correct word for gap (24):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "attempted"
+        },
+        {
+          "letter": "B",
+          "text": "installed"
+        },
+        {
+          "letter": "C",
+          "text": "hidden"
+        },
+        {
+          "letter": "D",
+          "text": "used"
+        }
+      ],
+      "hint": "💡 The fireworks were ___ for public displays."
+    },
+    {
+      "id": 25,
+      "question": "25. Choose the correct word for gap (25):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "location"
+        },
+        {
+          "letter": "B",
+          "text": "country"
+        },
+        {
+          "letter": "C",
+          "text": "month"
+        },
+        {
+          "letter": "D",
+          "text": "time"
+        }
+      ],
+      "hint": "💡 The sentence refers to displays held across the whole UK."
+    },
+    {
+      "id": 26,
+      "question": "26. Choose the correct word for gap (26):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "event"
+        },
+        {
+          "letter": "B",
+          "text": "performance"
+        },
+        {
+          "letter": "C",
+          "text": "presentation"
+        },
+        {
+          "letter": "D",
+          "text": "show"
+        }
+      ],
+      "hint": "💡 Bonfire Night remembers an important historical occurrence."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 21,
+      "ans": "B",
+      "key": "B (common) đúng vì các nguyên liệu được nói đến là những nguyên liệu nhà bếp bình thường, dễ tìm. A sai vì không phải nguyên liệu độc nhất. C sai vì nếu không cần thiết thì chúng đã không được dùng. D sai vì 'original' nghĩa là bản đầu tiên, không phù hợp với ngữ cảnh nguyên liệu."
+    },
+    {
+      "q": 22,
+      "ans": "B",
+      "key": "B (call) đúng vì cấu trúc tự nhiên là 'we call this gunpowder' = chúng ta gọi thứ này là gunpowder. A cần cấu trúc 'this was named...', C phải là 'this is called...', còn D dùng với người nhận thông tin: 'tell somebody something'."
+    },
+    {
+      "q": 23,
+      "ans": "C",
+      "key": "C (created) đúng vì người Italy đã làm ra những fireworks thực sự đầu tiên. A 'cooked' dùng cho food, B 'improved' hàm ý đã có loại trước đó để cải tiến, D 'found' dùng khi thứ đó đã tồn tại sẵn."
+    },
+    {
+      "q": 24,
+      "ans": "D",
+      "key": "D (used) đúng vì câu nói fireworks được dùng cho public displays. A 'attempted' cần thêm động từ theo sau, B 'installed' dùng cho machinery/equipment, C 'hidden' trái với ý public display."
+    },
+    {
+      "q": 25,
+      "ans": "B",
+      "key": "B (country) đúng vì đang nói về một truyền thống trên toàn UK. A chỉ một địa điểm đơn lẻ, C và D không phù hợp với cấu trúc 'all over the ...' trong nghĩa này."
+    },
+    {
+      "q": 26,
+      "ans": "A",
+      "key": "A (event) đúng vì một event là một sự việc quan trọng hoặc bất thường đã xảy ra. Performance, presentation và show đều là những hoạt động do con người trình diễn, không phù hợp với historical context."
+    }
+  ]
+}
