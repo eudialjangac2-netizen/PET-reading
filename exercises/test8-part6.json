@@ -1,0 +1,107 @@
+{
+  "id": "test8-part6",
+  "partType": "part6",
+  "exerciseName": "Ready for B1 - Test 8 - Part 6",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "27": [
+      "is"
+    ],
+    "28": [
+      "where"
+    ],
+    "29": [
+      "since"
+    ],
+    "30": [
+      "than"
+    ],
+    "31": [
+      "what"
+    ],
+    "32": [
+      "other"
+    ]
+  },
+  "article": {
+    "title": "Speakers’ Corner",
+    "author": "",
+    "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500",
+    "paragraphs": [
+      "That Speakers’ Corner exists at all <span class='gap-tag'>(27)</span>.................... a puzzle to foreigners. Speakers’ Corner is a place in Hyde Park, London, <span class='gap-tag'>(28)</span>.................... anyone can say anything about anybody without getting arrested for it! Sounds unbelievable, doesn't it?",
+      "This strange tradition started in the UK in the middle of the 19th century. Many famous people have spoken at Speakers’ Corner <span class='gap-tag'>(29)</span>.................... then, including Karl Marx, Vladimir Lenin and the writer, George Orwell.",
+      "Often, Speakers’ Corner attracts rather unusual people. Anyone can turn up and talk on any subject. Their audiences go to watch them more for entertainment <span class='gap-tag'>(30)</span>.................... because they are interested in <span class='gap-tag'>(31)</span>.................... they have to say.",
+      "Nowadays there are other Speakers’ Corners over the UK and even in <span class='gap-tag'>(32)</span>.................... countries. They seem to be as popular as ever!"
+    ]
+  },
+  "questions": [
+    {
+      "id": 27,
+      "label": "Câu 27",
+      "placeholder": "Nhập từ cho ô (27)...",
+      "hint": "💡 The subject 'That Speakers’ Corner exists at all' needs a present-tense form of 'be'."
+    },
+    {
+      "id": 28,
+      "label": "Câu 28",
+      "placeholder": "Nhập từ cho ô (28)...",
+      "hint": "💡 Use a relative word referring to a place, Hyde Park."
+    },
+    {
+      "id": 29,
+      "label": "Câu 29",
+      "placeholder": "Nhập từ cho ô (29)...",
+      "hint": "💡 Present perfect + a point in the past: ___ then."
+    },
+    {
+      "id": 30,
+      "label": "Câu 30",
+      "placeholder": "Nhập từ cho ô (30)...",
+      "hint": "💡 The comparison is: more for entertainment ___ because ..."
+    },
+    {
+      "id": 31,
+      "label": "Câu 31",
+      "placeholder": "Nhập từ cho ô (31)...",
+      "hint": "💡 Use a pronoun referring to the things the speakers say."
+    },
+    {
+      "id": 32,
+      "label": "Câu 32",
+      "placeholder": "Nhập từ cho ô (32)...",
+      "hint": "💡 The phrase means additional countries: ___ countries."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 27,
+      "ans": "is",
+      "key": "<strong>is</strong>: cần động từ be ở hiện tại đơn sau chủ ngữ dạng mệnh đề 'That Speakers’ Corner exists at all'."
+    },
+    {
+      "q": 28,
+      "ans": "where",
+      "key": "<strong>where</strong>: trạng từ quan hệ chỉ địa điểm, mở đầu mệnh đề giải thích điều diễn ra tại Speakers’ Corner ở Hyde Park."
+    },
+    {
+      "q": 29,
+      "ans": "since",
+      "key": "<strong>since</strong>: dùng với present perfect 'have spoken' để diễn tả hành động từ một mốc trong quá khứ đến nay: 'since then'."
+    },
+    {
+      "q": 30,
+      "ans": "than",
+      "key": "<strong>than</strong>: cấu trúc so sánh 'more ... than ...' cho biết khán giả xem vì mục đích giải trí nhiều hơn vì quan tâm đến nội dung."
+    },
+    {
+      "q": 31,
+      "ans": "what",
+      "key": "<strong>what</strong>: đại từ quan hệ mang nghĩa 'the things that', trong 'what they have to say'."
+    },
+    {
+      "q": 32,
+      "ans": "other",
+      "key": "<strong>other</strong>: đứng trước danh từ số nhiều 'countries', nghĩa là các quốc gia khác/bổ sung."
+    }
+  ]
+}
