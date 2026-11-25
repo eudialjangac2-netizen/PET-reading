@@ -1,0 +1,196 @@
+{
+  "id": "test8-part5",
+  "partType": "part5",
+  "exerciseName": "Ready for B1 - Test 8 - Part 5",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "21": "C",
+    "22": "A",
+    "23": "B",
+    "24": "D",
+    "25": "B",
+    "26": "A"
+  },
+  "article": {
+    "title": "Edinburgh",
+    "author": "",
+    "image": "https://images.unsplash.com/photo-1506377585622-bedcbb027afc?w=500",
+    "paragraphs": [
+      "Edinburgh, the capital of Scotland, is known as The Athens of the North. It may not have the great climate of Greece, but it has its <strong>(21) ....................</strong> in its architecture. The New Town, which started to be built in the 1760s, has many important buildings, <strong>(22) ....................</strong> by classical architecture. Today, this area of Edinburgh is full of galleries, cafes, restaurants and shops and is very <strong>(23) ....................</strong> with the hundreds of thousands of tourists that visit the city all year round.",
+      "Probably the most famous building is Edinburgh Castle. Parts of the castle date back as far as the 11th century. Back then, the city was completely different to the busy tourist <strong>(24) ....................</strong> of today. It was a dark foggy city because of all the fires which were burning. Add to that the <strong>(25) ....................</strong> of waste from the human population, and it’s not surprising that it was extremely smelly.",
+      "Luckily, today Edinburgh is known for better things. Probably one of the most important <strong>(26) ....................</strong> is the Fringe Festival which takes place every summer and fills the city with performers and tourists from all over the world."
+    ]
+  },
+  "questions": [
+    {
+      "id": 21,
+      "question": "21. Choose the correct word for gap (21):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "effect"
+        },
+        {
+          "letter": "B",
+          "text": "image"
+        },
+        {
+          "letter": "C",
+          "text": "influence"
+        },
+        {
+          "letter": "D",
+          "text": "result"
+        }
+      ],
+      "hint": "The city's architecture has been affected by Greek architecture; consider the noun that fits 'has its ... in'."
+    },
+    {
+      "id": 22,
+      "question": "22. Choose the correct word for gap (22):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "inspired"
+        },
+        {
+          "letter": "B",
+          "text": "educated"
+        },
+        {
+          "letter": "C",
+          "text": "built"
+        },
+        {
+          "letter": "D",
+          "text": "destroyed"
+        }
+      ],
+      "hint": "The buildings were influenced by classical architecture; the natural phrase is 'inspired by'."
+    },
+    {
+      "id": 23,
+      "question": "23. Choose the correct word for gap (23):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "positive"
+        },
+        {
+          "letter": "B",
+          "text": "popular"
+        },
+        {
+          "letter": "C",
+          "text": "famous"
+        },
+        {
+          "letter": "D",
+          "text": "accepted"
+        }
+      ],
+      "hint": "The structure is 'popular with' tourists."
+    },
+    {
+      "id": 24,
+      "question": "24. Choose the correct word for gap (24):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "site"
+        },
+        {
+          "letter": "B",
+          "text": "sight"
+        },
+        {
+          "letter": "C",
+          "text": "building"
+        },
+        {
+          "letter": "D",
+          "text": "attraction"
+        }
+      ],
+      "hint": "A tourist attraction is a place many people visit."
+    },
+    {
+      "id": 25,
+      "question": "25. Choose the correct word for gap (25):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "total"
+        },
+        {
+          "letter": "B",
+          "text": "amount"
+        },
+        {
+          "letter": "C",
+          "text": "sum"
+        },
+        {
+          "letter": "D",
+          "text": "number"
+        }
+      ],
+      "hint": "'Waste' is an uncountable noun; use 'amount of waste'."
+    },
+    {
+      "id": 26,
+      "question": "26. Choose the correct word for gap (26):",
+      "options": [
+        {
+          "letter": "A",
+          "text": "events"
+        },
+        {
+          "letter": "B",
+          "text": "facts"
+        },
+        {
+          "letter": "C",
+          "text": "activities"
+        },
+        {
+          "letter": "D",
+          "text": "actions"
+        }
+      ],
+      "hint": "The Fringe Festival is a significant occasion, or event."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 21,
+      "ans": "C",
+      "key": "C (influence) đúng vì kiến trúc Hy Lạp có tác động đến các công trình ở Edinburgh. A 'effect' sẽ cần cấu trúc 'has had an effect on'. B 'image' chỉ hình ảnh/ấn tượng về nơi chốn. D 'result' không hợp cấu trúc và ngữ cảnh."
+    },
+    {
+      "q": 22,
+      "ans": "A",
+      "key": "A (inspired) đúng vì 'inspired by classical architecture' nghĩa là được lấy cảm hứng/ảnh hưởng từ kiến trúc cổ điển. B 'educated' dùng cho con người. C phải đổi thành 'built in the style of'. D 'destroyed' không hợp nghĩa."
+    },
+    {
+      "q": 23,
+      "ans": "B",
+      "key": "B (popular) đúng vì collocation là 'popular with tourists'. A 'positive' cần danh từ khác. C 'famous' thường theo 'famous for/as', không dùng 'famous with' ở đây. D 'accepted' không hợp nghĩa."
+    },
+    {
+      "q": 24,
+      "ans": "D",
+      "key": "D (attraction) đúng vì 'tourist attraction' là địa điểm thu hút du khách. A 'site' chỉ địa điểm cụ thể nơi có sự kiện/công trình. B 'sight' là cảnh tượng/điều đáng ngắm. C không tạo thành cụm 'tourist building'."
+    },
+    {
+      "q": 25,
+      "ans": "B",
+      "key": "B (amount) đúng vì waste là danh từ không đếm được, dùng 'the amount of waste'. A 'total' và C 'sum' không đúng trong cách dùng này; D 'number' dùng với danh từ đếm được số nhiều."
+    },
+    {
+      "q": 26,
+      "ans": "A",
+      "key": "A (events) đúng vì Fringe Festival là một sự kiện quan trọng tổ chức hằng năm. B 'facts' là thông tin đúng; C 'activities' là các hoạt động riêng lẻ trong sự kiện; D 'actions' là hành động, không thay thế được events."
+    }
+  ]
+}
