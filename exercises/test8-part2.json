@@ -1,0 +1,129 @@
+{
+  "id": "test8-part2",
+  "partType": "part2",
+  "exerciseName": "Ready for B1 - Test 8 - Part 2",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "6": "B",
+    "7": "A",
+    "8": "D",
+    "9": "F",
+    "10": "H"
+  },
+  "people": [
+    {
+      "id": 6,
+      "name": "Harry",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=180",
+      "text": "Harry loves spending time on his computer. He likes learning about technologies that are both useful and interesting and which will also help people in the future to live healthier lives.",
+      "hint": "💡 Focus on technology that improves healthcare and people's health."
+    },
+    {
+      "id": 7,
+      "name": "Tanya",
+      "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=180",
+      "text": "Tanya likes to take part in activities and gets bored when she is just listening to someone talk. She likes anything that is different and loves to learn about new ideas. The stranger, the better.",
+      "hint": "💡 Look for unusual science with an activity you can try yourself."
+    },
+    {
+      "id": 8,
+      "name": "Sally",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=180",
+      "text": "Sally would like to take her 8-year-old sister with her and do something creative. She thinks that they are too young to attend an adult talk, but would like to attend an event during Science Week.",
+      "hint": "💡 Look for a family-friendly session with a creative make-and-take activity."
+    },
+    {
+      "id": 9,
+      "name": "Jill and Charita",
+      "avatar": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=180",
+      "text": "Jill and Charita like being outdoors a lot and are interested in the environment. They also love learning about new technologies and seeing how they compare to technologies of the past.",
+      "hint": "💡 The talk must connect the environment, new technology and earlier technology."
+    },
+    {
+      "id": 10,
+      "name": "Neil",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=180",
+      "text": "Neil is interested in science and history. But he would like to attend a talk that isn’t about a complicated subject and that is fun, too.",
+      "hint": "💡 Look for an entertaining science talk with an easy, fun activity."
+    }
+  ],
+  "options": [
+    {
+      "letter": "A",
+      "title": "Food that is out of this world",
+      "body": "Have you ever wondered how you cook food in outer space? Learn the secrets of cooking in space using only basic equipment and find out how a limited diet can be made more interesting. You can also try out recipes cooked for you live by our science experts on stage. You can even try making space food, yourself!"
+    },
+    {
+      "letter": "B",
+      "title": "Medicine and the modern world",
+      "body": "We think that printers are just for printing out information. But they are already used to print body parts and may one day print human hearts! In addition, pills will become a thing of the past soon, as we become better at finding ways to help the body recover from illness by itself. Find out how modern medicine is changing."
+    },
+    {
+      "letter": "C",
+      "title": "The natural environment and us",
+      "body": "Rainforests are fast disappearing but do we ever think about what this means to us? When we destroy plants and trees, it causes climate change. In addition, we lose plants that could be used for medicine and to cure illnesses. In this talk today, you will learn how you can help before it is too late for future generations!"
+    },
+    {
+      "letter": "D",
+      "title": "Science in our world",
+      "body": "In this family-friendly talk for all ages, learn how we use science and technology in our everyday lives. The talk will be followed by a 'make and take' session, where children will learn the science of flight, then make kites to take home with them. Booking in advance is essential for this very popular, free event."
+    },
+    {
+      "letter": "E",
+      "title": "Fashion in the future",
+      "body": "Fashion is always changing and so are the materials used to create it. In the future, we will use technology to copy animals and plants to make materials that last longer and which can keep in the warm, or keep out the cold! After the talk, you can speak to the experts and have a free drink!"
+    },
+    {
+      "letter": "F",
+      "title": "Understanding the weather",
+      "body": "Developments in computer programmes have made weather forecasts more accurate, but there is still a lot of work to be done. We will bring you the latest in technologies for creating weather forecasts and also describe how these have developed from past technologies. After the talk, historical weather equipment will be on display. You will also be able to watch old recordings from TV and news programmes."
+    },
+    {
+      "letter": "G",
+      "title": "Technology and toys",
+      "body": "You can never start too young learning about science. Young minds need to explore new ideas and become creative in finding solutions if we are to produce great scientists. Come and find out about creative play and technology and learn how you can encourage your children to become the scientists of the future. Who knows... your child may be the next Einstein!"
+    },
+    {
+      "letter": "H",
+      "title": "Comedy and Science",
+      "body": "Come along and enjoy a laughter-filled talk on scientific topics. Learn how scientists first discovered medicines and technologies in very unusual ways. You can then enter a fun quiz at the end of the talk to win a chemistry set or a family day out at the Science Museum, with free entry to all displays and talks!"
+    }
+  ],
+  "explanation": [
+    {
+      "q": 6,
+      "name": "Harry",
+      "demand": "Technology that helps people live healthier lives.",
+      "ans": "B. Medicine and the modern world",
+      "key": "B đúng vì talk giải thích công nghệ hiện đại trong medicine, như 3D printing body parts và phương pháp hồi phục sức khỏe. G cũng nói technology nhưng tập trung vào toys/creative play chứ không phải health."
+    },
+    {
+      "q": 7,
+      "name": "Tanya",
+      "demand": "Unusual new ideas with hands-on participation.",
+      "ans": "A. Food that is out of this world",
+      "key": "A đúng vì người tham dự có thể thử 'making space food, yourself', vừa lạ vừa có hoạt động thực hành. E chỉ giới thiệu ý tưởng mới, không có hoạt động sáng tạo thực hành tương tự."
+    },
+    {
+      "q": 8,
+      "name": "Sally",
+      "demand": "Family-friendly science suitable for an eight-year-old, with a creative task.",
+      "ans": "D. Science in our world",
+      "key": "D đúng vì đây là family-friendly talk dành cho all ages, tiếp theo là 'make and take' session làm kites. G nhắc đến children nhưng không mô tả hoạt động làm sản phẩm phù hợp bằng D."
+    },
+    {
+      "q": 9,
+      "name": "Jill and Charita",
+      "demand": "Environment, technology and comparisons with the past.",
+      "ans": "F. Understanding the weather",
+      "key": "F đúng vì nêu latest weather forecasting technologies và mô tả sự phát triển từ past technologies, có historical weather equipment. C chỉ đề cập bảo vệ môi trường, không so sánh công nghệ cũ/mới."
+    },
+    {
+      "q": 10,
+      "name": "Neil",
+      "demand": "Science and history presented in an entertaining, uncomplicated manner.",
+      "ans": "H. Comedy and Science",
+      "key": "H đúng vì đây là một talk vui nhộn về các khám phá scientific trong quá khứ, có fun quiz cuối buổi; phù hợp với người muốn học mà không quá nặng lý thuyết."
+    }
+  ]
+}
