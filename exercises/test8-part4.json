@@ -1,0 +1,101 @@
+{
+  "id": "test8-part4",
+  "partType": "part4",
+  "exerciseName": "Ready for B1 - Test 8 - Part 4",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "16": "G",
+    "17": "F",
+    "18": "A",
+    "19": "H",
+    "20": "D"
+  },
+  "gapIds": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "article": {
+    "title": "A change in attitude",
+    "author": "by Scott Peterson",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500",
+    "paragraphs": [
+      "It’s difficult to remember exactly when I started playing computer games. Even from an early age, I was always looking at a computer screen. Sometimes I was playing games, and other times I was spending time on the internet. My mum used to joke that I spent more time on the computer than speaking to her! {{gap:16}}",
+      "At first, my parents were keen for me to develop my computer skills. {{gap:17}} You use them at school for projects and at work when you’re an adult. So my parents thought the earlier I started using them, the better.",
+      "Soon they began to think differently, however. What first started as a hobby or interest soon began to become much more than that. I started to spend more and more time playing games and less time communicating with my parents and friends. And if that wasn’t bad enough, it wasn’t long before I began to miss lessons just to play on my computer.",
+      "{{gap:18}} My health began to suffer. Because I was indoors all day, I wasn’t exercising. {{gap:19}} Quite often I would get colds and feel unwell most of the time. My parents noticed this and decided to do something about it. They told me that if I didn’t stop spending so much time on my computer, they would take it away from me!",
+      "I was really upset at first. {{gap:20}} I listened to them and slowly began to spend less time on my computer and more time socialising with friends. As a result, I became much happier and now regret spending so much time in the past playing on my computer! I hope that more teenagers will be able to understand how bad this is for them and decide to take up a sport or go out with friends instead."
+    ]
+  },
+  "options": [
+    {
+      "letter": "A",
+      "title": "Then, things got much worse.",
+      "body": ""
+    },
+    {
+      "letter": "B",
+      "title": "I’m really pleased that he bought me a new computer.",
+      "body": ""
+    },
+    {
+      "letter": "C",
+      "title": "They did their best to try and persuade me.",
+      "body": ""
+    },
+    {
+      "letter": "D",
+      "title": "Then, I began to realise my parents were right.",
+      "body": ""
+    },
+    {
+      "letter": "E",
+      "title": "I joined a gym immediately.",
+      "body": ""
+    },
+    {
+      "letter": "F",
+      "title": "After all, computers are essential for everyday life.",
+      "body": ""
+    },
+    {
+      "letter": "G",
+      "title": "And I suppose that was true at the time.",
+      "body": ""
+    },
+    {
+      "letter": "H",
+      "title": "This lack of exercise meant that I began to get ill.",
+      "body": ""
+    }
+  ],
+  "explanation": [
+    {
+      "q": 16,
+      "ans": "G",
+      "key": "G đúng vì 'that was true' quay lại nhận xét ngay trước đó của mẹ rằng Scott dành nhiều thời gian cho computer hơn nói chuyện với mẹ. A/H nói về hậu quả xấu quá sớm, khi đoạn đầu chưa nêu vấn đề."
+    },
+    {
+      "q": 17,
+      "ans": "F",
+      "key": "F đúng vì câu trước nói bố mẹ muốn Scott phát triển computer skills; câu này giải thích computers cần thiết trong đời sống. Câu sau nêu ví dụ dùng máy tính ở trường và nơi làm việc. B sai vì chỉ nêu 'he' trong khi đoạn nói cả parents."
+    },
+    {
+      "q": 18,
+      "ans": "A",
+      "key": "A đúng vì đoạn trước miêu tả việc Scott bỏ cả giờ học để chơi game; câu tiếp theo kể thêm các tác động lên sức khoẻ. 'Then, things got much worse' là chuyển tiếp tự nhiên. H cần dùng cho ô 19."
+    },
+    {
+      "q": 19,
+      "ans": "H",
+      "key": "H đúng vì câu trước nói Scott 'wasn’t exercising'; H nêu hệ quả là cậu bắt đầu ốm, tiếp nối bằng câu hay bị cảm và mệt. E không phù hợp vì Scott chưa bắt đầu thay đổi hành vi."
+    },
+    {
+      "q": 20,
+      "ans": "D",
+      "key": "D đúng vì sau khi ban đầu rất buồn, Scott bắt đầu nhận ra parents were right. Câu sau 'I listened to them' cho thấy đại từ 'them' chỉ parents, dẫn sang việc thay đổi hành vi. E sai vì không có việc cậu lập tức gia nhập gym."
+    }
+  ]
+}
