@@ -1,0 +1,142 @@
+{
+  "id": "test8-part1",
+  "partType": "part1",
+  "exerciseName": "Ready for B1 - Test 8 - Part 1",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "1": "A",
+    "2": "C",
+    "3": "B",
+    "4": "A",
+    "5": "B"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style=\"border:2px solid #75b8dc;border-radius:9px;background:#f5fbfe;padding:17px;line-height:1.5;max-width:380px\">Don,<br>The car wouldn’t start this morning so I got a taxi to work. The second time this week! Can you tell your dad to phone the garage for me and get someone to come to see it again?<br>Tell him the brakes may need fixing, too.<br>Mum</div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Don's mum wants Don to contact his father and let him know about her car trouble."
+        },
+        {
+          "letter": "B",
+          "text": "Don is expected to call the garage in order to arrange an appointment."
+        },
+        {
+          "letter": "C",
+          "text": "Don's mum is checking whether Don has remembered to contact the garage."
+        }
+      ],
+      "hint": "Notice that Mum asks Don to tell Dad to telephone the garage, not to call it himself."
+    },
+    {
+      "id": 2,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style=\"border:2px solid #75b8dc;border-radius:9px;background:#f5fbfe;padding:17px;line-height:1.5;max-width:380px\"><strong style=\"color:#1585ba\">ATTENTION</strong><hr>All student accommodation must be paid by the last day of the month.<br><br>If paid by the 25th of each month, students get a discount of 5%.<br><br>Office hours: 9-5 Monday to Friday.</div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Students should pay for their accommodation by the 25th."
+        },
+        {
+          "letter": "B",
+          "text": "Students have the chance to get 5% off their accommodation if they pay for the year."
+        },
+        {
+          "letter": "C",
+          "text": "It is necessary to make all accommodation payments by the end of the month."
+        }
+      ],
+      "hint": "Distinguish the deadline (last day of the month) from the earlier date for the 5% discount."
+    },
+    {
+      "id": 3,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style=\"border:2px solid #75b8dc;border-radius:9px;background:#f5fbfe;padding:17px;line-height:1.5;max-width:380px\"><strong style=\"color:#1585ba\">COFFEE SHOP OPENING HOURS</strong><hr>Monday to Friday 9.30-6.00pm.<br>Wednesday half day until 1.00pm.<br>Weekends open until 5.00pm<br>(every third Saturday until 10.00pm).</div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "You can buy coffee until 10pm most Saturdays."
+        },
+        {
+          "letter": "B",
+          "text": "On Wednesdays coffee is not served late in the afternoon."
+        },
+        {
+          "letter": "C",
+          "text": "Coffee is not served after 5pm on any weekends."
+        }
+      ],
+      "hint": "On Wednesdays the shop closes at 1.00pm, earlier than on other weekdays."
+    },
+    {
+      "id": 4,
+      "promptQuestion": "Why is Tim contacting Hazel?",
+      "leftContentHTML": "<div style=\"border:2px solid #75b8dc;border-radius:9px;background:#f5fbfe;padding:17px;line-height:1.5;max-width:380px\"><strong>To:</strong> Hazel<br><strong>From:</strong> Tim<br><strong>Re:</strong> Dinner<br><br>Hi Hazel!<br>I can’t make it for dinner on Friday, so can we arrange Saturday? If you are free, call me, or we can go next weekend.<br>Love<br>Tim</div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "to let her know there's been a change of plan"
+        },
+        {
+          "letter": "B",
+          "text": "to suggest another activity rather than going out to eat"
+        },
+        {
+          "letter": "C",
+          "text": "to remind her she should call him on Friday"
+        }
+      ],
+      "hint": "Tim cannot make Friday dinner, but proposes Saturday or next weekend."
+    },
+    {
+      "id": 5,
+      "promptQuestion": "",
+      "leftContentHTML": "<div style=\"border:2px solid #75b8dc;border-radius:9px;background:#f5fbfe;padding:17px;line-height:1.5;max-width:380px\"><strong style=\"color:#1585ba\">JOIN US AT THE GYM</strong><hr>• Great discounts on membership this week<br>• Open 24 hours<br>• Classes from 8am to 8pm<br>(Saturday morning: only for kids)</div>",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Classes are offered 24 hours daily."
+        },
+        {
+          "letter": "B",
+          "text": "It is cheaper to join the gym if you do so this week."
+        },
+        {
+          "letter": "C",
+          "text": "Weekend classes at the gym are offered for everyone."
+        }
+      ],
+      "hint": "The gym is open 24 hours, but classes run only 8am–8pm; the membership discount lasts this week."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 1,
+      "ans": "A",
+      "key": "A đúng: Mum asks Don to tell his dad to phone the garage. B sai vì Don không được yêu cầu tự gọi garage. C sai vì Mum chưa nhờ Don liên lạc trực tiếp với garage trước đó."
+    },
+    {
+      "q": 2,
+      "ans": "C",
+      "key": "C đúng vì thông báo nói all student accommodation must be paid by the last day of the month. A nhầm hạn nhận giảm giá 25th với hạn thanh toán cuối tháng. B sai vì giảm 5% nếu trả sớm mỗi tháng, không phải trả cho cả năm."
+    },
+    {
+      "q": 3,
+      "ans": "B",
+      "key": "B đúng vì vào Wednesday coffee shop đóng lúc 1pm, nên không bán cà phê vào cuối buổi chiều. A sai vì 10pm chỉ áp dụng every third Saturday. C sai vì thứ Bảy thứ ba hằng kỳ có thể mở đến 10pm."
+    },
+    {
+      "q": 4,
+      "ans": "A",
+      "key": "A đúng: Tim không thể đi ăn tối thứ Sáu như kế hoạch và muốn đổi sang thứ Bảy hoặc cuối tuần sau. B sai vì vẫn là dinner, không phải hoạt động khác. C sai vì anh không yêu cầu Hazel gọi vào thứ Sáu."
+    },
+    {
+      "q": 5,
+      "ans": "B",
+      "key": "B đúng vì gym quảng cáo 'Great discounts on membership this week'. A sai vì cơ sở mở 24 giờ nhưng classes chỉ từ 8am đến 8pm. C sai vì Saturday morning chỉ dành cho kids."
+    }
+  ]
+}
