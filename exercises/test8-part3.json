@@ -1,0 +1,168 @@
+{
+  "id": "test8-part3",
+  "partType": "part3",
+  "exerciseName": "Ready for B1 - Test 8 - Part 3",
+  "webhookUrl": "https://script.google.com/macros/s/AKfycbwriNrQ7B7sLQqb5pOIGkFk8mOsrOmS1aAvZJ4m6jS3VWreAtcG_x2d6ToSnOF8mdmfrg/exec",
+  "correctAnswers": {
+    "11": "C",
+    "12": "A",
+    "13": "A",
+    "14": "B",
+    "15": "C"
+  },
+  "article": {
+    "title": "Kids for Climate",
+    "author": "by Liz Meyers",
+    "image": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=500",
+    "paragraphs": [
+      "I read at school that scientists studying the effects of climate change have warned that we need to make huge changes to the way that we live our lives in order to deal with global warming. The goal was to stop the world’s temperature from rising more than 1.5 degrees Celsius. However, we are nowhere near to doing this, and on top of that, scientists suggest that we are moving towards a 3-degree increase.",
+      "Since governments have done very little to deal with the problem, the younger generation, who are the ones who will have to deal with the results in the future, have decided to take the lead. Inspired by a 16-year-old Swedish girl, Greta Thunberg, who refused to go to school to draw attention to climate change, students from all around the world walk out of school to make world leaders pay attention and get public support. Now school walkouts for the climate are happening everywhere.",
+      "It had to happen. Extreme weather is increasing. Floods and forest fires are normal headline news nowadays. Extreme heat is becoming more common in countries that once had completely different climates. The argument of these young people missing their lessons is that global warming cannot be ignored any longer. This is the biggest crisis we have ever faced. It is time to take responsibility. Scientists have given the figures, now the young generation are taking those figures and telling their governments to take action. They argue that there is no point in going to school because there is no future.",
+      "If the world continues as if nothing is happening and governments do not set targets that will make the difference, it will be the young generation who will live through their failure. Those who are under 20 now could be around to see 2080, and be living in a world that has warmed by up to 4 degrees Celsius. Rivers would flood, storms would destroy towns and cities by the sea, melting ice would cause sea levels to rise. Thousands of scientists from around the world support the children saying that if we take action now, and that means all of us, we might be able to stop the rise in temperature."
+    ]
+  },
+  "questions": [
+    {
+      "id": 11,
+      "question": "11. What are scientists saying about climate change?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It’s not really happening as fast as we feared."
+        },
+        {
+          "letter": "B",
+          "text": "Temperatures will only rise by 1.5 degrees."
+        },
+        {
+          "letter": "C",
+          "text": "Original predictions were wrong."
+        },
+        {
+          "letter": "D",
+          "text": "We have reached a rise of 3 degrees already."
+        }
+      ],
+      "hint": "Compare the original 1.5°C goal with the newer projected rise of around 3°C."
+    },
+    {
+      "id": 12,
+      "question": "12. The first thing Greta Thunberg did was to",
+      "options": [
+        {
+          "letter": "A",
+          "text": "miss lessons to get a reaction."
+        },
+        {
+          "letter": "B",
+          "text": "become the leader of the young generation."
+        },
+        {
+          "letter": "C",
+          "text": "ask other children to help her."
+        },
+        {
+          "letter": "D",
+          "text": "ask the local government for support."
+        }
+      ],
+      "hint": "The writer says Greta refused to go to school to draw attention to climate change."
+    },
+    {
+      "id": 13,
+      "question": "13. What does Liz think about the reaction to climate change?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "There is no longer any other solution."
+        },
+        {
+          "letter": "B",
+          "text": "Everybody is finally taking responsibility."
+        },
+        {
+          "letter": "C",
+          "text": "The children should not be missing school."
+        },
+        {
+          "letter": "D",
+          "text": "The younger generation cannot achieve much."
+        }
+      ],
+      "hint": "Look at the sentence 'It had to happen' and the writer's support for young people taking action."
+    },
+    {
+      "id": 14,
+      "question": "14. What will happen in the future if we continue to ignore the problem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The planet will have become 4°C warmer in less than 20 years."
+        },
+        {
+          "letter": "B",
+          "text": "The effects of global warming will be even worse."
+        },
+        {
+          "letter": "C",
+          "text": "All cities will be destroyed by bad weather."
+        },
+        {
+          "letter": "D",
+          "text": "Governments will lose interest in global warming."
+        }
+      ],
+      "hint": "The article predicts flooding, storms and rising sea levels."
+    },
+    {
+      "id": 15,
+      "question": "15. How would Liz describe the movement started by Greta Thunberg?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Everybody is stopping work to discuss climate change."
+        },
+        {
+          "letter": "B",
+          "text": "Everyone is accepting that temperatures will reach no more than 3°C higher."
+        },
+        {
+          "letter": "C",
+          "text": "Younger people are no longer waiting for governments to act on climate change."
+        },
+        {
+          "letter": "D",
+          "text": "Young people are not attending school anymore because there is no reason to."
+        }
+      ],
+      "hint": "Young people have decided to take the lead because governments have done very little."
+    }
+  ],
+  "explanation": [
+    {
+      "q": 11,
+      "ans": "C",
+      "key": "C đúng trong ngữ cảnh đề vì mục tiêu ban đầu là giữ mức tăng nhiệt độ dưới 1.5°C, nhưng dự báo mới hướng tới 3°C. A sai vì tình trạng nghiêm trọng hơn dự kiến. B sai vì 1.5°C là mục tiêu chứ không phải dự báo chắc chắn. D sai vì thế giới đang tiến tới mức tăng 3°C, chưa đạt đến mức đó."
+    },
+    {
+      "q": 12,
+      "ans": "A",
+      "key": "A đúng vì Greta 'refused to go to school to draw attention to climate change'. B sai vì bài nói cả thế hệ trẻ dẫn đầu hành động, không nói Greta trở thành lãnh đạo chính thức. C sai vì cô truyền cảm hứng chứ không trực tiếp nhờ những người khác. D sai vì phong trào kêu gọi chính quyền hành động nhiều hơn."
+    },
+    {
+      "q": 13,
+      "ans": "A",
+      "key": "A là đáp án được sách chọn: 'It had to happen' cho thấy Liz tin hành động của học sinh là cần thiết khi chính phủ chưa giải quyết vấn đề. B sai vì không phải mọi người đều đã nhận trách nhiệm. C sai vì Liz ủng hộ cuộc vận động của học sinh. D sai vì cô tin giới trẻ có thể gây sức ép thay đổi."
+    },
+    {
+      "q": 14,
+      "ans": "B",
+      "key": "B đúng vì bài mô tả các tác động ngày càng nghiêm trọng: rivers would flood, storms would destroy coastal towns and cities, melting ice would raise sea levels. A sai vì mốc nói tới là 2080. C sai vì chỉ nói một số towns/cities by the sea. D không được bài nêu."
+    },
+    {
+      "q": 15,
+      "ans": "C",
+      "key": "C đúng vì giới trẻ chủ động dẫn đầu, không tiếp tục chờ chính phủ hành động. A sai vì schoolchildren nghỉ học chứ không phải mọi người ngừng làm việc. B sai vì chính phủ chưa thực hiện đầy đủ yêu cầu. D sai vì việc nghỉ học là hình thức phản đối để nâng cao nhận thức, không phải từ bỏ giáo dục vĩnh viễn."
+    }
+  ]
+}
